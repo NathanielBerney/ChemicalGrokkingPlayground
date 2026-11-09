@@ -1,0 +1,123 @@
+{
+  "log_bits": {
+    "constant": {
+      "train_final": {
+        "accuracy_rel_1pct": 0.24633333333333332,
+        "accuracy_rel_5pct": 0.9573333333333334,
+        "accuracy_rel_10pct": 0.9953333333333333,
+        "median_relative_error": 0.017575888486386297,
+        "mean_relative_error": 0.019976101960453643,
+        "p90_relative_error": 0.03552373074257082,
+        "log_rmse": 0.02840159608751837,
+        "rmse": 0.00974026437781395
+      },
+      "test_final": {
+        "accuracy_rel_1pct": 0.24428571428571427,
+        "accuracy_rel_5pct": 0.9534285714285714,
+        "accuracy_rel_10pct": 0.9934285714285714,
+        "median_relative_error": 0.01763475399399676,
+        "mean_relative_error": 0.021019743695616627,
+        "p90_relative_error": 0.03648145672754808,
+        "log_rmse": 0.03589605409268505,
+        "rmse": 0.018180191065612937
+      },
+      "test_best_1pct": 0.7807142857142857
+    },
+    "cosine": {
+      "train_final": {
+        "accuracy_rel_1pct": 0.969,
+        "accuracy_rel_5pct": 0.9973333333333333,
+        "accuracy_rel_10pct": 0.999,
+        "median_relative_error": 0.0013677535112640161,
+        "mean_relative_error": 0.0024481344740114085,
+        "p90_relative_error": 0.00458620508103468,
+        "log_rmse": 0.006522807984131703,
+        "rmse": 0.0018067087153856554
+      },
+      "test_final": {
+        "accuracy_rel_1pct": 0.9611428571428572,
+        "accuracy_rel_5pct": 0.9944285714285714,
+        "accuracy_rel_10pct": 0.9958571428571429,
+        "median_relative_error": 0.0014109452435121534,
+        "mean_relative_error": 0.004619484483054753,
+        "p90_relative_error": 0.004944589017708874,
+        "log_rmse": 0.03317296128687063,
+        "rmse": 0.018425110483421974
+      },
+      "test_best_1pct": 0.962
+    }
+  },
+  "log_flatbits": {
+    "constant": {
+      "train_final": {
+        "accuracy_rel_1pct": 0.6153333333333333,
+        "accuracy_rel_5pct": 0.9976666666666667,
+        "accuracy_rel_10pct": 0.9996666666666667,
+        "median_relative_error": 0.008624176997955726,
+        "mean_relative_error": 0.009964900890012833,
+        "p90_relative_error": 0.016153929184117594,
+        "log_rmse": 0.01279065225824042,
+        "rmse": 0.0007139385790924873
+      },
+      "test_final": {
+        "accuracy_rel_1pct": 0.6015714285714285,
+        "accuracy_rel_5pct": 0.9847142857142858,
+        "accuracy_rel_10pct": 0.9914285714285714,
+        "median_relative_error": 0.008726116088721043,
+        "mean_relative_error": 0.01570971964741015,
+        "p90_relative_error": 0.017776568071708722,
+        "log_rmse": 0.052809766381322266,
+        "rmse": 0.013426471848539068
+      },
+      "test_best_1pct": 0.9332857142857143
+    },
+    "cosine": {
+      "train_final": {
+        "accuracy_rel_1pct": 0.9916666666666667,
+        "accuracy_rel_5pct": 0.9996666666666667,
+        "accuracy_rel_10pct": 1.0,
+        "median_relative_error": 0.0002717149965737914,
+        "mean_relative_error": 0.0008008391678208976,
+        "p90_relative_error": 0.0017216374180107211,
+        "log_rmse": 0.002275066289657212,
+        "rmse": 9.971030926297967e-05
+      },
+      "test_final": {
+        "accuracy_rel_1pct": 0.969,
+        "accuracy_rel_5pct": 0.9884285714285714,
+        "accuracy_rel_10pct": 0.992,
+        "median_relative_error": 0.0003359764144558123,
+        "mean_relative_error": 0.006017837178648094,
+        "p90_relative_error": 0.0030900769344421705,
+        "log_rmse": 0.046247539354851805,
+        "rmse": 0.01250064360896234
+      },
+      "test_best_1pct": 0.969
+    }
+  },
+  "log_posbits": {
+    "cosine": {
+      "train_final": {
+        "accuracy_rel_1pct": 0.995,
+        "accuracy_rel_5pct": 1.0,
+        "accuracy_rel_10pct": 1.0,
+        "median_relative_error": 0.0005057253594455682,
+        "mean_relative_error": 0.0009152959519559728,
+        "p90_relative_error": 0.0017637626970335495,
+        "log_rmse": 0.0020985311930625796,
+        "rmse": 0.00011470084156409803
+      },
+      "test_final": {
+        "accuracy_rel_1pct": 0.9848571428571429,
+        "accuracy_rel_5pct": 0.9937142857142857,
+        "accuracy_rel_10pct": 0.995,
+        "median_relative_error": 0.0005347897414836298,
+        "mean_relative_error": 0.004862297207038381,
+        "p90_relative_error": 0.002316498288881353,
+        "log_rmse": 0.048773048551108006,
+        "rmse": 0.031076569688096342
+      },
+      "test_best_1pct": 0.9874285714285714
+    }
+  }
+}

@@ -1,0 +1,38 @@
+<!doctype html><html lang="en"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Circulant spectrum learning</title>
+<style>body{font:16px system-ui;max-width:1250px;margin:35px auto;padding:0 22px;color:#17222e;background:#f7f9fc}
+h1{font-size:28px}p{line-height:1.6}select,button{font:inherit;padding:8px;margin:5px;border:1px solid #aebccb;border-radius:6px;background:white}
+img{width:100%;height:auto;background:white;border-radius:8px}table{border-collapse:collapse;width:100%;background:white}
+td,th{padding:9px;text-align:left;border-bottom:1px solid #dde4ed}.note{color:#526376;font-size:14px}a{color:#1758ad}</style>
+<h1>Learning eigenvalue spectra from circulant matrices</h1>
+<p>Raw matrix inputs, continuous eigenvalue outputs, and no supplied Fourier features.
+The mode-ordered control isolates the linear spectral map. The main task predicts eigenvalues in energy order.
+Distinct matrices sharing a spectrum stay in the same split.</p>
+<img src="comparison.png" alt="Full train and test error histories for all runs">
+<p><label>Run <select id="run"></select></label><label>View <select id="view">
+<option value="representations">Embeddings and predicted spectra</option>
+<option value="frequencies">Fourier modes, Gini, and coupling sensitivities</option>
+<option value="causal_ablations">Causal Fourier-mode ablations</option></select></label>
+<button id="restart">Restart animation</button> <a id="download">Open GIF</a></p>
+<p id="caption" class="note"></p><img id="movie" alt="Training progression animation">
+<p class="note">Each frame is a saved checkpoint. Early frames are more closely spaced in optimizer steps.
+PCA coordinates, heatmap scales, and axes are fixed across time. Channel order is chosen from the final checkpoint for display only.</p>
+<table><thead><tr><th>Run</th><th>Train RMSE</th><th>Test RMSE</th><th>Linear test RMSE</th><th>Sensitivity relative error</th></tr></thead>
+<tbody><tr><td>mode_seed0</td><td>0.05076</td><td>0.05166</td><td>1.45e-14</td><td>0.290</td></tr>
+<tr><td>mode_seed1</td><td>0.11971</td><td>0.11989</td><td>9.67e-15</td><td>0.329</td></tr>
+<tr><td>sorted_seed0</td><td>0.41361</td><td>0.65547</td><td>0.724</td><td>1.067</td></tr>
+<tr><td>sorted_seed0_wd0p1</td><td>0.10831</td><td>0.68133</td><td>0.724</td><td>1.104</td></tr>
+<tr><td>sorted_seed1</td><td>0.63442</td><td>0.64047</td><td>0.728</td><td>1.004</td></tr>
+<tr><td>sorted_seed1_wd0p1</td><td>0.05661</td><td>0.68079</td><td>0.728</td><td>1.049</td></tr></tbody></table>
+<p class="note">RMSE uses every eigenvalue in the full split. Sensitivity compares central finite differences on four fixed held-out matrices
+with the exact response to continuous changes in symmetric couplings; it is a separate local diagnostic.
+Ablations use 128 fixed held-out matrices, remove real Fourier subspaces before attention blocks, and preserve CLS.
+Random controls match subspace rank, with three draws per rank. Power concentration alone does not establish a Fourier algorithm;
+Gini can increase as non-DC weight power vanishes. These fixed-size mathematical circulants do not enforce carbon valence or planarity.</p>
+<p><a href="../README.md">Methods and reproduction instructions</a></p>
+<script>const runs=[{"name": "mode_seed0", "images": {"representations": "mode_seed0/representations.gif", "frequencies": "mode_seed0/frequencies.gif", "causal_ablations": "mode_seed0/causal_ablations.gif"}, "caption": "mode targets \u00b7 seed 0 \u00b7 weight decay 1 \u00b7 87 checkpoints \u00b7 train/test 3000/7000"}, {"name": "mode_seed1", "images": {"representations": "mode_seed1/representations.gif", "frequencies": "mode_seed1/frequencies.gif", "causal_ablations": "mode_seed1/causal_ablations.gif"}, "caption": "mode targets \u00b7 seed 1 \u00b7 weight decay 1 \u00b7 87 checkpoints \u00b7 train/test 3000/7000"}, {"name": "sorted_seed0", "images": {"representations": "sorted_seed0/representations.gif", "frequencies": "sorted_seed0/frequencies.gif", "causal_ablations": "sorted_seed0/causal_ablations.gif"}, "caption": "sorted targets \u00b7 seed 0 \u00b7 weight decay 1 \u00b7 87 checkpoints \u00b7 train/test 3000/7000"}, {"name": "sorted_seed0_wd0p1", "images": {"representations": "sorted_seed0_wd0p1/representations.gif", "frequencies": "sorted_seed0_wd0p1/frequencies.gif", "causal_ablations": "sorted_seed0_wd0p1/causal_ablations.gif"}, "caption": "sorted targets \u00b7 seed 0 \u00b7 weight decay 0.1 \u00b7 87 checkpoints \u00b7 train/test 3000/7000"}, {"name": "sorted_seed1", "images": {"representations": "sorted_seed1/representations.gif", "frequencies": "sorted_seed1/frequencies.gif", "causal_ablations": "sorted_seed1/causal_ablations.gif"}, "caption": "sorted targets \u00b7 seed 1 \u00b7 weight decay 1 \u00b7 87 checkpoints \u00b7 train/test 3000/7000"}, {"name": "sorted_seed1_wd0p1", "images": {"representations": "sorted_seed1_wd0p1/representations.gif", "frequencies": "sorted_seed1_wd0p1/frequencies.gif", "causal_ablations": "sorted_seed1_wd0p1/causal_ablations.gif"}, "caption": "sorted targets \u00b7 seed 1 \u00b7 weight decay 0.1 \u00b7 87 checkpoints \u00b7 train/test 3000/7000"}];const r=document.querySelector('#run'),v=document.querySelector('#view'),m=document.querySelector('#movie');
+runs.forEach((x,i)=>{let o=document.createElement('option');o.value=i;o.textContent=x.name;r.appendChild(o)});
+function update(restart=false){const x=runs[+r.value],src=x.images[v.value];m.src=src+(restart?'?restart='+Date.now():'');
+document.querySelector('#download').href=src;document.querySelector('#caption').textContent=x.caption;}
+r.onchange=()=>update();v.onchange=()=>update();document.querySelector('#restart').onclick=()=>update(true);update();</script></html>

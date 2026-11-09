@@ -1,0 +1,126 @@
+{
+  "requested_count": 10000,
+  "generated_count": 10000,
+  "attempts": 13363,
+  "rejection_stats": {
+    "rejected_heteroatom_count": 1111,
+    "rejected_construction": 822,
+    "rejected_duplicate": 1430
+  },
+  "seed": 20261029,
+  "settings": {
+    "count": 10000,
+    "min_heavy": 6,
+    "max_heavy": 50,
+    "max_fused_rings": 3,
+    "link_prob": 0.35,
+    "max_substituents": 4,
+    "min_heteroatoms": 1,
+    "max_heteroatoms": 8,
+    "single_bond_scale": 0.9,
+    "allow_all_carbon": false,
+    "unique_spectra": false,
+    "seed": 20261029,
+    "outdir": "heteroatom_huckel_dataset",
+    "max_attempts": null,
+    "quiet": false
+  },
+  "beta_cc": -1.0,
+  "site_parameters_h_k": {
+    "C": [
+      0.0,
+      1.0
+    ],
+    "N_pyridine": [
+      0.5,
+      1.0
+    ],
+    "N_pyrrole": [
+      1.5,
+      0.8
+    ],
+    "N_nitro": [
+      2.0,
+      1.0
+    ],
+    "O_carbonyl": [
+      1.0,
+      1.0
+    ],
+    "O_ether": [
+      2.0,
+      0.8
+    ],
+    "O_anion": [
+      1.5,
+      0.8
+    ],
+    "S_thio": [
+      1.0,
+      0.7
+    ]
+  },
+  "pi_electrons_per_site_class": {
+    "C": 1,
+    "N_pyridine": 1,
+    "N_pyrrole": 2,
+    "N_nitro": 1,
+    "O_carbonyl": 1,
+    "O_ether": 2,
+    "O_anion": 2,
+    "S_thio": 2
+  },
+  "off_diagonal_rule": "beta_ij = sqrt(k_i*k_j)*beta_cc; x single_bond_scale for non-aromatic single bonds between two 1-electron sites",
+  "diagonal_rule": "alpha_i = h_i * beta_cc (alpha_C = 0)",
+  "ring_library": [
+    "c1ccccc1",
+    "c1ccncc1",
+    "c1cncnc1",
+    "c1cnccn1",
+    "c1ccnnc1",
+    "c1ncncn1",
+    "c1cc[nH]c1",
+    "c1ccoc1",
+    "c1ccsc1",
+    "c1c[nH]cn1",
+    "c1cc[nH]n1",
+    "c1cocn1",
+    "c1cscn1"
+  ],
+  "substituents": [
+    "N",
+    "N(C)C",
+    "O",
+    "OC",
+    "S",
+    "C",
+    "CC",
+    "C(F)(F)F",
+    "F",
+    "Cl",
+    "C=O",
+    "C(=O)C",
+    "C(=O)O",
+    "C(=O)N",
+    "C#N",
+    "[N+](=O)[O-]",
+    "C=C"
+  ],
+  "spacers": [
+    "direct",
+    "vinylene",
+    "ethynylene",
+    "azo"
+  ],
+  "blocklist": {
+    "peroxide/O-O": "[#8]~[#8]",
+    "S-S": "[#16]~[#16]",
+    "O-S": "[#8]~[#16]",
+    "N-S": "[#7]~[#16]",
+    "N-O (non-nitro)": "[#7;!$([N+](=O)[O-])]~[#8]",
+    "N-N single (hydrazine-like)": "[#7]-!:[#7]",
+    "N-N-N chain": "[#7]~[#7]~[#7]"
+  },
+  "energy_units": "|beta_CC| (arbitrary H\u00fcckel units)",
+  "caveats": "Parameters are illustrative textbook-range values, not a single cited parameterization. RDKit sanitization and the blocklist do not assess strain, stability, synthetic accessibility, or 3D geometry. Halogens and sp3 atoms are not part of the pi system."
+}

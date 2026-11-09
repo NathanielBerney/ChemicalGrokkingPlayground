@@ -1,0 +1,442 @@
+{
+  "drawing_type": "qualitative orbital phase schematics; no TS optimization",
+  "frontier_model": "uniform open-chain Hii=0, nearest-neighbor Hij=-1",
+  "lobe_sizes": "compressed illustrative scale; not density isosurfaces",
+  "frontier_coefficients": {
+    "chain_4_psi_2": {
+      "n": 4,
+      "k": 2,
+      "energy_beta_units": -0.6180339887498949,
+      "coefficients": [
+        0.6015009550075456,
+        0.37174803446018456,
+        -0.37174803446018445,
+        -0.6015009550075457
+      ]
+    },
+    "chain_2_psi_2": {
+      "n": 2,
+      "k": 2,
+      "energy_beta_units": 0.9999999999999996,
+      "coefficients": [
+        0.7071067811865476,
+        -0.7071067811865474
+      ]
+    },
+    "chain_2_psi_1": {
+      "n": 2,
+      "k": 1,
+      "energy_beta_units": -1.0000000000000002,
+      "coefficients": [
+        0.7071067811865475,
+        0.7071067811865476
+      ]
+    },
+    "chain_4_psi_3": {
+      "n": 4,
+      "k": 3,
+      "energy_beta_units": 0.6180339887498947,
+      "coefficients": [
+        0.6015009550075457,
+        -0.37174803446018445,
+        -0.3717480344601846,
+        0.6015009550075456
+      ]
+    },
+    "chain_6_psi_3": {
+      "n": 6,
+      "k": 3,
+      "energy_beta_units": -0.4450418679126289,
+      "coefficients": [
+        0.5211208891696024,
+        0.23192061392432994,
+        -0.41790650594127493,
+        -0.4179065059412751,
+        0.2319206139243293,
+        0.5211208891696025
+      ]
+    }
+  },
+  "dataset_checks": [
+    {
+      "family": "diels_alder_4plus2",
+      "mode": "supra_supra",
+      "topology": "Huckel",
+      "phase": 1,
+      "electrons": 6,
+      "thermal_allowed": 1,
+      "example_index": 17,
+      "sample_id": "peri_00017"
+    },
+    {
+      "family": "diels_alder_4plus2",
+      "mode": "supra_antara",
+      "topology": "Mobius",
+      "phase": -1,
+      "electrons": 6,
+      "thermal_allowed": 0,
+      "example_index": 13,
+      "sample_id": "peri_00013"
+    },
+    {
+      "family": "alder_ene",
+      "mode": "all_suprafacial",
+      "topology": "Huckel",
+      "phase": 1,
+      "electrons": 6,
+      "thermal_allowed": 1,
+      "example_index": 2,
+      "sample_id": "peri_00002"
+    },
+    {
+      "family": "alder_ene",
+      "mode": "one_antarafacial_component",
+      "topology": "Mobius",
+      "phase": -1,
+      "electrons": 6,
+      "thermal_allowed": 0,
+      "example_index": 25,
+      "sample_id": "peri_00025"
+    },
+    {
+      "family": "claisen_3_3",
+      "mode": "supra_supra",
+      "topology": "Huckel",
+      "phase": 1,
+      "electrons": 6,
+      "thermal_allowed": 1,
+      "example_index": 96,
+      "sample_id": "peri_00096"
+    },
+    {
+      "family": "claisen_3_3",
+      "mode": "supra_antara",
+      "topology": "Mobius",
+      "phase": -1,
+      "electrons": 6,
+      "thermal_allowed": 0,
+      "example_index": 37,
+      "sample_id": "peri_00037"
+    },
+    {
+      "family": "cope_3_3",
+      "mode": "supra_supra",
+      "topology": "Huckel",
+      "phase": 1,
+      "electrons": 6,
+      "thermal_allowed": 1,
+      "example_index": 3,
+      "sample_id": "peri_00003"
+    },
+    {
+      "family": "cope_3_3",
+      "mode": "supra_antara",
+      "topology": "Mobius",
+      "phase": -1,
+      "electrons": 6,
+      "thermal_allowed": 0,
+      "example_index": 11,
+      "sample_id": "peri_00011"
+    },
+    {
+      "family": "cycloaddition_2plus2",
+      "mode": "supra_supra",
+      "topology": "Huckel",
+      "phase": 1,
+      "electrons": 4,
+      "thermal_allowed": 0,
+      "example_index": 7,
+      "sample_id": "peri_00007"
+    },
+    {
+      "family": "cycloaddition_2plus2",
+      "mode": "supra_antara",
+      "topology": "Mobius",
+      "phase": -1,
+      "electrons": 4,
+      "thermal_allowed": 1,
+      "example_index": 6,
+      "sample_id": "peri_00006"
+    },
+    {
+      "family": "cycloaddition_4plus4",
+      "mode": "supra_supra",
+      "topology": "Huckel",
+      "phase": 1,
+      "electrons": 8,
+      "thermal_allowed": 0,
+      "example_index": 54,
+      "sample_id": "peri_00054"
+    },
+    {
+      "family": "cycloaddition_4plus4",
+      "mode": "supra_antara",
+      "topology": "Mobius",
+      "phase": -1,
+      "electrons": 8,
+      "thermal_allowed": 1,
+      "example_index": 18,
+      "sample_id": "peri_00018"
+    },
+    {
+      "family": "electrocyclic_4pi",
+      "mode": "disrotatory",
+      "topology": "Huckel",
+      "phase": 1,
+      "electrons": 4,
+      "thermal_allowed": 0,
+      "example_index": 1,
+      "sample_id": "peri_00001"
+    },
+    {
+      "family": "electrocyclic_4pi",
+      "mode": "conrotatory",
+      "topology": "Mobius",
+      "phase": -1,
+      "electrons": 4,
+      "thermal_allowed": 1,
+      "example_index": 0,
+      "sample_id": "peri_00000"
+    },
+    {
+      "family": "electrocyclic_6pi",
+      "mode": "disrotatory",
+      "topology": "Huckel",
+      "phase": 1,
+      "electrons": 6,
+      "thermal_allowed": 1,
+      "example_index": 9,
+      "sample_id": "peri_00009"
+    },
+    {
+      "family": "electrocyclic_6pi",
+      "mode": "conrotatory",
+      "topology": "Mobius",
+      "phase": -1,
+      "electrons": 6,
+      "thermal_allowed": 0,
+      "example_index": 12,
+      "sample_id": "peri_00012"
+    }
+  ],
+  "reaction_bonds": [
+    {
+      "family": "diels_alder_4plus2",
+      "elements": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C"
+      ],
+      "reactant_cyclic_bond_orders": [
+        2,
+        1,
+        2,
+        0,
+        2,
+        0
+      ],
+      "product_cyclic_bond_orders": [
+        1,
+        2,
+        1,
+        1,
+        1,
+        1
+      ],
+      "expected_product_smiles": "C1=CCCCC1"
+    },
+    {
+      "family": "cycloaddition_2plus2",
+      "elements": [
+        "C",
+        "C",
+        "C",
+        "C"
+      ],
+      "reactant_cyclic_bond_orders": [
+        2,
+        0,
+        2,
+        0
+      ],
+      "product_cyclic_bond_orders": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "expected_product_smiles": "C1CCC1"
+    },
+    {
+      "family": "cycloaddition_4plus4",
+      "elements": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C"
+      ],
+      "reactant_cyclic_bond_orders": [
+        2,
+        1,
+        2,
+        0,
+        2,
+        1,
+        2,
+        0
+      ],
+      "product_cyclic_bond_orders": [
+        1,
+        2,
+        1,
+        1,
+        1,
+        2,
+        1,
+        1
+      ],
+      "expected_product_smiles": "C1=CCCC=CCC1"
+    },
+    {
+      "family": "electrocyclic_4pi",
+      "elements": [
+        "C",
+        "C",
+        "C",
+        "C"
+      ],
+      "reactant_cyclic_bond_orders": [
+        2,
+        1,
+        2,
+        0
+      ],
+      "product_cyclic_bond_orders": [
+        1,
+        2,
+        1,
+        1
+      ],
+      "expected_product_smiles": "C1=CCC1"
+    },
+    {
+      "family": "electrocyclic_6pi",
+      "elements": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C"
+      ],
+      "reactant_cyclic_bond_orders": [
+        2,
+        1,
+        2,
+        1,
+        2,
+        0
+      ],
+      "product_cyclic_bond_orders": [
+        1,
+        2,
+        1,
+        2,
+        1,
+        1
+      ],
+      "expected_product_smiles": "C1=CC=CCC1"
+    },
+    {
+      "family": "claisen_3_3",
+      "elements": [
+        "C",
+        "C",
+        "C",
+        "O",
+        "C",
+        "C"
+      ],
+      "reactant_cyclic_bond_orders": [
+        2,
+        1,
+        1,
+        1,
+        2,
+        0
+      ],
+      "product_cyclic_bond_orders": [
+        1,
+        2,
+        0,
+        2,
+        1,
+        1
+      ],
+      "expected_product_smiles": "O=CCCC=C"
+    },
+    {
+      "family": "cope_3_3",
+      "elements": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C"
+      ],
+      "reactant_cyclic_bond_orders": [
+        2,
+        1,
+        1,
+        1,
+        2,
+        0
+      ],
+      "product_cyclic_bond_orders": [
+        1,
+        2,
+        0,
+        2,
+        1,
+        1
+      ],
+      "expected_product_smiles": "C=CCCC=C"
+    },
+    {
+      "family": "alder_ene",
+      "elements": [
+        "C",
+        "C",
+        "C",
+        "H",
+        "C",
+        "C"
+      ],
+      "reactant_cyclic_bond_orders": [
+        2,
+        1,
+        1,
+        0,
+        2,
+        0
+      ],
+      "product_cyclic_bond_orders": [
+        1,
+        2,
+        0,
+        1,
+        1,
+        1
+      ],
+      "expected_product_smiles": "C=CCCC"
+    }
+  ]
+}

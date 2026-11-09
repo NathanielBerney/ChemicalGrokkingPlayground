@@ -1,0 +1,18 @@
+{
+  "family": "circulant",
+  "count": 10000,
+  "n_min": 6,
+  "n_max": 40002,
+  "n_step": 4,
+  "alpha": 0.0,
+  "beta": -1.0,
+  "graph_identity": "cycle:n",
+  "bond_order_rule": "edge (i,i+1) is double when i is even; ring closure (n-1,0) is single",
+  "hydrogen_rule": "4 minus sum of C-C bond orders at each carbon",
+  "phase_rule": "all edges have beta",
+  "graph_planar": true,
+  "planarity_constraint": "planar_graph",
+  "geometry_verified": false,
+  "model_note": "Graph planarity does not certify a low-energy 3D conformation",
+  "stored_matrices": "small example only; use constrained_huckel.hamiltonian_sparse(family,n)"
+}

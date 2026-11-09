@@ -1,0 +1,32 @@
+{
+  "one_layer": {
+    "train_accuracy_rel_1pct": 0.8895714285714286,
+    "test_accuracy_rel_1pct": 0.099,
+    "train_mae": 0.00504543019786554,
+    "test_mae": 0.09882686408934033
+  },
+  "one_layer_slow_decay": {
+    "train_accuracy_rel_1pct": 0.9957142857142857,
+    "test_accuracy_rel_1pct": 0.095,
+    "train_mae": 0.00149014511096616,
+    "test_mae": 0.08618376374199797
+  },
+  "two_layers": {
+    "train_accuracy_rel_1pct": 0.9967142857142857,
+    "test_accuracy_rel_1pct": 0.154,
+    "train_mae": 0.001937952328188633,
+    "test_mae": 0.07421067313930657
+  },
+  "perm_aug": {
+    "train_accuracy_rel_1pct": 0.11257142857142857,
+    "test_accuracy_rel_1pct": 0.072,
+    "train_mae": 0.07394135738060689,
+    "test_mae": 0.09665008540272044
+  },
+  "perm_aug_slow_decay": {
+    "train_accuracy_rel_1pct": 0.19171428571428573,
+    "test_accuracy_rel_1pct": 0.09066666666666667,
+    "train_mae": 0.04989925104002589,
+    "test_mae": 0.10215434803209951
+  }
+}

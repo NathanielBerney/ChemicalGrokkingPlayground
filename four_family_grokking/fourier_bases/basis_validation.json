@@ -1,0 +1,39 @@
+{
+  "circulant": {
+    "n": 42,
+    "basis_orthogonality_max_error": 8.32955961815944e-15,
+    "offdiagonal_max_error": 1.2658378044660563e-14,
+    "analytic_eigenvalue_max_error": 1.3322676295501878e-15,
+    "boundary_phase": 1
+  },
+  "mobius": {
+    "n": 40,
+    "basis_orthogonality_max_error": 6.414989150802817e-15,
+    "offdiagonal_max_error": 1.0995358111684305e-14,
+    "analytic_eigenvalue_max_error": 1.27675647831893e-15,
+    "boundary_phase": -1
+  },
+  "linear": {
+    "n": 42,
+    "basis_orthogonality_max_error": 3.2320077253482074e-15,
+    "offdiagonal_max_error": 4.957839694341715e-15,
+    "analytic_eigenvalue_max_error": 4.218847493575595e-15,
+    "boundary_phase": null
+  },
+  "pericyclic": {
+    "1": {
+      "sample_index": 2,
+      "n": 6,
+      "label": 1,
+      "offdiagonal_frobenius_fraction": 0.508812865839807,
+      "basis_orthogonality_max_error": 7.417978424080268e-16
+    },
+    "-1": {
+      "sample_index": 11,
+      "n": 6,
+      "label": 0,
+      "offdiagonal_frobenius_fraction": 0.38097611955161187,
+      "basis_orthogonality_max_error": 5.549543371872621e-16
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "dataset": "QM9",
+  "processed_molecule_count": 130831,
+  "target_index": 1,
+  "target_name": "isotropic polarizability",
+  "target_unit": "Bohr radius cubed",
+  "processor": "torch_geometric.datasets.QM9, version 2.8.1",
+  "raw_source": "https://deepchemdata.s3-us-west-1.amazonaws.com/datasets/molnet_publish/qm9.zip",
+  "uncharacterized_source": "https://ndownloader.figshare.com/files/3195404",
+  "raw_sha256": {
+    "gdb9.sdf": "98c4e97d50ac549b8c9f0b2114b348a9a944718e17e50d9a724b729f1deaa28e",
+    "gdb9.sdf.csv": "73a67793e3cfa9660f001278bd019c143f57e4785db537a01811cf2ce72aa7eb",
+    "uncharacterized.txt": "3aa5115d540b356de94791d4a74c3bf1ed91c469ecf52a4f5d7cc0506fe02e24"
+  }
+}

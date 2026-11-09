@@ -1,0 +1,97 @@
+{
+  "count": 10000,
+  "seed": 20261029,
+  "label_meaning": "1 = formally thermally symmetry-allowed for the specified candidate approach; 0 = forbidden by ideal Woodward-Hoffmann/Huckel-Mobius rule",
+  "matrix_meaning": "generalized Huckel-style active cyclic transition-state orbital interaction matrix; dimensionless beta_CC=-1",
+  "padding": "H has shape (count,8,8); use n_sites or site_mask to remove zero padding",
+  "site_code": {
+    "0": "PAD",
+    "1": "C active orbital",
+    "2": "O active orbital",
+    "3": "H transfer orbital"
+  },
+  "site_alpha": {
+    "C": 0.0,
+    "O": -0.8,
+    "H": -0.4
+  },
+  "site_coupling": {
+    "C": 1.0,
+    "O": 0.8,
+    "H": 0.75
+  },
+  "substituents": [
+    "none",
+    "methyl",
+    "ethyl",
+    "propyl",
+    "butyl",
+    "pentyl",
+    "hexyl",
+    "fluoro",
+    "chloro",
+    "hydroxy",
+    "methoxy",
+    "cyano"
+  ],
+  "substituent_site_shifts": {
+    "none": 0.0,
+    "methyl": 0.025,
+    "ethyl": 0.035,
+    "propyl": 0.04,
+    "butyl": 0.045,
+    "pentyl": 0.05,
+    "hexyl": 0.055,
+    "fluoro": -0.08,
+    "chloro": -0.06,
+    "hydroxy": -0.075,
+    "methoxy": -0.055,
+    "cyano": -0.12
+  },
+  "reactant_graphs": "reactant_graphs.jsonl contains one exact valence-checked graph per matrix; all graphs are non-isomorphic",
+  "role_magnitude_ranges": {
+    "pi": [
+      0.9,
+      1.1
+    ],
+    "conjugated": [
+      0.6,
+      0.85
+    ],
+    "breaking_CH": [
+      0.25,
+      0.6
+    ],
+    "breaking_CO": [
+      0.25,
+      0.6
+    ],
+    "breaking_CC": [
+      0.25,
+      0.6
+    ],
+    "forming_CH": [
+      0.18,
+      0.52
+    ],
+    "forming_CC": [
+      0.18,
+      0.52
+    ]
+  },
+  "rule": "phase +1 and 4k+2 electrons OR phase -1 and 4k electrons",
+  "gauge": "random orbital sign gauge, cyclic rotation, and reversal; cycle sign is invariant",
+  "template_count": 8,
+  "not_assessed": [
+    "transition-state geometry",
+    "reaction kinetics",
+    "synthetic feasibility",
+    "competing mechanisms"
+  ],
+  "template_sources": {
+    "general": "https://www.old.goldbook.iupac.org/html/P/P04491.html",
+    "orbital_symmetry": "https://onlinelibrary.wiley.com/doi/10.1002/anie.196907811",
+    "ene": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10087545/",
+    "electrocyclic": "https://roaldhoffmann.com/sites/default/files/fromd6/18s_1.pdf"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "0": {
+    "last_step": 40000,
+    "first_train_accuracy_99pct_step": 200,
+    "first_train_accuracy_99pct_seconds": 0.5533221270015929,
+    "first_test_accuracy_99pct_step": 12700,
+    "first_test_accuracy_99pct_seconds": 39.83195605200308,
+    "last_train_accuracy": 1.0,
+    "last_test_accuracy": 1.0,
+    "last_embedding_fourier_gini": 0.9188466070786188,
+    "last_neuron_logit_fourier_gini": 0.9290658601926467,
+    "last_elapsed_seconds": 140.21302768400346
+  },
+  "1": {
+    "last_step": 40000,
+    "first_train_accuracy_99pct_step": 200,
+    "first_train_accuracy_99pct_seconds": 0.54412687200238,
+    "first_test_accuracy_99pct_step": 13900,
+    "first_test_accuracy_99pct_seconds": 40.31724629100063,
+    "last_train_accuracy": 1.0,
+    "last_test_accuracy": 1.0,
+    "last_embedding_fourier_gini": 0.930036381742352,
+    "last_neuron_logit_fourier_gini": 0.9497461762109295,
+    "last_elapsed_seconds": 107.64333947600244
+  },
+  "2": {
+    "last_step": 40000,
+    "first_train_accuracy_99pct_step": 200,
+    "first_train_accuracy_99pct_seconds": 0.5947406859995681,
+    "first_test_accuracy_99pct_step": 4700,
+    "first_test_accuracy_99pct_seconds": 17.213341454997135,
+    "last_train_accuracy": 1.0,
+    "last_test_accuracy": 1.0,
+    "last_embedding_fourier_gini": 0.9314861145439153,
+    "last_neuron_logit_fourier_gini": 0.9375434423906068,
+    "last_elapsed_seconds": 116.99503384200216
+  },
+  "3": {
+    "last_step": 40000,
+    "first_train_accuracy_99pct_step": 200,
+    "first_train_accuracy_99pct_seconds": 0.594846164000046,
+    "first_test_accuracy_99pct_step": 7400,
+    "first_test_accuracy_99pct_seconds": 14.332308689001366,
+    "last_train_accuracy": 1.0,
+    "last_test_accuracy": 1.0,
+    "last_embedding_fourier_gini": 0.9281569874597588,
+    "last_neuron_logit_fourier_gini": 0.9320449359397887,
+    "last_elapsed_seconds": 109.64816220600187
+  },
+  "4": {
+    "last_step": 40000,
+    "first_train_accuracy_99pct_step": 200,
+    "first_train_accuracy_99pct_seconds": 0.5713979379943339,
+    "first_test_accuracy_99pct_step": 9300,
+    "first_test_accuracy_99pct_seconds": 17.214460634000716,
+    "last_train_accuracy": 1.0,
+    "last_test_accuracy": 1.0,
+    "last_embedding_fourier_gini": 0.907525918727403,
+    "last_neuron_logit_fourier_gini": 0.9194710846744091,
+    "last_elapsed_seconds": 90.63533957899926
+  }
+}

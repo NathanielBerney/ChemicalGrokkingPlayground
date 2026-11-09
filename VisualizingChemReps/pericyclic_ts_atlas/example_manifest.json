@@ -1,0 +1,162 @@
+[
+  {
+    "family": "diels_alder_4plus2",
+    "mode": "supra_supra",
+    "topology": "Huckel",
+    "phase": 1,
+    "electrons": 6,
+    "thermal_allowed": 1,
+    "example_index": 17,
+    "sample_id": "peri_00017"
+  },
+  {
+    "family": "diels_alder_4plus2",
+    "mode": "supra_antara",
+    "topology": "Mobius",
+    "phase": -1,
+    "electrons": 6,
+    "thermal_allowed": 0,
+    "example_index": 13,
+    "sample_id": "peri_00013"
+  },
+  {
+    "family": "alder_ene",
+    "mode": "all_suprafacial",
+    "topology": "Huckel",
+    "phase": 1,
+    "electrons": 6,
+    "thermal_allowed": 1,
+    "example_index": 2,
+    "sample_id": "peri_00002"
+  },
+  {
+    "family": "alder_ene",
+    "mode": "one_antarafacial_component",
+    "topology": "Mobius",
+    "phase": -1,
+    "electrons": 6,
+    "thermal_allowed": 0,
+    "example_index": 25,
+    "sample_id": "peri_00025"
+  },
+  {
+    "family": "claisen_3_3",
+    "mode": "supra_supra",
+    "topology": "Huckel",
+    "phase": 1,
+    "electrons": 6,
+    "thermal_allowed": 1,
+    "example_index": 96,
+    "sample_id": "peri_00096"
+  },
+  {
+    "family": "claisen_3_3",
+    "mode": "supra_antara",
+    "topology": "Mobius",
+    "phase": -1,
+    "electrons": 6,
+    "thermal_allowed": 0,
+    "example_index": 37,
+    "sample_id": "peri_00037"
+  },
+  {
+    "family": "cope_3_3",
+    "mode": "supra_supra",
+    "topology": "Huckel",
+    "phase": 1,
+    "electrons": 6,
+    "thermal_allowed": 1,
+    "example_index": 3,
+    "sample_id": "peri_00003"
+  },
+  {
+    "family": "cope_3_3",
+    "mode": "supra_antara",
+    "topology": "Mobius",
+    "phase": -1,
+    "electrons": 6,
+    "thermal_allowed": 0,
+    "example_index": 11,
+    "sample_id": "peri_00011"
+  },
+  {
+    "family": "cycloaddition_2plus2",
+    "mode": "supra_supra",
+    "topology": "Huckel",
+    "phase": 1,
+    "electrons": 4,
+    "thermal_allowed": 0,
+    "example_index": 7,
+    "sample_id": "peri_00007"
+  },
+  {
+    "family": "cycloaddition_2plus2",
+    "mode": "supra_antara",
+    "topology": "Mobius",
+    "phase": -1,
+    "electrons": 4,
+    "thermal_allowed": 1,
+    "example_index": 6,
+    "sample_id": "peri_00006"
+  },
+  {
+    "family": "cycloaddition_4plus4",
+    "mode": "supra_supra",
+    "topology": "Huckel",
+    "phase": 1,
+    "electrons": 8,
+    "thermal_allowed": 0,
+    "example_index": 54,
+    "sample_id": "peri_00054"
+  },
+  {
+    "family": "cycloaddition_4plus4",
+    "mode": "supra_antara",
+    "topology": "Mobius",
+    "phase": -1,
+    "electrons": 8,
+    "thermal_allowed": 1,
+    "example_index": 18,
+    "sample_id": "peri_00018"
+  },
+  {
+    "family": "electrocyclic_4pi",
+    "mode": "disrotatory",
+    "topology": "Huckel",
+    "phase": 1,
+    "electrons": 4,
+    "thermal_allowed": 0,
+    "example_index": 1,
+    "sample_id": "peri_00001"
+  },
+  {
+    "family": "electrocyclic_4pi",
+    "mode": "conrotatory",
+    "topology": "Mobius",
+    "phase": -1,
+    "electrons": 4,
+    "thermal_allowed": 1,
+    "example_index": 0,
+    "sample_id": "peri_00000"
+  },
+  {
+    "family": "electrocyclic_6pi",
+    "mode": "disrotatory",
+    "topology": "Huckel",
+    "phase": 1,
+    "electrons": 6,
+    "thermal_allowed": 1,
+    "example_index": 9,
+    "sample_id": "peri_00009"
+  },
+  {
+    "family": "electrocyclic_6pi",
+    "mode": "conrotatory",
+    "topology": "Mobius",
+    "phase": -1,
+    "electrons": 6,
+    "thermal_allowed": 0,
+    "example_index": 12,
+    "sample_id": "peri_00012"
+  }
+]

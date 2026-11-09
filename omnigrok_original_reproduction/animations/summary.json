@@ -1,0 +1,40 @@
+[
+  {
+    "total_size": 100,
+    "frame_count": 101,
+    "first_step": 0,
+    "last_step": 100000,
+    "frame_interval": 1000,
+    "alpha1_embedding_pca_fraction": 0.9840091133717933,
+    "alpha3_embedding_pca_fraction": 0.9996050627279275,
+    "alpha1_embedding_radius_initial_final": [
+      7.3882162569217895,
+      75.74619688162231
+    ],
+    "alpha3_embedding_radius_initial_final": [
+      881.9752252360438,
+      53.15137334635726
+    ],
+    "alpha1_weight_pca_fraction": 0.921195770020958,
+    "alpha3_weight_pca_fraction": 0.8748418580880308
+  },
+  {
+    "total_size": 400,
+    "frame_count": 89,
+    "first_step": 0,
+    "last_step": 87500,
+    "frame_interval": 1000,
+    "alpha1_embedding_pca_fraction": 0.8432031024301302,
+    "alpha3_embedding_pca_fraction": 0.9610152255632561,
+    "alpha1_embedding_radius_initial_final": [
+      19.065396826371742,
+      48.770849937519415
+    ],
+    "alpha3_embedding_radius_initial_final": [
+      920.4637818310715,
+      90.70132755311259
+    ],
+    "alpha1_weight_pca_fraction": 0.9359887663829531,
+    "alpha3_weight_pca_fraction": 0.8882062335455311
+  }
+]

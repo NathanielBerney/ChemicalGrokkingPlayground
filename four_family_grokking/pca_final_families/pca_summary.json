@@ -1,0 +1,42 @@
+{
+  "circulant": {
+    "model_source": "runs_log/circulant/last.pt",
+    "hidden_pc1_pc2_variance_fraction": 0.9959118636069044,
+    "hidden_pc1_variance_fraction": 0.9842777431606043,
+    "readout_weight_fraction_in_pc1_pc2": 0.9545167075553243,
+    "checkpoint_step": 40000,
+    "hidden_pc1_log_n_correlation": 0.9992103694979363,
+    "input_pc1_pc2_variance_fraction": 0.906348219413921
+  },
+  "mobius": {
+    "model_source": "runs_log/mobius/last.pt",
+    "hidden_pc1_pc2_variance_fraction": 0.9968962568540113,
+    "hidden_pc1_variance_fraction": 0.9923862351501294,
+    "readout_weight_fraction_in_pc1_pc2": 0.9041169268904472,
+    "checkpoint_step": 40000,
+    "hidden_pc1_log_n_correlation": 0.999660363706968,
+    "input_pc1_pc2_variance_fraction": 0.9673999428228213
+  },
+  "linear": {
+    "model_source": "runs_log/linear/last.pt",
+    "hidden_pc1_pc2_variance_fraction": 0.9987532402214925,
+    "hidden_pc1_variance_fraction": 0.9946323155298906,
+    "readout_weight_fraction_in_pc1_pc2": 0.89292199054217,
+    "checkpoint_step": 40000,
+    "hidden_pc1_log_n_correlation": 0.9997890815117533,
+    "input_pc1_pc2_variance_fraction": 0.9330331661775897
+  },
+  "pericyclic": {
+    "model_source": "runs/pericyclic/last.pt",
+    "hidden_pc1_pc2_variance_fraction": 0.4806132689905924,
+    "hidden_pc1_variance_fraction": 0.29973878242041957,
+    "readout_weight_fraction_in_pc1_pc2": 0.00221654281422359,
+    "checkpoint_step": 120000,
+    "hidden_pc1_label_correlation": 0.0183741204485565,
+    "hidden_pc2_label_correlation": -0.09202528529113639,
+    "strongest_readout_pc": 7,
+    "readout_weight_fraction_in_strongest_pc": 0.8141444038755444,
+    "hidden_variance_fraction_in_strongest_pc": 0.03431553035336587,
+    "strongest_pc_label_correlation": -0.8516871848515111
+  }
+}

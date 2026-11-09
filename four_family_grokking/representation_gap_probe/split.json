@@ -1,0 +1,8 @@
+{
+  "seed": 20261029,
+  "train": 7000,
+  "test": 3000,
+  "spectral_groups": 8317,
+  "source": "/mnt/das_storage/nates_workspace/OPGrokkingDatasets/OPSandbox/heteroatom_huckel_dataset/dataset.npz",
+  "policy": "group by rounded eigenvalue spectrum plus pi electron count"
+}

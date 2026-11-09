@@ -1,0 +1,66 @@
+{
+  "matrix_rows": {
+    "test_1pct_accuracy": {
+      "change_100k_minus_20k": -0.007,
+      "cluster_bootstrap_95pct_interval": [
+        -0.03761197024387263,
+        0.023007122227567376
+      ]
+    },
+    "test_mae": {
+      "change_100k_minus_20k": 0.009278130200085387,
+      "cluster_bootstrap_95pct_interval": [
+        0.006803668853396877,
+        0.011784916432943507
+      ]
+    }
+  },
+  "pi_graph": {
+    "test_1pct_accuracy": {
+      "change_100k_minus_20k": 0.016666666666666666,
+      "cluster_bootstrap_95pct_interval": [
+        -0.013092182690314485,
+        0.04545489456779779
+      ]
+    },
+    "test_mae": {
+      "change_100k_minus_20k": -0.00026729815837922164,
+      "cluster_bootstrap_95pct_interval": [
+        -0.0011878028949821396,
+        0.000666504028404935
+      ]
+    }
+  },
+  "molecular_graph": {
+    "test_1pct_accuracy": {
+      "change_100k_minus_20k": -0.012666666666666666,
+      "cluster_bootstrap_95pct_interval": [
+        -0.024577313123695686,
+        -0.001042926402690809
+      ]
+    },
+    "test_mae": {
+      "change_100k_minus_20k": 0.00029091261333421246,
+      "cluster_bootstrap_95pct_interval": [
+        -0.00017914957168791416,
+        0.0007818916292469025
+      ]
+    }
+  },
+  "smiles": {
+    "test_1pct_accuracy": {
+      "change_100k_minus_20k": -0.006,
+      "cluster_bootstrap_95pct_interval": [
+        -0.01902989475470267,
+        0.007149947601304133
+      ]
+    },
+    "test_mae": {
+      "change_100k_minus_20k": 0.002963394398882869,
+      "cluster_bootstrap_95pct_interval": [
+        0.0015672888271635193,
+        0.0044369404777951
+      ]
+    }
+  }
+}

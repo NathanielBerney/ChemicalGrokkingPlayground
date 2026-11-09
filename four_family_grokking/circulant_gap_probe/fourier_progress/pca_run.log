@@ -1,0 +1,88 @@
+{
+  "embedding": {
+    "log_bits": {
+      "effective_token_pc1_pc2_final_variance_fraction": 0.9648911066366705,
+      "effective_token_pc1_pc2_initial_variance_fraction": 0.9991455771431496,
+      "bit_delta_norm_by_position_msb_first": [
+        1.4063677787780762,
+        1.4063677787780762,
+        1.4063677787780762,
+        1.4063677787780762,
+        1.4063677787780762,
+        1.4063677787780762,
+        1.4063677787780762,
+        1.4063677787780762,
+        1.4063677787780762,
+        1.4063677787780762,
+        1.4063677787780762,
+        1.4063677787780762,
+        1.4063677787780762,
+        1.4063677787780762,
+        1.4063677787780762,
+        1.4063677787780762
+      ]
+    },
+    "log_posbits": {
+      "effective_token_pc1_pc2_final_variance_fraction": 0.7645382990419795,
+      "effective_token_pc1_pc2_initial_variance_fraction": 0.12735729713136845,
+      "bit_delta_norm_by_position_msb_first": [
+        0.5082378387451172,
+        0.431198388338089,
+        0.5767316222190857,
+        0.5627483129501343,
+        0.46559181809425354,
+        0.6037237644195557,
+        0.5588676333427429,
+        0.6949915289878845,
+        0.42342516779899597,
+        0.5901777148246765,
+        0.3054238557815552,
+        0.2535383105278015,
+        0.0440678745508194,
+        0.526548445224762,
+        0.20493808388710022,
+        0.20493841171264648
+      ]
+    }
+  },
+  "weight_trajectory": {
+    "log_bits": {
+      "parameter_count": 200449,
+      "weight_pc1_pc2_variance_fraction": 0.6624713935907388,
+      "weight_pc1_variance_fraction": 0.4483412797411899,
+      "initial_weight_norm": 25.988739499089633,
+      "final_weight_norm": 20.127013245864614,
+      "weight_norm_ratio_final_to_initial": 0.774451305980794
+    },
+    "log_posbits": {
+      "parameter_count": 204289,
+      "weight_pc1_pc2_variance_fraction": 0.9117068080096293,
+      "weight_pc1_variance_fraction": 0.8061341072205007,
+      "initial_weight_norm": 68.10410151618066,
+      "final_weight_norm": 20.272360703024848,
+      "weight_norm_ratio_final_to_initial": 0.297667251335933
+    },
+    "log_scalar": {
+      "parameter_count": 16897,
+      "weight_pc1_pc2_variance_fraction": 0.9799743009183961,
+      "weight_pc1_variance_fraction": 0.9456503740786126,
+      "initial_weight_norm": 11.268369198601494,
+      "final_weight_norm": 5.241805505280843,
+      "weight_norm_ratio_final_to_initial": 0.46517871511801356
+    }
+  },
+  "hidden": {
+    "log_bits": {
+      "hidden_pc1_pc2_variance_fraction": 0.9932342118449292,
+      "hidden_pc1_variance_fraction": 0.9471507020155048
+    },
+    "log_posbits": {
+      "hidden_pc1_pc2_variance_fraction": 0.9902183520335897,
+      "hidden_pc1_variance_fraction": 0.9563286717967314
+    },
+    "log_scalar": {
+      "hidden_pc1_pc2_variance_fraction": 0.9999796684865186,
+      "hidden_pc1_variance_fraction": 0.895711740303371
+    }
+  }
+}

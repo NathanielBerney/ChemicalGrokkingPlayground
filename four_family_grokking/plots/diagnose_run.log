@@ -1,0 +1,53 @@
+{
+  "original_test_accuracy": 0.963,
+  "gauge_accuracy_mean": 0.9613928571428572,
+  "gauge_accuracy_each": [
+    0.963,
+    0.9628571428571429,
+    0.9588571428571429,
+    0.9608571428571429
+  ],
+  "gauge_prediction_agreement_mean": 0.94075,
+  "cyclic_rotation_reversal_accuracy_mean": 0.9638928571428571,
+  "cyclic_rotation_reversal_accuracy_each": [
+    0.9612857142857143,
+    0.9658571428571429,
+    0.9652857142857143,
+    0.9631428571428572
+  ],
+  "cyclic_rotation_prediction_agreement_mean": 0.9474642857142858,
+  "accuracy_by_reaction_family": {
+    "alder_ene": {
+      "count": 886,
+      "accuracy": 0.9255079006772009
+    },
+    "claisen_3_3": {
+      "count": 879,
+      "accuracy": 0.9943117178612059
+    },
+    "cope_3_3": {
+      "count": 868,
+      "accuracy": 0.9976958525345622
+    },
+    "cycloaddition_2plus2": {
+      "count": 892,
+      "accuracy": 1.0
+    },
+    "cycloaddition_4plus4": {
+      "count": 866,
+      "accuracy": 0.8002309468822171
+    },
+    "diels_alder_4plus2": {
+      "count": 875,
+      "accuracy": 0.9862857142857143
+    },
+    "electrocyclic_4pi": {
+      "count": 868,
+      "accuracy": 1.0
+    },
+    "electrocyclic_6pi": {
+      "count": 866,
+      "accuracy": 0.9988452655889145
+    }
+  }
+}

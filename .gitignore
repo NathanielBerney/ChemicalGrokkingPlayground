@@ -1,0 +1,11 @@
+**.env
+**__pycache__/
+**.pytest_cache/
+**.venv/
+**.mypy_cache/
+**.pt
+**.npz
+**.pkl
+**.sdf
+**logs/
+**runs/

@@ -1,0 +1,28 @@
+{
+  "family": "linear",
+  "dataset": "/mnt/das_storage/nates_workspace/OPGrokkingDatasets/OPSandbox/constrained_huckel_datasets/linear/dataset.npz",
+  "n_samples": 10000,
+  "train_size": 3000,
+  "test_size": 7000,
+  "seed": 0,
+  "steps": 40000,
+  "train_fraction": 0.3,
+  "eval_every": 200,
+  "checkpoint_every": 2000,
+  "snapshot_every": 1000,
+  "tolerance_abs_beta": 0.05,
+  "lr": 0.001,
+  "energy_target_transform": "log",
+  "weight_decay": 1.0,
+  "architecture": "one-layer four-head d128 MLP512 ReLU no LayerNorm",
+  "input": "16 binary n tokens",
+  "target": "HOMO and LUMO energies",
+  "device": "NVIDIA H200 NVL",
+  "baselines": {
+    "zero_test_abs_accuracy": 0.9968571428571429,
+    "zero_test_relative_accuracy": 0.0,
+    "train_mean_test_abs_accuracy": 0.9968571428571429,
+    "train_mean_test_relative_accuracy": 0.036,
+    "exact_rule_max_error": 1.6415205306152814e-08
+  }
+}

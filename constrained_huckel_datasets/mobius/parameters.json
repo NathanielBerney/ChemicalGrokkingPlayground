@@ -1,0 +1,18 @@
+{
+  "family": "mobius",
+  "count": 10000,
+  "n_min": 16,
+  "n_max": 40012,
+  "n_step": 4,
+  "alpha": 0.0,
+  "beta": -1.0,
+  "graph_identity": "cycle:n",
+  "bond_order_rule": "edge (i,i+1) is double when i is even; ring closure (n-1,0) is single",
+  "hydrogen_rule": "4 minus sum of C-C bond orders at each carbon",
+  "phase_rule": "closing edge has -beta",
+  "graph_planar": true,
+  "planarity_constraint": "none",
+  "geometry_verified": false,
+  "model_note": "M\u00f6bius orbital twist requires nonplanar geometry; 2D drawings are graph projections",
+  "stored_matrices": "small example only; use constrained_huckel.hamiltonian_sparse(family,n)"
+}

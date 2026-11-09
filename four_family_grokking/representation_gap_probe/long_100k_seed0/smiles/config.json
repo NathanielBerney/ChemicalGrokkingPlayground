@@ -1,0 +1,17 @@
+{
+  "kind": "smiles",
+  "outdir": "/mnt/das_storage/nates_workspace/OPGrokkingDatasets/OPSandbox/four_family_grokking/representation_gap_probe/long_100k_seed0/smiles",
+  "steps": 100000,
+  "eval_every": 1000,
+  "batch_size": 128,
+  "lr": 0.0003,
+  "weight_decay": 0.001,
+  "decay_steps": 20000,
+  "seed": 0,
+  "train_size": 7000,
+  "test_size": 3000,
+  "target": "standardized log gap",
+  "split": "spectral-group 70/30",
+  "device": "cuda:0",
+  "parameters": 188001
+}

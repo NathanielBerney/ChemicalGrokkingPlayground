@@ -1,0 +1,36 @@
+{
+  "matrix_spectral": {
+    "input": "precomputed full eigenvalue spectrum plus HOMO/LUMO position markers",
+    "final": {
+      "train_accuracy_rel_1pct": 0.07442857142857143,
+      "train_accuracy_rel_5pct": 0.36514285714285716,
+      "train_mae": 0.08814257211769275,
+      "train_rmse": 0.11354675022388358,
+      "train_median_relative_error": 0.07203483997245111,
+      "train_p90_relative_error": 0.19447607093692257,
+      "test_accuracy_rel_1pct": 0.073,
+      "test_accuracy_rel_5pct": 0.3406666666666667,
+      "test_mae": 0.0957873049636533,
+      "test_rmse": 0.1215898077467143,
+      "test_median_relative_error": 0.07967404065482037,
+      "test_p90_relative_error": 0.2009719987673901
+    }
+  },
+  "matrix_frontier": {
+    "input": "precomputed HOMO and LUMO eigenvalues selected before the neural network",
+    "final": {
+      "train_accuracy_rel_1pct": 0.9977142857142857,
+      "train_accuracy_rel_5pct": 0.9998571428571429,
+      "train_mae": 0.0004312355380238801,
+      "train_rmse": 0.0006455434548779949,
+      "train_median_relative_error": 0.00032105935679823923,
+      "train_p90_relative_error": 0.0008947026882335547,
+      "test_accuracy_rel_1pct": 0.998,
+      "test_accuracy_rel_5pct": 0.9996666666666667,
+      "test_mae": 0.00047071959541524855,
+      "test_rmse": 0.0006754123213854432,
+      "test_median_relative_error": 0.0003334105421816613,
+      "test_p90_relative_error": 0.000931660402570258
+    }
+  }
+}

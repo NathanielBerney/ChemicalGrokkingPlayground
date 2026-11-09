@@ -1,0 +1,204 @@
+{
+  "runs": [
+    {
+      "run": "mode_seed0",
+      "step": 40000,
+      "verified_test_rmse": 0.05165883153676987,
+      "checkpoints": 87,
+      "gifs": [
+        {
+          "path": "animations/mode_seed0/representations.gif",
+          "frames": 87,
+          "size": [
+            1200,
+            800
+          ]
+        },
+        {
+          "path": "animations/mode_seed0/frequencies.gif",
+          "frames": 87,
+          "size": [
+            1500,
+            800
+          ]
+        },
+        {
+          "path": "animations/mode_seed0/causal_ablations.gif",
+          "frames": 87,
+          "size": [
+            1200,
+            800
+          ]
+        }
+      ]
+    },
+    {
+      "run": "mode_seed1",
+      "step": 40000,
+      "verified_test_rmse": 0.11989226937294006,
+      "checkpoints": 87,
+      "gifs": [
+        {
+          "path": "animations/mode_seed1/representations.gif",
+          "frames": 87,
+          "size": [
+            1200,
+            800
+          ]
+        },
+        {
+          "path": "animations/mode_seed1/frequencies.gif",
+          "frames": 87,
+          "size": [
+            1500,
+            800
+          ]
+        },
+        {
+          "path": "animations/mode_seed1/causal_ablations.gif",
+          "frames": 87,
+          "size": [
+            1200,
+            800
+          ]
+        }
+      ]
+    },
+    {
+      "run": "sorted_seed0",
+      "step": 40000,
+      "verified_test_rmse": 0.6554655432701111,
+      "checkpoints": 87,
+      "gifs": [
+        {
+          "path": "animations/sorted_seed0/representations.gif",
+          "frames": 87,
+          "size": [
+            1200,
+            800
+          ]
+        },
+        {
+          "path": "animations/sorted_seed0/frequencies.gif",
+          "frames": 87,
+          "size": [
+            1500,
+            800
+          ]
+        },
+        {
+          "path": "animations/sorted_seed0/causal_ablations.gif",
+          "frames": 87,
+          "size": [
+            1200,
+            800
+          ]
+        }
+      ]
+    },
+    {
+      "run": "sorted_seed0_wd0p1",
+      "step": 40000,
+      "verified_test_rmse": 0.6813337206840515,
+      "checkpoints": 87,
+      "gifs": [
+        {
+          "path": "animations/sorted_seed0_wd0p1/representations.gif",
+          "frames": 87,
+          "size": [
+            1200,
+            800
+          ]
+        },
+        {
+          "path": "animations/sorted_seed0_wd0p1/frequencies.gif",
+          "frames": 87,
+          "size": [
+            1500,
+            800
+          ]
+        },
+        {
+          "path": "animations/sorted_seed0_wd0p1/causal_ablations.gif",
+          "frames": 87,
+          "size": [
+            1200,
+            800
+          ]
+        }
+      ]
+    },
+    {
+      "run": "sorted_seed1",
+      "step": 40000,
+      "verified_test_rmse": 0.6404661536216736,
+      "checkpoints": 87,
+      "gifs": [
+        {
+          "path": "animations/sorted_seed1/representations.gif",
+          "frames": 87,
+          "size": [
+            1200,
+            800
+          ]
+        },
+        {
+          "path": "animations/sorted_seed1/frequencies.gif",
+          "frames": 87,
+          "size": [
+            1500,
+            800
+          ]
+        },
+        {
+          "path": "animations/sorted_seed1/causal_ablations.gif",
+          "frames": 87,
+          "size": [
+            1200,
+            800
+          ]
+        }
+      ]
+    },
+    {
+      "run": "sorted_seed1_wd0p1",
+      "step": 40000,
+      "verified_test_rmse": 0.6807860732078552,
+      "checkpoints": 87,
+      "gifs": [
+        {
+          "path": "animations/sorted_seed1_wd0p1/representations.gif",
+          "frames": 87,
+          "size": [
+            1200,
+            800
+          ]
+        },
+        {
+          "path": "animations/sorted_seed1_wd0p1/frequencies.gif",
+          "frames": 87,
+          "size": [
+            1500,
+            800
+          ]
+        },
+        {
+          "path": "animations/sorted_seed1_wd0p1/causal_ablations.gif",
+          "frames": 87,
+          "size": [
+            1200,
+            800
+          ]
+        }
+      ]
+    }
+  ],
+  "total_gifs": 18,
+  "checks": [
+    "Dataset identity and split isolation (load_data)",
+    "Final checkpoint and full-test RMSE agree with reported results",
+    "All diagnostic arrays finite; final probe predictions match checkpoint",
+    "Checkpoint steps ordered; GIF frame count and final frame decode",
+    "Gallery links and run entries exist"
+  ]
+}

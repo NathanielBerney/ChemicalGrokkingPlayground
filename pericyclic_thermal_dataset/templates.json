@@ -1,0 +1,246 @@
+[
+  {
+    "name": "diels_alder_4plus2",
+    "reactants": "C=CC=C.C=C",
+    "sites": [
+      "C",
+      "C",
+      "C",
+      "C",
+      "C",
+      "C"
+    ],
+    "edge_roles_cyclic_order": [
+      "pi",
+      "conjugated",
+      "pi",
+      "forming_CC",
+      "pi",
+      "forming_CC"
+    ],
+    "modes": [
+      [
+        "supra_supra",
+        0
+      ],
+      [
+        "supra_antara",
+        1
+      ]
+    ],
+    "electron_sources": "pi4 + pi2"
+  },
+  {
+    "name": "alder_ene",
+    "reactants": "C=CC.C=C",
+    "sites": [
+      "C",
+      "C",
+      "C",
+      "H",
+      "C",
+      "C"
+    ],
+    "edge_roles_cyclic_order": [
+      "pi",
+      "conjugated",
+      "breaking_CH",
+      "forming_CH",
+      "pi",
+      "forming_CC"
+    ],
+    "modes": [
+      [
+        "all_suprafacial",
+        0
+      ],
+      [
+        "one_antarafacial_component",
+        1
+      ]
+    ],
+    "electron_sources": "pi2 + pi2 + sigma_CH2"
+  },
+  {
+    "name": "claisen_3_3",
+    "reactants": "C=CCOC=C",
+    "sites": [
+      "C",
+      "C",
+      "C",
+      "O",
+      "C",
+      "C"
+    ],
+    "edge_roles_cyclic_order": [
+      "pi",
+      "conjugated",
+      "breaking_CO",
+      "conjugated",
+      "pi",
+      "forming_CC"
+    ],
+    "modes": [
+      [
+        "supra_supra",
+        0
+      ],
+      [
+        "supra_antara",
+        1
+      ]
+    ],
+    "electron_sources": "pi2 + pi2 + sigma_CO2"
+  },
+  {
+    "name": "cope_3_3",
+    "reactants": "C=CCCC=C",
+    "sites": [
+      "C",
+      "C",
+      "C",
+      "C",
+      "C",
+      "C"
+    ],
+    "edge_roles_cyclic_order": [
+      "pi",
+      "conjugated",
+      "breaking_CC",
+      "conjugated",
+      "pi",
+      "forming_CC"
+    ],
+    "modes": [
+      [
+        "supra_supra",
+        0
+      ],
+      [
+        "supra_antara",
+        1
+      ]
+    ],
+    "electron_sources": "pi2 + pi2 + sigma_CC2"
+  },
+  {
+    "name": "cycloaddition_2plus2",
+    "reactants": "C=C.C=C",
+    "sites": [
+      "C",
+      "C",
+      "C",
+      "C"
+    ],
+    "edge_roles_cyclic_order": [
+      "pi",
+      "forming_CC",
+      "pi",
+      "forming_CC"
+    ],
+    "modes": [
+      [
+        "supra_supra",
+        0
+      ],
+      [
+        "supra_antara",
+        1
+      ]
+    ],
+    "electron_sources": "pi2 + pi2"
+  },
+  {
+    "name": "cycloaddition_4plus4",
+    "reactants": "C=CC=C.C=CC=C",
+    "sites": [
+      "C",
+      "C",
+      "C",
+      "C",
+      "C",
+      "C",
+      "C",
+      "C"
+    ],
+    "edge_roles_cyclic_order": [
+      "pi",
+      "conjugated",
+      "pi",
+      "forming_CC",
+      "pi",
+      "conjugated",
+      "pi",
+      "forming_CC"
+    ],
+    "modes": [
+      [
+        "supra_supra",
+        0
+      ],
+      [
+        "supra_antara",
+        1
+      ]
+    ],
+    "electron_sources": "pi4 + pi4"
+  },
+  {
+    "name": "electrocyclic_4pi",
+    "reactants": "C=CC=C",
+    "sites": [
+      "C",
+      "C",
+      "C",
+      "C"
+    ],
+    "edge_roles_cyclic_order": [
+      "pi",
+      "conjugated",
+      "pi",
+      "forming_CC"
+    ],
+    "modes": [
+      [
+        "disrotatory",
+        0
+      ],
+      [
+        "conrotatory",
+        1
+      ]
+    ],
+    "electron_sources": "pi4"
+  },
+  {
+    "name": "electrocyclic_6pi",
+    "reactants": "C=CC=CC=C",
+    "sites": [
+      "C",
+      "C",
+      "C",
+      "C",
+      "C",
+      "C"
+    ],
+    "edge_roles_cyclic_order": [
+      "pi",
+      "conjugated",
+      "pi",
+      "conjugated",
+      "pi",
+      "forming_CC"
+    ],
+    "modes": [
+      [
+        "disrotatory",
+        0
+      ],
+      [
+        "conrotatory",
+        1
+      ]
+    ],
+    "electron_sources": "pi6"
+  }
+]

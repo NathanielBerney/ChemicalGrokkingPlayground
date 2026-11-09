@@ -1,0 +1,68 @@
+[
+  {
+    "family": "circulant",
+    "objective": "log",
+    "frames": 41,
+    "last_step": 40000,
+    "final_test_relative_accuracy": 0.6602857142857143,
+    "final_output_gini": 0.999387751914502,
+    "final_hidden_gini": 0.9990689176167268,
+    "final_hidden_pc12_fraction": 0.9959118636050799,
+    "final_token_pc12_fraction": 0.9063482194139185
+  },
+  {
+    "family": "circulant",
+    "objective": "raw",
+    "frames": 41,
+    "last_step": 40000,
+    "final_test_relative_accuracy": 0.23885714285714285,
+    "final_output_gini": 0.9429220739428352,
+    "final_hidden_gini": 0.9440900345033634,
+    "final_hidden_pc12_fraction": 0.9919505910024394,
+    "final_token_pc12_fraction": 0.9383577194961011
+  },
+  {
+    "family": "linear",
+    "objective": "log",
+    "frames": 41,
+    "last_step": 40000,
+    "final_test_relative_accuracy": 0.9404285714285714,
+    "final_output_gini": 0.999433423227708,
+    "final_hidden_gini": 0.9993185725679283,
+    "final_hidden_pc12_fraction": 0.9987532402204897,
+    "final_token_pc12_fraction": 0.9330331661775833
+  },
+  {
+    "family": "linear",
+    "objective": "raw",
+    "frames": 41,
+    "last_step": 40000,
+    "final_test_relative_accuracy": 0.17885714285714285,
+    "final_output_gini": 0.9551474004644019,
+    "final_hidden_gini": 0.9558593659510758,
+    "final_hidden_pc12_fraction": 0.9771049347195258,
+    "final_token_pc12_fraction": 0.9650311542200612
+  },
+  {
+    "family": "mobius",
+    "objective": "log",
+    "frames": 41,
+    "last_step": 40000,
+    "final_test_relative_accuracy": 0.9242857142857143,
+    "final_output_gini": 0.9995183292610943,
+    "final_hidden_gini": 0.9993826795958592,
+    "final_hidden_pc12_fraction": 0.9968962568530314,
+    "final_token_pc12_fraction": 0.9673999428228163
+  },
+  {
+    "family": "mobius",
+    "objective": "raw",
+    "frames": 41,
+    "last_step": 40000,
+    "final_test_relative_accuracy": 0.2927142857142857,
+    "final_output_gini": 0.9662359067761309,
+    "final_hidden_gini": 0.9655968498460351,
+    "final_hidden_pc12_fraction": 0.98772089549431,
+    "final_token_pc12_fraction": 0.9549535569756445
+  }
+]

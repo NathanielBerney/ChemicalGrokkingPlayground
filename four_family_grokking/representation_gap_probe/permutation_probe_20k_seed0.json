@@ -1,0 +1,47 @@
+{
+  "matrix_rows": {
+    "original": {
+      "accuracy_rel_1pct": 0.1,
+      "accuracy_rel_5pct": 0.416,
+      "mae": 0.09116768091917038,
+      "rmse": 0.12146725505590439,
+      "median_relative_error": 0.06726104021072388,
+      "p90_relative_error": 0.2518230080604553
+    },
+    "permuted_mean_1pct_accuracy": 0.021,
+    "permuted_mean_mae": 0.3113504846890767,
+    "prediction_change_median": 0.21987390518188477,
+    "prediction_change_p90": 0.5910218775272369,
+    "prediction_change_max": 7.413789749145508
+  },
+  "pi_graph": {
+    "original": {
+      "accuracy_rel_1pct": 0.283,
+      "accuracy_rel_5pct": 0.811,
+      "mae": 0.028172865509986877,
+      "rmse": 0.038456715643405914,
+      "median_relative_error": 0.019903896376490593,
+      "p90_relative_error": 0.07644300907850266
+    },
+    "permuted_mean_1pct_accuracy": 0.283,
+    "permuted_mean_mae": 0.028172869235277176,
+    "prediction_change_median": 5.960464477539063e-08,
+    "prediction_change_p90": 1.7881393432617188e-07,
+    "prediction_change_max": 4.76837158203125e-07
+  },
+  "molecular_graph": {
+    "original": {
+      "accuracy_rel_1pct": 0.173,
+      "accuracy_rel_5pct": 0.641,
+      "mae": 0.046416133642196655,
+      "rmse": 0.060841154307127,
+      "median_relative_error": 0.03568068891763687,
+      "p90_relative_error": 0.11677215993404388
+    },
+    "permuted_mean_1pct_accuracy": 0.17299999999999996,
+    "permuted_mean_mae": 0.04641613488396009,
+    "prediction_change_median": 0.0,
+    "prediction_change_p90": 1.1920928955078125e-07,
+    "prediction_change_max": 3.5762786865234375e-07
+  }
+}

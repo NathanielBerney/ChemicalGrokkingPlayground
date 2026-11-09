@@ -1,0 +1,11 @@
+{
+  "family": "linear",
+  "objective": "log",
+  "frames": 41,
+  "last_step": 40000,
+  "final_test_relative_accuracy": 0.9404285714285714,
+  "final_output_gini": 0.999433423227708,
+  "final_hidden_gini": 0.9993185725679283,
+  "final_hidden_pc12_fraction": 0.9987532402204897,
+  "final_token_pc12_fraction": 0.9330331661775833
+}

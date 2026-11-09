@@ -1,0 +1,77 @@
+{
+  "matrix_rows": {
+    "original": {
+      "accuracy_rel_1pct": 0.096,
+      "accuracy_rel_5pct": 0.398,
+      "mae": 0.10151371359825134,
+      "rmse": 0.1394663006067276,
+      "median_relative_error": 0.07505462318658829,
+      "p90_relative_error": 0.2802559733390808
+    },
+    "permuted_mean_1pct_accuracy": 0.023666666666666666,
+    "permuted_mean_mae": 0.3729570011297862,
+    "prediction_change_median": 0.2524074614048004,
+    "prediction_change_p90": 0.6637451589107514,
+    "prediction_change_max": 16.960880279541016
+  },
+  "matrix_rows_2layer": {
+    "original": {
+      "accuracy_rel_1pct": 0.15,
+      "accuracy_rel_5pct": 0.506,
+      "mae": 0.07357675582170486,
+      "rmse": 0.1040346547961235,
+      "median_relative_error": 0.04866734892129898,
+      "p90_relative_error": 0.20560942590236664
+    },
+    "permuted_mean_1pct_accuracy": 0.030666666666666665,
+    "permuted_mean_mae": 0.20881100992361704,
+    "prediction_change_median": 0.17385196685791016,
+    "prediction_change_p90": 0.42263819277286524,
+    "prediction_change_max": 1.0805861949920654
+  },
+  "matrix_rows_permaug": {
+    "original": {
+      "accuracy_rel_1pct": 0.089,
+      "accuracy_rel_5pct": 0.396,
+      "mae": 0.09217838197946548,
+      "rmse": 0.12550754845142365,
+      "median_relative_error": 0.06866380572319031,
+      "p90_relative_error": 0.22492393851280212
+    },
+    "permuted_mean_1pct_accuracy": 0.09033333333333333,
+    "permuted_mean_mae": 0.09277002265055974,
+    "prediction_change_median": 0.010345280170440674,
+    "prediction_change_p90": 0.030424165725708007,
+    "prediction_change_max": 0.11026787757873535
+  },
+  "matrix_rows_permaug_slowdecay": {
+    "original": {
+      "accuracy_rel_1pct": 0.108,
+      "accuracy_rel_5pct": 0.379,
+      "mae": 0.09607896208763123,
+      "rmse": 0.12863276898860931,
+      "median_relative_error": 0.07070416212081909,
+      "p90_relative_error": 0.228586807847023
+    },
+    "permuted_mean_1pct_accuracy": 0.103,
+    "permuted_mean_mae": 0.09636176377534866,
+    "prediction_change_median": 0.0065468549728393555,
+    "prediction_change_p90": 0.0230567455291748,
+    "prediction_change_max": 0.2521369159221649
+  },
+  "pi_graph": {
+    "original": {
+      "accuracy_rel_1pct": 0.296,
+      "accuracy_rel_5pct": 0.819,
+      "mae": 0.027930250391364098,
+      "rmse": 0.03818569332361221,
+      "median_relative_error": 0.01934501715004444,
+      "p90_relative_error": 0.07396364957094193
+    },
+    "permuted_mean_1pct_accuracy": 0.296,
+    "permuted_mean_mae": 0.027930255979299545,
+    "prediction_change_median": 5.960464477539063e-08,
+    "prediction_change_p90": 2.384185791015625e-07,
+    "prediction_change_max": 5.960464477539062e-07
+  }
+}

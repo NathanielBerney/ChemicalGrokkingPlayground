@@ -1,0 +1,11 @@
+{
+  "family": "mobius",
+  "objective": "raw",
+  "frames": 41,
+  "last_step": 40000,
+  "final_test_relative_accuracy": 0.2927142857142857,
+  "final_output_gini": 0.9662359067761309,
+  "final_hidden_gini": 0.9655968498460351,
+  "final_hidden_pc12_fraction": 0.98772089549431,
+  "final_token_pc12_fraction": 0.9549535569756445
+}

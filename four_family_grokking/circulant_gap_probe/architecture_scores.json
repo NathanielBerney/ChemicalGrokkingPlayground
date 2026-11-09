@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Shared-bit transformer",
+    "kind": "transformer",
+    "heldout_1pct": 0.9611428571428572,
+    "larger_rings_1pct": 0.3558
+  },
+  {
+    "name": "Position-aware transformer",
+    "kind": "transformer",
+    "heldout_1pct": 0.9848571428571429,
+    "larger_rings_1pct": 0.0478
+  },
+  {
+    "name": "Flat-bit MLP",
+    "kind": "mlp",
+    "heldout_1pct": 0.969,
+    "larger_rings_1pct": 0.0478
+  },
+  {
+    "name": "log(n) MLP",
+    "kind": "mlp",
+    "heldout_1pct": 0.9998571428571429,
+    "larger_rings_1pct": 0.0364
+  },
+  {
+    "name": "Log-linear fit",
+    "kind": "linear",
+    "heldout_1pct": 0.9998571428571429,
+    "larger_rings_1pct": 1.0
+  }
+]

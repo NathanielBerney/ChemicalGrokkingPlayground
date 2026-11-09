@@ -1,0 +1,198 @@
+log_bits: analyzed step 0
+log_bits: analyzed step 200
+log_bits: analyzed step 400
+log_bits: analyzed step 600
+log_bits: analyzed step 800
+log_bits: analyzed step 1000
+log_bits: analyzed step 2000
+log_bits: analyzed step 3000
+log_bits: analyzed step 4000
+log_bits: analyzed step 5000
+log_bits: analyzed step 6000
+log_bits: analyzed step 7000
+log_bits: analyzed step 8000
+log_bits: analyzed step 9000
+log_bits: analyzed step 10000
+log_bits: analyzed step 11000
+log_bits: analyzed step 12000
+log_bits: analyzed step 13000
+log_bits: analyzed step 14000
+log_bits: analyzed step 15000
+log_bits: analyzed step 16000
+log_bits: analyzed step 17000
+log_bits: analyzed step 18000
+log_bits: analyzed step 19000
+log_bits: analyzed step 20000
+log_bits: analyzed step 21000
+log_bits: analyzed step 22000
+log_bits: analyzed step 23000
+log_bits: analyzed step 24000
+log_bits: analyzed step 25000
+log_bits: analyzed step 26000
+log_bits: analyzed step 27000
+log_bits: analyzed step 28000
+log_bits: analyzed step 29000
+log_bits: analyzed step 30000
+log_bits: analyzed step 31000
+log_bits: analyzed step 32000
+log_bits: analyzed step 33000
+log_bits: analyzed step 34000
+log_bits: analyzed step 35000
+log_bits: analyzed step 36000
+log_bits: analyzed step 37000
+log_bits: analyzed step 38000
+log_bits: analyzed step 39000
+log_bits: analyzed step 40000
+log_posbits: analyzed step 0
+log_posbits: analyzed step 200
+log_posbits: analyzed step 400
+log_posbits: analyzed step 600
+log_posbits: analyzed step 800
+log_posbits: analyzed step 1000
+log_posbits: analyzed step 2000
+log_posbits: analyzed step 3000
+log_posbits: analyzed step 4000
+log_posbits: analyzed step 5000
+log_posbits: analyzed step 6000
+log_posbits: analyzed step 7000
+log_posbits: analyzed step 8000
+log_posbits: analyzed step 9000
+log_posbits: analyzed step 10000
+log_posbits: analyzed step 11000
+log_posbits: analyzed step 12000
+log_posbits: analyzed step 13000
+log_posbits: analyzed step 14000
+log_posbits: analyzed step 15000
+log_posbits: analyzed step 16000
+log_posbits: analyzed step 17000
+log_posbits: analyzed step 18000
+log_posbits: analyzed step 19000
+log_posbits: analyzed step 20000
+log_posbits: analyzed step 21000
+log_posbits: analyzed step 22000
+log_posbits: analyzed step 23000
+log_posbits: analyzed step 24000
+log_posbits: analyzed step 25000
+log_posbits: analyzed step 26000
+log_posbits: analyzed step 27000
+log_posbits: analyzed step 28000
+log_posbits: analyzed step 29000
+log_posbits: analyzed step 30000
+log_posbits: analyzed step 31000
+log_posbits: analyzed step 32000
+log_posbits: analyzed step 33000
+log_posbits: analyzed step 34000
+log_posbits: analyzed step 35000
+log_posbits: analyzed step 36000
+log_posbits: analyzed step 37000
+log_posbits: analyzed step 38000
+log_posbits: analyzed step 39000
+log_posbits: analyzed step 40000
+log_scalar: analyzed step 0
+log_scalar: analyzed step 200
+log_scalar: analyzed step 400
+log_scalar: analyzed step 600
+log_scalar: analyzed step 800
+log_scalar: analyzed step 1000
+log_scalar: analyzed step 2000
+log_scalar: analyzed step 3000
+log_scalar: analyzed step 4000
+log_scalar: analyzed step 5000
+log_scalar: analyzed step 6000
+log_scalar: analyzed step 7000
+log_scalar: analyzed step 8000
+log_scalar: analyzed step 9000
+log_scalar: analyzed step 10000
+log_scalar: analyzed step 11000
+log_scalar: analyzed step 12000
+log_scalar: analyzed step 13000
+log_scalar: analyzed step 14000
+log_scalar: analyzed step 15000
+log_scalar: analyzed step 16000
+log_scalar: analyzed step 17000
+log_scalar: analyzed step 18000
+log_scalar: analyzed step 19000
+log_scalar: analyzed step 20000
+log_scalar: analyzed step 21000
+log_scalar: analyzed step 22000
+log_scalar: analyzed step 23000
+log_scalar: analyzed step 24000
+log_scalar: analyzed step 25000
+log_scalar: analyzed step 26000
+log_scalar: analyzed step 27000
+log_scalar: analyzed step 28000
+log_scalar: analyzed step 29000
+log_scalar: analyzed step 30000
+log_scalar: analyzed step 31000
+log_scalar: analyzed step 32000
+log_scalar: analyzed step 33000
+log_scalar: analyzed step 34000
+log_scalar: analyzed step 35000
+log_scalar: analyzed step 36000
+log_scalar: analyzed step 37000
+log_scalar: analyzed step 38000
+log_scalar: analyzed step 39000
+log_scalar: analyzed step 40000
+{
+  "target_gini": 0.9993792432968006,
+  "target_low32_power_fraction": 0.987137982363667,
+  "final": {
+    "log_bits": {
+      "step": 40000,
+      "train_accuracy_1pct": 0.969,
+      "test_accuracy_1pct": 0.9611428571428572,
+      "test_accuracy_5pct": 0.9944285714285714,
+      "test_n_le_1000_accuracy_1pct": 0.32222222222222224,
+      "test_n_le_100_accuracy_1pct": 0.0,
+      "output_cosine_gini": 0.9992718465449858,
+      "hidden_cosine_gini": 0.998545363653998,
+      "output_periodic_fft_gini": 0.9915202952887465,
+      "output_low32_power_fraction": 0.9863601646799572,
+      "hidden_low32_power_fraction": 0.9664378928363,
+      "target_cosine_alignment": 0.9996065702748989,
+      "low_mode_relative_rmse": 0.0022258580653429323,
+      "high_mode_relative_rmse": 0.24703585432794584,
+      "low32_log_mse_contribution": 4.967143367532179e-06,
+      "remaining_log_mse_contribution": 0.00077810874551976,
+      "total_log_mse": 0.0007830758888872922
+    },
+    "log_posbits": {
+      "step": 40000,
+      "train_accuracy_1pct": 0.995,
+      "test_accuracy_1pct": 0.9848571428571429,
+      "test_accuracy_5pct": 0.9937142857142857,
+      "test_n_le_1000_accuracy_1pct": 0.5277777777777778,
+      "test_n_le_100_accuracy_1pct": 0.0,
+      "output_cosine_gini": 0.999005658950867,
+      "hidden_cosine_gini": 0.9982479544671045,
+      "output_periodic_fft_gini": 0.9913388604679191,
+      "output_low32_power_fraction": 0.9856485780086904,
+      "hidden_low32_power_fraction": 0.9598353452211059,
+      "target_cosine_alignment": 0.9991674340490632,
+      "low_mode_relative_rmse": 0.0037102226391906314,
+      "high_mode_relative_rmse": 0.3599461019827392,
+      "low32_log_mse_contribution": 1.4544575021460204e-05,
+      "remaining_log_mse_contribution": 0.0016519437875001962,
+      "total_log_mse": 0.0016664883625216564
+    },
+    "log_scalar": {
+      "step": 40000,
+      "train_accuracy_1pct": 0.9996666666666667,
+      "test_accuracy_1pct": 0.9998571428571429,
+      "test_accuracy_5pct": 1.0,
+      "test_n_le_1000_accuracy_1pct": 0.9944444444444445,
+      "test_n_le_100_accuracy_1pct": 0.9444444444444444,
+      "output_cosine_gini": 0.999374290320369,
+      "hidden_cosine_gini": 0.9991377155954319,
+      "output_periodic_fft_gini": 0.9911231468717412,
+      "output_low32_power_fraction": 0.9870897816988748,
+      "hidden_low32_power_fraction": 0.9817652696785621,
+      "target_cosine_alignment": 0.9999997509625385,
+      "low_mode_relative_rmse": 0.0005069779792177007,
+      "high_mode_relative_rmse": 0.004847105508191649,
+      "low32_log_mse_contribution": 3.2937114382242734e-07,
+      "remaining_log_mse_contribution": 2.9956099329070093e-07,
+      "total_log_mse": 6.289321371131283e-07
+    }
+  }
+}

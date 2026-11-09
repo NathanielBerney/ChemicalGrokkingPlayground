@@ -1,0 +1,61 @@
+{
+  "rdkit_version": "2026.03.1",
+  "reactions": [
+    {
+      "family": "diels_alder_4plus2",
+      "reactant_smiles": "C=C.C=CC=C",
+      "product_smiles": "C1=CCCCC1",
+      "conserved_formula": "C6H10",
+      "valence_sanitized": true
+    },
+    {
+      "family": "cycloaddition_2plus2",
+      "reactant_smiles": "C=C.C=C",
+      "product_smiles": "C1CCC1",
+      "conserved_formula": "C4H8",
+      "valence_sanitized": true
+    },
+    {
+      "family": "cycloaddition_4plus4",
+      "reactant_smiles": "C=CC=C.C=CC=C",
+      "product_smiles": "C1=CCCC=CCC1",
+      "conserved_formula": "C8H12",
+      "valence_sanitized": true
+    },
+    {
+      "family": "electrocyclic_4pi",
+      "reactant_smiles": "C=CC=C",
+      "product_smiles": "C1=CCC1",
+      "conserved_formula": "C4H6",
+      "valence_sanitized": true
+    },
+    {
+      "family": "electrocyclic_6pi",
+      "reactant_smiles": "C=CC=CC=C",
+      "product_smiles": "C1=CCCC=C1",
+      "conserved_formula": "C6H8",
+      "valence_sanitized": true
+    },
+    {
+      "family": "claisen_3_3",
+      "reactant_smiles": "C=CCOC=C",
+      "product_smiles": "C=CCCC=O",
+      "conserved_formula": "C5H8O",
+      "valence_sanitized": true
+    },
+    {
+      "family": "cope_3_3",
+      "reactant_smiles": "C=CCCC=C",
+      "product_smiles": "C=CCCC=C",
+      "conserved_formula": "C6H10",
+      "valence_sanitized": true
+    },
+    {
+      "family": "alder_ene",
+      "reactant_smiles": "C=C.C=CC",
+      "product_smiles": "C=CCCC",
+      "conserved_formula": "C5H10",
+      "valence_sanitized": true
+    }
+  ]
+}

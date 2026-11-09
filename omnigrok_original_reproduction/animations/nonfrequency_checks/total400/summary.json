@@ -1,0 +1,3065 @@
+{
+  "method": "Frozen N=400 checkpoints; fit on archived 200 train; evaluate on next 1000 QM9 molecules, except original test size group",
+  "layers": [
+    "input_sum",
+    "conv1_sum32",
+    "conv1_PCA16",
+    "conv2_sum16",
+    "hidden32"
+  ],
+  "graph_moments": "tr(A^2), tr(A^3), tr(A^4) of unweighted heavy-atom bond adjacency; not H\u00fcckel Hamiltonian eigenvalues",
+  "outside_group_counts": {
+    "archived_test_up_to_6_heavy": 200,
+    "outside_6_heavy": 383,
+    "outside_7_heavy": 616,
+    "outside_other_heavy": 1
+  },
+  "element_count_probe_baselines": {
+    "dipole": {
+      "reference_training_mean_mse": 2.0522041899787005,
+      "external_mse": 1.833934506198871,
+      "external_score_vs_training_mean": 0.10635865809342049,
+      "selected_penalty": 10.0,
+      "train_cv_mse": 2.1811326201056063
+    },
+    "polarizability": {
+      "reference_training_mean_mse": 159.73758633421744,
+      "external_mse": 6.302612718148294,
+      "external_score_vs_training_mean": 0.9605439592347327,
+      "selected_penalty": 1.0,
+      "train_cv_mse": 2.86033060936174
+    },
+    "HOMO": {
+      "reference_training_mean_mse": 0.7987748095577593,
+      "external_mse": 0.642834444236999,
+      "external_score_vs_training_mean": 0.19522444054926624,
+      "selected_penalty": 0.0001,
+      "train_cv_mse": 0.6917333900665469
+    },
+    "LUMO": {
+      "reference_training_mean_mse": 1.7168946731139272,
+      "external_mse": 1.3032959982279206,
+      "external_score_vs_training_mean": 0.24089927085385132,
+      "selected_penalty": 0.0001,
+      "train_cv_mse": 1.0342989558089828
+    },
+    "gap": {
+      "reference_training_mean_mse": 1.9524350305371132,
+      "external_mse": 1.3586283382293332,
+      "external_score_vs_training_mean": 0.3041364670374841,
+      "selected_penalty": 0.0001,
+      "train_cv_mse": 1.3461339008200466
+    },
+    "trace_A2": {
+      "reference_training_mean_mse": 11.721219999999994,
+      "external_mse": 2.3737231762613735,
+      "external_score_vs_training_mean": 0.7974849737261671,
+      "selected_penalty": 1.0,
+      "train_cv_mse": 1.3876478848771248
+    },
+    "trace_A3": {
+      "reference_training_mean_mse": 8.623619999999999,
+      "external_mse": 8.322374874053576,
+      "external_score_vs_training_mean": 0.03493256033387637,
+      "selected_penalty": 100.0,
+      "train_cv_mse": 4.637871967131434
+    },
+    "trace_A4": {
+      "reference_training_mean_mse": 373.17473999999993,
+      "external_mse": 215.29220176386085,
+      "external_score_vs_training_mean": 0.4230793816219691,
+      "selected_penalty": 1.0,
+      "train_cv_mse": 119.755167536345
+    }
+  },
+  "element_count_polarizability_error_by_size": {
+    "archived_test_up_to_6_heavy": {
+      "molecules": 200,
+      "mse": 1.5077373119508608,
+      "mae": 0.9083839661350999
+    },
+    "outside_6_heavy": {
+      "molecules": 383,
+      "mse": 7.084421279453984,
+      "mae": 1.638641599315296
+    },
+    "outside_7_heavy": {
+      "molecules": 616,
+      "mse": 5.692649314426343,
+      "mae": 1.5603949394106897
+    },
+    "outside_other_heavy": {
+      "molecules": 1,
+      "mse": 82.60739043079026,
+      "mae": 9.088860788393134
+    }
+  },
+  "states": {
+    "alpha1_step0": {
+      "alpha": 1,
+      "step": 0,
+      "max_prediction_difference_from_animation": 4.0531158447265625e-06,
+      "probes": {
+        "dipole": {
+          "input_sum": {
+            "external_mse": 1.8778801263458167,
+            "external_score_vs_training_mean": 0.0849447947159162,
+            "selected_penalty": 10.0,
+            "train_cv_mse": 2.205338318534934
+          },
+          "conv1_sum32": {
+            "external_mse": 1.4925136802704593,
+            "external_score_vs_training_mean": 0.27272652128931196,
+            "selected_penalty": 1.0,
+            "train_cv_mse": 2.111952826992582
+          },
+          "conv1_PCA16": {
+            "external_mse": 1.6083661895276649,
+            "external_score_vs_training_mean": 0.21627380092993675,
+            "selected_penalty": 10.0,
+            "train_cv_mse": 2.0572086905030993
+          },
+          "conv2_sum16": {
+            "external_mse": 1.5885966567946694,
+            "external_score_vs_training_mean": 0.22590711755093085,
+            "selected_penalty": 10.0,
+            "train_cv_mse": 2.290053042755051
+          },
+          "hidden32": {
+            "external_mse": 1.7910958995728952,
+            "external_score_vs_training_mean": 0.12723309487469436,
+            "selected_penalty": 1.0,
+            "train_cv_mse": 1.924729024299665
+          }
+        },
+        "polarizability": {
+          "input_sum": {
+            "external_mse": 6.0912300571736635,
+            "external_score_vs_training_mean": 0.96186727121049,
+            "selected_penalty": 0.0001,
+            "train_cv_mse": 2.9933986086916002
+          },
+          "conv1_sum32": {
+            "external_mse": 4.440828326227575,
+            "external_score_vs_training_mean": 0.9721992273193857,
+            "selected_penalty": 1.0,
+            "train_cv_mse": 1.777725846934556
+          },
+          "conv1_PCA16": {
+            "external_mse": 3.8151844848576264,
+            "external_score_vs_training_mean": 0.9761159250467504,
+            "selected_penalty": 0.1,
+            "train_cv_mse": 1.6792635515311034
+          },
+          "conv2_sum16": {
+            "external_mse": 5.141689610547374,
+            "external_score_vs_training_mean": 0.9678116482880275,
+            "selected_penalty": 1.0,
+            "train_cv_mse": 2.380391300846016
+          },
+          "hidden32": {
+            "external_mse": 6.064651455443052,
+            "external_score_vs_training_mean": 0.9620336603637291,
+            "selected_penalty": 1.0,
+            "train_cv_mse": 2.0500728504019388
+          }
+        },
+        "HOMO": {
+          "input_sum": {
+            "external_mse": 0.6428344459236834,
+            "external_score_vs_training_mean": 0.1952244384376769,
+            "selected_penalty": 0.0001,
+            "train_cv_mse": 0.7241603178469795
+          },
+          "conv1_sum32": {
+            "external_mse": 0.2919021160066335,
+            "external_score_vs_training_mean": 0.6345626921206431,
+            "selected_penalty": 0.01,
+            "train_cv_mse": 0.2599586866616748
+          },
+          "conv1_PCA16": {
+            "external_mse": 0.24388296562121323,
+            "external_score_vs_training_mean": 0.6946786970457435,
+            "selected_penalty": 100.0,
+            "train_cv_mse": 0.420529232090165
+          },
+          "conv2_sum16": {
+            "external_mse": 0.38040835171642656,
+            "external_score_vs_training_mean": 0.5237602047978464,
+            "selected_penalty": 100.0,
+            "train_cv_mse": 0.6183624416052591
+          },
+          "hidden32": {
+            "external_mse": 0.37852401405040426,
+            "external_score_vs_training_mean": 0.5261192397141647,
+            "selected_penalty": 10.0,
+            "train_cv_mse": 0.5449921278616865
+          },
+          "conv1_vs_conv2": {
+            "score_advantage": 0.1108024873227968,
+            "molecule_bootstrap_95_percent_interval": [
+              0.05216781884552708,
+              0.16759238692729886
+            ]
+          },
+          "conv1_PCA16_vs_conv2": {
+            "score_advantage": 0.17091849224789707,
+            "molecule_bootstrap_95_percent_interval": [
+              0.13126853627007068,
+              0.21212050982618713
+            ]
+          }
+        },
+        "LUMO": {
+          "input_sum": {
+            "external_mse": 1.2958805987594249,
+            "external_score_vs_training_mean": 0.24521834737299886,
+            "selected_penalty": 1.0,
+            "train_cv_mse": 1.11900969464971
+          },
+          "conv1_sum32": {
+            "external_mse": 0.2740861960514301,
+            "external_score_vs_training_mean": 0.840359341581321,
+            "selected_penalty": 0.1,
+            "train_cv_mse": 0.1976660522152652
+          },
+          "conv1_PCA16": {
+            "external_mse": 0.30723708300106906,
+            "external_score_vs_training_mean": 0.8210507098587276,
+            "selected_penalty": 0.1,
+            "train_cv_mse": 0.2205789465351155
+          },
+          "conv2_sum16": {
+            "external_mse": 0.5522172556682243,
+            "external_score_vs_training_mean": 0.6783627648709112,
+            "selected_penalty": 1.0,
+            "train_cv_mse": 0.40854425108995274
+          },
+          "hidden32": {
+            "external_mse": 0.5997740381587737,
+            "external_score_vs_training_mean": 0.650663463780824,
+            "selected_penalty": 1.0,
+            "train_cv_mse": 0.41194056122354683
+          },
+          "conv1_vs_conv2": {
+            "score_advantage": 0.1619965767104098,
+            "molecule_bootstrap_95_percent_interval": [
+              0.13823006720265332,
+              0.18649915034531656
+            ]
+          },
+          "conv1_PCA16_vs_conv2": {
+            "score_advantage": 0.14268794498781653,
+            "molecule_bootstrap_95_percent_interval": [
+              0.1162464937794836,
+              0.1682255410276311
+            ]
+          }
+        },
+        "gap": {
+          "input_sum": {
+            "external_mse": 1.3493889192658124,
+            "external_score_vs_training_mean": 0.308868721283598,
+            "selected_penalty": 1.0,
+            "train_cv_mse": 1.5692941722613696
+          },
+          "conv1_sum32": {
+            "external_mse": 0.7011150698770643,
+            "external_score_vs_training_mean": 0.6409022277764663,
+            "selected_penalty": 0.1,
+            "train_cv_mse": 0.5776963768914417
+          },
+          "conv1_PCA16": {
+            "external_mse": 0.7583805467891596,
+            "external_score_vs_training_mean": 0.6115719422527828,
+            "selected_penalty": 0.0001,
+            "train_cv_mse": 0.8693193973302202
+          },
+          "conv2_sum16": {
+            "external_mse": 0.8006982303856235,
+            "external_score_vs_training_mean": 0.5898976314897648,
+            "selected_penalty": 0.01,
+            "train_cv_mse": 0.7484914503164127
+          },
+          "hidden32": {
+            "external_mse": 0.7567024355779245,
+            "external_score_vs_training_mean": 0.612431438822445,
+            "selected_penalty": 0.0001,
+            "train_cv_mse": 0.6896062726384068
+          },
+          "conv1_vs_conv2": {
+            "score_advantage": 0.051004596286701356,
+            "molecule_bootstrap_95_percent_interval": [
+              0.02152432570905058,
+              0.08091125246810822
+            ]
+          },
+          "conv1_PCA16_vs_conv2": {
+            "score_advantage": 0.021674310763017957,
+            "molecule_bootstrap_95_percent_interval": [
+              -0.008965917001021185,
+              0.05452674092637466
+            ]
+          }
+        },
+        "trace_A2": {
+          "input_sum": {
+            "external_mse": 2.324146480595263,
+            "external_score_vs_training_mean": 0.801714626924905,
+            "selected_penalty": 0.0001,
+            "train_cv_mse": 1.1791497743651016
+          },
+          "conv1_sum32": {
+            "external_mse": 0.0010244765322883632,
+            "external_score_vs_training_mean": 0.9999125964249209,
+            "selected_penalty": 0.01,
+            "train_cv_mse": 0.00723985215586314
+          },
+          "conv1_PCA16": {
+            "external_mse": 0.01470233448301999,
+            "external_score_vs_training_mean": 0.9987456651711153,
+            "selected_penalty": 1.0,
+            "train_cv_mse": 0.010974547867625523
+          },
+          "conv2_sum16": {
+            "external_mse": 0.010711498395823324,
+            "external_score_vs_training_mean": 0.9990861447532063,
+            "selected_penalty": 0.01,
+            "train_cv_mse": 0.022660524353531292
+          },
+          "hidden32": {
+            "external_mse": 0.01277483532574378,
+            "external_score_vs_training_mean": 0.9989101104385257,
+            "selected_penalty": 0.01,
+            "train_cv_mse": 0.0208738716314533
+          },
+          "conv1_vs_conv2": {
+            "score_advantage": 0.0008264516717146308,
+            "molecule_bootstrap_95_percent_interval": [
+              0.0007071279673185768,
+              0.0009563051555770859
+            ]
+          },
+          "conv1_PCA16_vs_conv2": {
+            "score_advantage": -0.00034047958209099984,
+            "molecule_bootstrap_95_percent_interval": [
+              -0.0004898722347679708,
+              -0.00019902629407705168
+            ]
+          }
+        },
+        "trace_A3": {
+          "input_sum": {
+            "external_mse": 8.386132346295353,
+            "external_score_vs_training_mean": 0.027539206702596575,
+            "selected_penalty": 100.0,
+            "train_cv_mse": 4.61868973076938
+          },
+          "conv1_sum32": {
+            "external_mse": 3.6732876885765338,
+            "external_score_vs_training_mean": 0.5740434192860383,
+            "selected_penalty": 1.0,
+            "train_cv_mse": 3.6619242653034916
+          },
+          "conv1_PCA16": {
+            "external_mse": 4.163299840981763,
+            "external_score_vs_training_mean": 0.5172213245734665,
+            "selected_penalty": 100.0,
+            "train_cv_mse": 3.2820118541924344
+          },
+          "conv2_sum16": {
+            "external_mse": 4.383554041653392,
+            "external_score_vs_training_mean": 0.4916805191261451,
+            "selected_penalty": 10.0,
+            "train_cv_mse": 3.6161575595281
+          },
+          "hidden32": {
+            "external_mse": 4.491361093512971,
+            "external_score_vs_training_mean": 0.47917915057563165,
+            "selected_penalty": 10.0,
+            "train_cv_mse": 3.7015178412554954
+          },
+          "conv1_vs_conv2": {
+            "score_advantage": 0.08236290015989324,
+            "molecule_bootstrap_95_percent_interval": [
+              0.030279581666719745,
+              0.13861859140651092
+            ]
+          },
+          "conv1_PCA16_vs_conv2": {
+            "score_advantage": 0.02554080544732138,
+            "molecule_bootstrap_95_percent_interval": [
+              -0.005182470328196951,
+              0.05660286437207342
+            ]
+          }
+        },
+        "trace_A4": {
+          "input_sum": {
+            "external_mse": 214.48973800905932,
+            "external_score_vs_training_mean": 0.4252297515928882,
+            "selected_penalty": 1.0,
+            "train_cv_mse": 115.9527516260601
+          },
+          "conv1_sum32": {
+            "external_mse": 20.742069477912967,
+            "external_score_vs_training_mean": 0.9444172735863285,
+            "selected_penalty": 0.1,
+            "train_cv_mse": 12.393295703633651
+          },
+          "conv1_PCA16": {
+            "external_mse": 20.485082157957486,
+            "external_score_vs_training_mean": 0.9451059250206553,
+            "selected_penalty": 1.0,
+            "train_cv_mse": 13.724592483743209
+          },
+          "conv2_sum16": {
+            "external_mse": 23.46387255334738,
+            "external_score_vs_training_mean": 0.9371236312689669,
+            "selected_penalty": 0.1,
+            "train_cv_mse": 13.884498419908926
+          },
+          "hidden32": {
+            "external_mse": 26.243511405314294,
+            "external_score_vs_training_mean": 0.9296750058556635,
+            "selected_penalty": 0.1,
+            "train_cv_mse": 16.34392388473716
+          },
+          "conv1_vs_conv2": {
+            "score_advantage": 0.0072936423173615905,
+            "molecule_bootstrap_95_percent_interval": [
+              0.0030407491962903604,
+              0.012127487345180312
+            ]
+          },
+          "conv1_PCA16_vs_conv2": {
+            "score_advantage": 0.007982293751688265,
+            "molecule_bootstrap_95_percent_interval": [
+              0.0034860641182494776,
+              0.012768637819191292
+            ]
+          }
+        }
+      },
+      "polarizability_error_by_size": {
+        "archived_test_up_to_6_heavy": {
+          "molecules": 200,
+          "mse": 2146.571895950044,
+          "mae": 45.30852455765009
+        },
+        "outside_6_heavy": {
+          "molecules": 383,
+          "mse": 2652.993380911694,
+          "mae": 51.01255150633443
+        },
+        "outside_7_heavy": {
+          "molecules": 616,
+          "mse": 3675.568812410211,
+          "mae": 60.26126961622919
+        },
+        "outside_other_heavy": {
+          "molecules": 1,
+          "mse": 5212.326186978258,
+          "mae": 72.19644165039062
+        }
+      }
+    },
+    "alpha1_step20000": {
+      "alpha": 1,
+      "step": 20000,
+      "max_prediction_difference_from_animation": 2.288818359375e-05,
+      "probes": {
+        "dipole": {
+          "input_sum": {
+            "external_mse": 1.8778801263458167,
+            "external_score_vs_training_mean": 0.0849447947159162,
+            "selected_penalty": 10.0,
+            "train_cv_mse": 2.205338318534934
+          },
+          "conv1_sum32": {
+            "external_mse": 1.8949289994070102,
+            "external_score_vs_training_mean": 0.07663720371476412,
+            "selected_penalty": 0.1,
+            "train_cv_mse": 1.9401814922951353
+          },
+          "conv1_PCA16": {
+            "external_mse": 1.8748190366666964,
+            "external_score_vs_training_mean": 0.0864364053919241,
+            "selected_penalty": 0.1,
+            "train_cv_mse": 2.0491977631550524
+          },
+          "conv2_sum16": {
+            "external_mse": 1.6724089328592895,
+            "external_score_vs_training_mean": 0.18506699234609436,
+            "selected_penalty": 100.0,
+            "train_cv_mse": 2.192229576439845
+          },
+          "hidden32": {
+            "external_mse": 1.55625816804147,
+            "external_score_vs_training_mean": 0.24166504695732927,
+            "selected_penalty": 100.0,
+            "train_cv_mse": 2.3244565319384525
+          }
+        },
+        "polarizability": {
+          "input_sum": {
+            "external_mse": 6.0912300571736635,
+            "external_score_vs_training_mean": 0.96186727121049,
+            "selected_penalty": 0.0001,
+            "train_cv_mse": 2.9933986086916002
+          },
+          "conv1_sum32": {
+            "external_mse": 3.628969452023079,
+            "external_score_vs_training_mean": 0.9772816809412018,
+            "selected_penalty": 10.0,
+            "train_cv_mse": 1.527397906141789
+          },
+          "conv1_PCA16": {
+            "external_mse": 3.8072548287707724,
+            "external_score_vs_training_mean": 0.9761655668140315,
+            "selected_penalty": 10.0,
+            "train_cv_mse": 2.1281043193259253
+          },
+          "conv2_sum16": {
+            "external_mse": 2.1585484450050045,
+            "external_score_vs_training_mean": 0.9864869095962882,
+            "selected_penalty": 0.0001,
+            "train_cv_mse": 0.2904702995132892
+          },
+          "hidden32": {
+            "external_mse": 2.1573178451994646,
+            "external_score_vs_training_mean": 0.9864946134801003,
+            "selected_penalty": 0.01,
+            "train_cv_mse": 0.03554755395669785
+          }
+        },
+        "HOMO": {
+          "input_sum": {
+            "external_mse": 0.6428344459236834,
+            "external_score_vs_training_mean": 0.1952244384376769,
+            "selected_penalty": 0.0001,
+            "train_cv_mse": 0.7241603178469795
+          },
+          "conv1_sum32": {
+            "external_mse": 0.2902764587865556,
+            "external_score_vs_training_mean": 0.6365978805124477,
+            "selected_penalty": 10.0,
+            "train_cv_mse": 0.4097307409924616
+          },
+          "conv1_PCA16": {
+            "external_mse": 0.31623977282723104,
+            "external_score_vs_training_mean": 0.6040939585935154,
+            "selected_penalty": 1.0,
+            "train_cv_mse": 0.43029944631128647
+          },
+          "conv2_sum16": {
+            "external_mse": 0.481927469772702,
+            "external_score_vs_training_mean": 0.3966666649896977,
+            "selected_penalty": 1.0,
+            "train_cv_mse": 0.6216955803010837
+          },
+          "hidden32": {
+            "external_mse": 0.5159221835488303,
+            "external_score_vs_training_mean": 0.35410809482779004,
+            "selected_penalty": 10.0,
+            "train_cv_mse": 0.5295725585060651
+          },
+          "conv1_vs_conv2": {
+            "score_advantage": 0.23993121552275012,
+            "molecule_bootstrap_95_percent_interval": [
+              0.19112433869927775,
+              0.2882566464113761
+            ]
+          },
+          "conv1_PCA16_vs_conv2": {
+            "score_advantage": 0.20742729360381781,
+            "molecule_bootstrap_95_percent_interval": [
+              0.1486850791608675,
+              0.2672806251291095
+            ]
+          }
+        },
+        "LUMO": {
+          "input_sum": {
+            "external_mse": 1.2958805987594249,
+            "external_score_vs_training_mean": 0.24521834737299886,
+            "selected_penalty": 1.0,
+            "train_cv_mse": 1.11900969464971
+          },
+          "conv1_sum32": {
+            "external_mse": 0.3615174273420331,
+            "external_score_vs_training_mean": 0.7894352909335143,
+            "selected_penalty": 0.1,
+            "train_cv_mse": 0.2431722170566441
+          },
+          "conv1_PCA16": {
+            "external_mse": 0.39564504219319235,
+            "external_score_vs_training_mean": 0.7695577670611489,
+            "selected_penalty": 0.1,
+            "train_cv_mse": 0.25548656084890026
+          },
+          "conv2_sum16": {
+            "external_mse": 0.6687774351028818,
+            "external_score_vs_training_mean": 0.6104726483367078,
+            "selected_penalty": 0.0001,
+            "train_cv_mse": 0.4567194238628164
+          },
+          "hidden32": {
+            "external_mse": 1.05458013878748,
+            "external_score_vs_training_mean": 0.3857630550656955,
+            "selected_penalty": 0.01,
+            "train_cv_mse": 0.39008438575379645
+          },
+          "conv1_vs_conv2": {
+            "score_advantage": 0.1789626425968065,
+            "molecule_bootstrap_95_percent_interval": [
+              0.14939285298938298,
+              0.21212357702824663
+            ]
+          },
+          "conv1_PCA16_vs_conv2": {
+            "score_advantage": 0.15908511872444103,
+            "molecule_bootstrap_95_percent_interval": [
+              0.12851722773007027,
+              0.19287187864532493
+            ]
+          }
+        },
+        "gap": {
+          "input_sum": {
+            "external_mse": 1.3493889192658124,
+            "external_score_vs_training_mean": 0.308868721283598,
+            "selected_penalty": 1.0,
+            "train_cv_mse": 1.5692941722613696
+          },
+          "conv1_sum32": {
+            "external_mse": 0.9422088130429398,
+            "external_score_vs_training_mean": 0.5174186089133328,
+            "selected_penalty": 0.01,
+            "train_cv_mse": 0.5072459398350903
+          },
+          "conv1_PCA16": {
+            "external_mse": 0.7749663456359087,
+            "external_score_vs_training_mean": 0.6030770122872072,
+            "selected_penalty": 0.01,
+            "train_cv_mse": 0.5307018802333048
+          },
+          "conv2_sum16": {
+            "external_mse": 0.7944820501283196,
+            "external_score_vs_training_mean": 0.5930814405077753,
+            "selected_penalty": 10.0,
+            "train_cv_mse": 1.0434199376024818
+          },
+          "hidden32": {
+            "external_mse": 1.007282099935236,
+            "external_score_vs_training_mean": 0.484089311971557,
+            "selected_penalty": 0.0001,
+            "train_cv_mse": 0.961363483232836
+          },
+          "conv1_vs_conv2": {
+            "score_advantage": -0.07566283159444273,
+            "molecule_bootstrap_95_percent_interval": [
+              -0.12295870816032248,
+              -0.029757759314470826
+            ]
+          },
+          "conv1_PCA16_vs_conv2": {
+            "score_advantage": 0.00999557177943187,
+            "molecule_bootstrap_95_percent_interval": [
+              -0.028373263538322726,
+              0.04691734846958163
+            ]
+          }
+        },
+        "trace_A2": {
+          "input_sum": {
+            "external_mse": 2.324146480595263,
+            "external_score_vs_training_mean": 0.801714626924905,
+            "selected_penalty": 0.0001,
+            "train_cv_mse": 1.1791497743651016
+          },
+          "conv1_sum32": {
+            "external_mse": 0.006461874421362674,
+            "external_score_vs_training_mean": 0.9994487029147681,
+            "selected_penalty": 0.01,
+            "train_cv_mse": 0.0074122919200740305
+          },
+          "conv1_PCA16": {
+            "external_mse": 0.020534652324957364,
+            "external_score_vs_training_mean": 0.9982480789265147,
+            "selected_penalty": 0.01,
+            "train_cv_mse": 0.010866519772325096
+          },
+          "conv2_sum16": {
+            "external_mse": 0.07213001611236754,
+            "external_score_vs_training_mean": 0.9938462023481883,
+            "selected_penalty": 0.0001,
+            "train_cv_mse": 0.11712848892750513
+          },
+          "hidden32": {
+            "external_mse": 0.10300228020997397,
+            "external_score_vs_training_mean": 0.9912123242964491,
+            "selected_penalty": 0.0001,
+            "train_cv_mse": 0.1127173363870293
+          },
+          "conv1_vs_conv2": {
+            "score_advantage": 0.005602500566579665,
+            "molecule_bootstrap_95_percent_interval": [
+              0.004983316485633689,
+              0.0062828623040580515
+            ]
+          },
+          "conv1_PCA16_vs_conv2": {
+            "score_advantage": 0.0044018765783263355,
+            "molecule_bootstrap_95_percent_interval": [
+              0.003759524828068565,
+              0.005097113051129929
+            ]
+          }
+        },
+        "trace_A3": {
+          "input_sum": {
+            "external_mse": 8.386132346295353,
+            "external_score_vs_training_mean": 0.027539206702596575,
+            "selected_penalty": 100.0,
+            "train_cv_mse": 4.61868973076938
+          },
+          "conv1_sum32": {
+            "external_mse": 3.7024228727523805,
+            "external_score_vs_training_mean": 0.5706648863525549,
+            "selected_penalty": 0.1,
+            "train_cv_mse": 3.23887185381912
+          },
+          "conv1_PCA16": {
+            "external_mse": 3.8957871189340065,
+            "external_score_vs_training_mean": 0.548242255696099,
+            "selected_penalty": 1.0,
+            "train_cv_mse": 3.352928311536446
+          },
+          "conv2_sum16": {
+            "external_mse": 4.764364128876944,
+            "external_score_vs_training_mean": 0.44752155952176176,
+            "selected_penalty": 1.0,
+            "train_cv_mse": 3.5655935376408663
+          },
+          "hidden32": {
+            "external_mse": 4.695631102513168,
+            "external_score_vs_training_mean": 0.4554918813081781,
+            "selected_penalty": 1.0,
+            "train_cv_mse": 3.640469676144361
+          },
+          "conv1_vs_conv2": {
+            "score_advantage": 0.12314332683079304,
+            "molecule_bootstrap_95_percent_interval": [
+              0.06773442405904602,
+              0.17800847696955427
+            ]
+          },
+          "conv1_PCA16_vs_conv2": {
+            "score_advantage": 0.10072069617433718,
+            "molecule_bootstrap_95_percent_interval": [
+              0.06395457464283898,
+              0.13889174473851848
+            ]
+          }
+        },
+        "trace_A4": {
+          "input_sum": {
+            "external_mse": 214.48973800905932,
+            "external_score_vs_training_mean": 0.4252297515928882,
+            "selected_penalty": 1.0,
+            "train_cv_mse": 115.9527516260601
+          },
+          "conv1_sum32": {
+            "external_mse": 20.774648858292856,
+            "external_score_vs_training_mean": 0.9443299703021355,
+            "selected_penalty": 0.1,
+            "train_cv_mse": 13.383530366272897
+          },
+          "conv1_PCA16": {
+            "external_mse": 23.076032136650674,
+            "external_score_vs_training_mean": 0.9381629310262246,
+            "selected_penalty": 0.1,
+            "train_cv_mse": 13.932863698082457
+          },
+          "conv2_sum16": {
+            "external_mse": 39.210638085077605,
+            "external_score_vs_training_mean": 0.8949268696882388,
+            "selected_penalty": 0.0001,
+            "train_cv_mse": 27.879965272729788
+          },
+          "hidden32": {
+            "external_mse": 38.13704922359732,
+            "external_score_vs_training_mean": 0.8978037762588182,
+            "selected_penalty": 0.1,
+            "train_cv_mse": 27.882812728616056
+          },
+          "conv1_vs_conv2": {
+            "score_advantage": 0.04940310061389674,
+            "molecule_bootstrap_95_percent_interval": [
+              0.036797043036802334,
+              0.06396899692908947
+            ]
+          },
+          "conv1_PCA16_vs_conv2": {
+            "score_advantage": 0.043236061337985895,
+            "molecule_bootstrap_95_percent_interval": [
+              0.031118106847375572,
+              0.05676346203108756
+            ]
+          }
+        }
+      },
+      "polarizability_error_by_size": {
+        "archived_test_up_to_6_heavy": {
+          "molecules": 200,
+          "mse": 0.901182081642047,
+          "mae": 0.5669932341575623
+        },
+        "outside_6_heavy": {
+          "molecules": 383,
+          "mse": 1.3442760837517518,
+          "mae": 0.7959808269929014
+        },
+        "outside_7_heavy": {
+          "molecules": 616,
+          "mse": 2.491821311250509,
+          "mae": 1.0567934791763107
+        },
+        "outside_other_heavy": {
+          "molecules": 1,
+          "mse": 4.581164904171601,
+          "mae": 2.1403656005859375
+        }
+      }
+    },
+    "alpha1_step40000": {
+      "alpha": 1,
+      "step": 40000,
+      "max_prediction_difference_from_animation": 1.1444091796875e-05,
+      "probes": {
+        "dipole": {
+          "input_sum": {
+            "external_mse": 1.8778801263458167,
+            "external_score_vs_training_mean": 0.0849447947159162,
+            "selected_penalty": 10.0,
+            "train_cv_mse": 2.205338318534934
+          },
+          "conv1_sum32": {
+            "external_mse": 1.5811716021462057,
+            "external_score_vs_training_mean": 0.22952520520747188,
+            "selected_penalty": 1.0,
+            "train_cv_mse": 2.1476901203821024
+          },
+          "conv1_PCA16": {
+            "external_mse": 1.4773453152844809,
+            "external_score_vs_training_mean": 0.28011777653576764,
+            "selected_penalty": 100.0,
+            "train_cv_mse": 2.2122023241528552
+          },
+          "conv2_sum16": {
+            "external_mse": 1.59601301224982,
+            "external_score_vs_training_mean": 0.2222932688455408,
+            "selected_penalty": 100.0,
+            "train_cv_mse": 2.1194233729956915
+          },
+          "hidden32": {
+            "external_mse": 1.5396759642846212,
+            "external_score_vs_training_mean": 0.24974523889818134,
+            "selected_penalty": 100.0,
+            "train_cv_mse": 2.2047308825153547
+          }
+        },
+        "polarizability": {
+          "input_sum": {
+            "external_mse": 6.0912300571736635,
+            "external_score_vs_training_mean": 0.96186727121049,
+            "selected_penalty": 0.0001,
+            "train_cv_mse": 2.9933986086916002
+          },
+          "conv1_sum32": {
+            "external_mse": 2.6314305483002487,
+            "external_score_vs_training_mean": 0.9835265411936641,
+            "selected_penalty": 0.0001,
+            "train_cv_mse": 1.5390283566355238
+          },
+          "conv1_PCA16": {
+            "external_mse": 3.0415523522487393,
+            "external_score_vs_training_mean": 0.9809590690453721,
+            "selected_penalty": 1.0,
+            "train_cv_mse": 1.4714567267026495
+          },
+          "conv2_sum16": {
+            "external_mse": 2.134899444284308,
+            "external_score_vs_training_mean": 0.9866349586639085,
+            "selected_penalty": 0.0001,
+            "train_cv_mse": 0.2874234377735882
+          },
+          "hidden32": {
+            "external_mse": 2.1005708606593534,
+            "external_score_vs_training_mean": 0.9868498647759435,
+            "selected_penalty": 0.01,
+            "train_cv_mse": 0.015075994508658968
+          }
+        },
+        "HOMO": {
+          "input_sum": {
+            "external_mse": 0.6428344459236834,
+            "external_score_vs_training_mean": 0.1952244384376769,
+            "selected_penalty": 0.0001,
+            "train_cv_mse": 0.7241603178469795
+          },
+          "conv1_sum32": {
+            "external_mse": 0.34137607993041397,
+            "external_score_vs_training_mean": 0.5726253809638584,
+            "selected_penalty": 0.0001,
+            "train_cv_mse": 0.2753765610139477
+          },
+          "conv1_PCA16": {
+            "external_mse": 0.2959275582917405,
+            "external_score_vs_training_mean": 0.6295231712983282,
+            "selected_penalty": 1.0,
+            "train_cv_mse": 0.41411928600659015
+          },
+          "conv2_sum16": {
+            "external_mse": 0.5424890287674439,
+            "external_score_vs_training_mean": 0.3208486017882909,
+            "selected_penalty": 1.0,
+            "train_cv_mse": 0.6109756283260632
+          },
+          "hidden32": {
+            "external_mse": 0.5643524903059877,
+            "external_score_vs_training_mean": 0.2934773561293943,
+            "selected_penalty": 10.0,
+            "train_cv_mse": 0.5405671551352011
+          },
+          "conv1_vs_conv2": {
+            "score_advantage": 0.25177677917556757,
+            "molecule_bootstrap_95_percent_interval": [
+              0.17702198808729708,
+              0.3239509982421061
+            ]
+          },
+          "conv1_PCA16_vs_conv2": {
+            "score_advantage": 0.30867456951003736,
+            "molecule_bootstrap_95_percent_interval": [
+              0.2488445013585973,
+              0.370572267108645
+            ]
+          }
+        },
+        "LUMO": {
+          "input_sum": {
+            "external_mse": 1.2958805987594249,
+            "external_score_vs_training_mean": 0.24521834737299886,
+            "selected_penalty": 1.0,
+            "train_cv_mse": 1.11900969464971
+          },
+          "conv1_sum32": {
+            "external_mse": 0.4865294390622356,
+            "external_score_vs_training_mean": 0.7166224307867305,
+            "selected_penalty": 0.1,
+            "train_cv_mse": 0.26661958099724326
+          },
+          "conv1_PCA16": {
+            "external_mse": 0.5536214764917475,
+            "external_score_vs_training_mean": 0.6775448807889619,
+            "selected_penalty": 0.1,
+            "train_cv_mse": 0.2657618164034713
+          },
+          "conv2_sum16": {
+            "external_mse": 0.6610933700989264,
+            "external_score_vs_training_mean": 0.614948208267253,
+            "selected_penalty": 0.0001,
+            "train_cv_mse": 0.41751312896968945
+          },
+          "hidden32": {
+            "external_mse": 0.6343537213524337,
+            "external_score_vs_training_mean": 0.63052263409851,
+            "selected_penalty": 0.1,
+            "train_cv_mse": 0.39113048006772344
+          },
+          "conv1_vs_conv2": {
+            "score_advantage": 0.10167422251947741,
+            "molecule_bootstrap_95_percent_interval": [
+              0.07196090763597611,
+              0.13460562665113024
+            ]
+          },
+          "conv1_PCA16_vs_conv2": {
+            "score_advantage": 0.06259667252170889,
+            "molecule_bootstrap_95_percent_interval": [
+              0.03778177520920458,
+              0.0903479338029623
+            ]
+          }
+        },
+        "gap": {
+          "input_sum": {
+            "external_mse": 1.3493889192658124,
+            "external_score_vs_training_mean": 0.308868721283598,
+            "selected_penalty": 1.0,
+            "train_cv_mse": 1.5692941722613696
+          },
+          "conv1_sum32": {
+            "external_mse": 0.944378912879649,
+            "external_score_vs_training_mean": 0.5163071251493314,
+            "selected_penalty": 0.1,
+            "train_cv_mse": 0.5085408447173414
+          },
+          "conv1_PCA16": {
+            "external_mse": 0.9050391125532843,
+            "external_score_vs_training_mean": 0.5364562208739367,
+            "selected_penalty": 0.0001,
+            "train_cv_mse": 0.5758331100781187
+          },
+          "conv2_sum16": {
+            "external_mse": 0.8350327607983126,
+            "external_score_vs_training_mean": 0.5723121395908392,
+            "selected_penalty": 10.0,
+            "train_cv_mse": 0.9779146821817092
+          },
+          "hidden32": {
+            "external_mse": 0.9934663737759993,
+            "external_score_vs_training_mean": 0.49116546351726875,
+            "selected_penalty": 1.0,
+            "train_cv_mse": 0.959122872828168
+          },
+          "conv1_vs_conv2": {
+            "score_advantage": -0.05600501444150767,
+            "molecule_bootstrap_95_percent_interval": [
+              -0.09736496442085378,
+              -0.014733632997762773
+            ]
+          },
+          "conv1_PCA16_vs_conv2": {
+            "score_advantage": -0.035855918716902524,
+            "molecule_bootstrap_95_percent_interval": [
+              -0.07430198660122467,
+              0.0012652913988126988
+            ]
+          }
+        },
+        "trace_A2": {
+          "input_sum": {
+            "external_mse": 2.324146480595263,
+            "external_score_vs_training_mean": 0.801714626924905,
+            "selected_penalty": 0.0001,
+            "train_cv_mse": 1.1791497743651016
+          },
+          "conv1_sum32": {
+            "external_mse": 0.014328023073463338,
+            "external_score_vs_training_mean": 0.9987775996804544,
+            "selected_penalty": 0.01,
+            "train_cv_mse": 0.011251981671578499
+          },
+          "conv1_PCA16": {
+            "external_mse": 0.04901411720784684,
+            "external_score_vs_training_mean": 0.9958183433799684,
+            "selected_penalty": 0.01,
+            "train_cv_mse": 0.03406118640600809
+          },
+          "conv2_sum16": {
+            "external_mse": 0.09844553364788822,
+            "external_score_vs_training_mean": 0.9916010847294149,
+            "selected_penalty": 0.0001,
+            "train_cv_mse": 0.17174223309136688
+          },
+          "hidden32": {
+            "external_mse": 0.08200262635351144,
+            "external_score_vs_training_mean": 0.9930039171388719,
+            "selected_penalty": 0.1,
+            "train_cv_mse": 0.1827245099365124
+          },
+          "conv1_vs_conv2": {
+            "score_advantage": 0.0071765149510396465,
+            "molecule_bootstrap_95_percent_interval": [
+              0.00636953983503611,
+              0.008042517056251234
+            ]
+          },
+          "conv1_PCA16_vs_conv2": {
+            "score_advantage": 0.00421725865055356,
+            "molecule_bootstrap_95_percent_interval": [
+              0.003221893553170336,
+              0.005255634055384724
+            ]
+          }
+        },
+        "trace_A3": {
+          "input_sum": {
+            "external_mse": 8.386132346295353,
+            "external_score_vs_training_mean": 0.027539206702596575,
+            "selected_penalty": 100.0,
+            "train_cv_mse": 4.61868973076938
+          },
+          "conv1_sum32": {
+            "external_mse": 3.6496273543035493,
+            "external_score_vs_training_mean": 0.5767870854347072,
+            "selected_penalty": 0.1,
+            "train_cv_mse": 3.310045206943324
+          },
+          "conv1_PCA16": {
+            "external_mse": 4.053775248372202,
+            "external_score_vs_training_mean": 0.5299218601501223,
+            "selected_penalty": 10.0,
+            "train_cv_mse": 3.5428826253416985
+          },
+          "conv2_sum16": {
+            "external_mse": 4.527687948573896,
+            "external_score_vs_training_mean": 0.4749666672958808,
+            "selected_penalty": 1.0,
+            "train_cv_mse": 3.3723976785150995
+          },
+          "hidden32": {
+            "external_mse": 4.747838358990889,
+            "external_score_vs_training_mean": 0.4494378974269634,
+            "selected_penalty": 10.0,
+            "train_cv_mse": 3.7341698036655315
+          },
+          "conv1_vs_conv2": {
+            "score_advantage": 0.10182041813882653,
+            "molecule_bootstrap_95_percent_interval": [
+              0.05368101888997677,
+              0.14849082484382656
+            ]
+          },
+          "conv1_PCA16_vs_conv2": {
+            "score_advantage": 0.05495519285424163,
+            "molecule_bootstrap_95_percent_interval": [
+              0.024604244663599183,
+              0.08475795393584419
+            ]
+          }
+        },
+        "trace_A4": {
+          "input_sum": {
+            "external_mse": 214.48973800905932,
+            "external_score_vs_training_mean": 0.4252297515928882,
+            "selected_penalty": 1.0,
+            "train_cv_mse": 115.9527516260601
+          },
+          "conv1_sum32": {
+            "external_mse": 20.486905868086605,
+            "external_score_vs_training_mean": 0.9451010380067885,
+            "selected_penalty": 0.1,
+            "train_cv_mse": 13.698612663239407
+          },
+          "conv1_PCA16": {
+            "external_mse": 25.51091362111247,
+            "external_score_vs_training_mean": 0.9316381553019573,
+            "selected_penalty": 0.1,
+            "train_cv_mse": 13.799303536443214
+          },
+          "conv2_sum16": {
+            "external_mse": 41.129352480050834,
+            "external_score_vs_training_mean": 0.8897852719611975,
+            "selected_penalty": 0.0001,
+            "train_cv_mse": 31.829728131784982
+          },
+          "hidden32": {
+            "external_mse": 40.166917512435205,
+            "external_score_vs_training_mean": 0.89236431835543,
+            "selected_penalty": 10.0,
+            "train_cv_mse": 34.7597289001527
+          },
+          "conv1_vs_conv2": {
+            "score_advantage": 0.05531576604559095,
+            "molecule_bootstrap_95_percent_interval": [
+              0.04224906672187896,
+              0.07028502463498043
+            ]
+          },
+          "conv1_PCA16_vs_conv2": {
+            "score_advantage": 0.04185288334075979,
+            "molecule_bootstrap_95_percent_interval": [
+              0.028713709321570385,
+              0.056270691062896463
+            ]
+          }
+        }
+      },
+      "polarizability_error_by_size": {
+        "archived_test_up_to_6_heavy": {
+          "molecules": 200,
+          "mse": 0.792122740438781,
+          "mae": 0.5299885559082032
+        },
+        "outside_6_heavy": {
+          "molecules": 383,
+          "mse": 1.3951360463787117,
+          "mae": 0.8433266233837635
+        },
+        "outside_7_heavy": {
+          "molecules": 616,
+          "mse": 3.0275062291293344,
+          "mae": 1.2058863020562507
+        },
+        "outside_other_heavy": {
+          "molecules": 1,
+          "mse": 6.039927240693942,
+          "mae": 2.4576263427734375
+        }
+      }
+    },
+    "alpha1_step87500": {
+      "alpha": 1,
+      "step": 87500,
+      "max_prediction_difference_from_animation": 1.9073486328125e-05,
+      "probes": {
+        "dipole": {
+          "input_sum": {
+            "external_mse": 1.8778801263458167,
+            "external_score_vs_training_mean": 0.0849447947159162,
+            "selected_penalty": 10.0,
+            "train_cv_mse": 2.205338318534934
+          },
+          "conv1_sum32": {
+            "external_mse": 1.5492669463269306,
+            "external_score_vs_training_mean": 0.2450717360912268,
+            "selected_penalty": 100.0,
+            "train_cv_mse": 2.286657377140076
+          },
+          "conv1_PCA16": {
+            "external_mse": 1.5287290354881626,
+            "external_score_vs_training_mean": 0.2550794687228326,
+            "selected_penalty": 100.0,
+            "train_cv_mse": 2.3189702249470225
+          },
+          "conv2_sum16": {
+            "external_mse": 1.5657777584885726,
+            "external_score_vs_training_mean": 0.23702633191445555,
+            "selected_penalty": 100.0,
+            "train_cv_mse": 2.1982805587181664
+          },
+          "hidden32": {
+            "external_mse": 1.505658942264311,
+            "external_score_vs_training_mean": 0.2663210855836241,
+            "selected_penalty": 100.0,
+            "train_cv_mse": 2.2287360339024915
+          }
+        },
+        "polarizability": {
+          "input_sum": {
+            "external_mse": 6.0912300571736635,
+            "external_score_vs_training_mean": 0.96186727121049,
+            "selected_penalty": 0.0001,
+            "train_cv_mse": 2.9933986086916002
+          },
+          "conv1_sum32": {
+            "external_mse": 2.6389833015651694,
+            "external_score_vs_training_mean": 0.983479258938822,
+            "selected_penalty": 0.0001,
+            "train_cv_mse": 1.3731879158608906
+          },
+          "conv1_PCA16": {
+            "external_mse": 2.961084767617942,
+            "external_score_vs_training_mean": 0.9814628176400356,
+            "selected_penalty": 0.1,
+            "train_cv_mse": 1.4124010142552197
+          },
+          "conv2_sum16": {
+            "external_mse": 2.1414862627507247,
+            "external_score_vs_training_mean": 0.9865937234191701,
+            "selected_penalty": 0.0001,
+            "train_cv_mse": 0.26600050524178376
+          },
+          "hidden32": {
+            "external_mse": 2.121692648746319,
+            "external_score_vs_training_mean": 0.9867176367351193,
+            "selected_penalty": 0.0001,
+            "train_cv_mse": 0.005311476719222191
+          }
+        },
+        "HOMO": {
+          "input_sum": {
+            "external_mse": 0.6428344459236834,
+            "external_score_vs_training_mean": 0.1952244384376769,
+            "selected_penalty": 0.0001,
+            "train_cv_mse": 0.7241603178469795
+          },
+          "conv1_sum32": {
+            "external_mse": 0.34325418911761907,
+            "external_score_vs_training_mean": 0.5702741435879014,
+            "selected_penalty": 0.1,
+            "train_cv_mse": 0.3703678736902093
+          },
+          "conv1_PCA16": {
+            "external_mse": 0.29705747840984825,
+            "external_score_vs_training_mean": 0.6281086047589386,
+            "selected_penalty": 10.0,
+            "train_cv_mse": 0.452355581869078
+          },
+          "conv2_sum16": {
+            "external_mse": 0.5534229144548072,
+            "external_score_vs_training_mean": 0.3071602811796117,
+            "selected_penalty": 100.0,
+            "train_cv_mse": 0.6488075474490318
+          },
+          "hidden32": {
+            "external_mse": 0.5656031279915724,
+            "external_score_vs_training_mean": 0.2919116611793029,
+            "selected_penalty": 10.0,
+            "train_cv_mse": 0.5598347356516107
+          },
+          "conv1_vs_conv2": {
+            "score_advantage": 0.2631138624082896,
+            "molecule_bootstrap_95_percent_interval": [
+              0.18584211342346624,
+              0.3392484578147015
+            ]
+          },
+          "conv1_PCA16_vs_conv2": {
+            "score_advantage": 0.3209483235793268,
+            "molecule_bootstrap_95_percent_interval": [
+              0.2646301306895062,
+              0.3798613621361718
+            ]
+          }
+        },
+        "LUMO": {
+          "input_sum": {
+            "external_mse": 1.2958805987594249,
+            "external_score_vs_training_mean": 0.24521834737299886,
+            "selected_penalty": 1.0,
+            "train_cv_mse": 1.11900969464971
+          },
+          "conv1_sum32": {
+            "external_mse": 0.45631093891650365,
+            "external_score_vs_training_mean": 0.7342231028715969,
+            "selected_penalty": 0.1,
+            "train_cv_mse": 0.31165788016373525
+          },
+          "conv1_PCA16": {
+            "external_mse": 0.5534112655328856,
+            "external_score_vs_training_mean": 0.6776673175127481,
+            "selected_penalty": 0.1,
+            "train_cv_mse": 0.292214821856017
+          },
+          "conv2_sum16": {
+            "external_mse": 0.6269773858579404,
+            "external_score_vs_training_mean": 0.6348189579266426,
+            "selected_penalty": 0.0001,
+            "train_cv_mse": 0.4269862577769491
+          },
+          "hidden32": {
+            "external_mse": 0.6087001944357392,
+            "external_score_vs_training_mean": 0.6454644516243147,
+            "selected_penalty": 0.1,
+            "train_cv_mse": 0.42233921440875954
+          },
+          "conv1_vs_conv2": {
+            "score_advantage": 0.09940414494495431,
+            "molecule_bootstrap_95_percent_interval": [
+              0.06964544015624372,
+              0.1326298709886735
+            ]
+          },
+          "conv1_PCA16_vs_conv2": {
+            "score_advantage": 0.042848359586105625,
+            "molecule_bootstrap_95_percent_interval": [
+              0.013388958161818123,
+              0.07543847541791046
+            ]
+          }
+        },
+        "gap": {
+          "input_sum": {
+            "external_mse": 1.3493889192658124,
+            "external_score_vs_training_mean": 0.308868721283598,
+            "selected_penalty": 1.0,
+            "train_cv_mse": 1.5692941722613696
+          },
+          "conv1_sum32": {
+            "external_mse": 1.013358794570281,
+            "external_score_vs_training_mean": 0.4809769448300121,
+            "selected_penalty": 0.01,
+            "train_cv_mse": 0.70864177557651
+          },
+          "conv1_PCA16": {
+            "external_mse": 0.9280327458202988,
+            "external_score_vs_training_mean": 0.524679320281916,
+            "selected_penalty": 0.01,
+            "train_cv_mse": 0.638096424324442
+          },
+          "conv2_sum16": {
+            "external_mse": 0.9137958332449394,
+            "external_score_vs_training_mean": 0.5319711954801616,
+            "selected_penalty": 10.0,
+            "train_cv_mse": 1.0387325039914894
+          },
+          "hidden32": {
+            "external_mse": 0.9878047028399114,
+            "external_score_vs_training_mean": 0.49406526343252144,
+            "selected_penalty": 1.0,
+            "train_cv_mse": 0.9996884013559489
+          },
+          "conv1_vs_conv2": {
+            "score_advantage": -0.050994250650149446,
+            "molecule_bootstrap_95_percent_interval": [
+              -0.0935335018686817,
+              -0.006491833878094192
+            ]
+          },
+          "conv1_PCA16_vs_conv2": {
+            "score_advantage": -0.007291875198245556,
+            "molecule_bootstrap_95_percent_interval": [
+              -0.04465345870177398,
+              0.03110991982121961
+            ]
+          }
+        },
+        "trace_A2": {
+          "input_sum": {
+            "external_mse": 2.324146480595263,
+            "external_score_vs_training_mean": 0.801714626924905,
+            "selected_penalty": 0.0001,
+            "train_cv_mse": 1.1791497743651016
+          },
+          "conv1_sum32": {
+            "external_mse": 0.037521699183059386,
+            "external_score_vs_training_mean": 0.9967988230591134,
+            "selected_penalty": 0.1,
+            "train_cv_mse": 0.06678304540926462
+          },
+          "conv1_PCA16": {
+            "external_mse": 0.05494549368163018,
+            "external_score_vs_training_mean": 0.9953123059134091,
+            "selected_penalty": 0.1,
+            "train_cv_mse": 0.06124992261087463
+          },
+          "conv2_sum16": {
+            "external_mse": 0.13736681636499665,
+            "external_score_vs_training_mean": 0.9882805018278816,
+            "selected_penalty": 0.0001,
+            "train_cv_mse": 0.1919843769264053
+          },
+          "hidden32": {
+            "external_mse": 0.12314900175573104,
+            "external_score_vs_training_mean": 0.9894934996736064,
+            "selected_penalty": 0.01,
+            "train_cv_mse": 0.1932018303962534
+          },
+          "conv1_vs_conv2": {
+            "score_advantage": 0.008518321231231672,
+            "molecule_bootstrap_95_percent_interval": [
+              0.007333271930955752,
+              0.009794350863693617
+            ]
+          },
+          "conv1_PCA16_vs_conv2": {
+            "score_advantage": 0.007031804085527488,
+            "molecule_bootstrap_95_percent_interval": [
+              0.005899551111804897,
+              0.008235439875020557
+            ]
+          }
+        },
+        "trace_A3": {
+          "input_sum": {
+            "external_mse": 8.386132346295353,
+            "external_score_vs_training_mean": 0.027539206702596575,
+            "selected_penalty": 100.0,
+            "train_cv_mse": 4.61868973076938
+          },
+          "conv1_sum32": {
+            "external_mse": 4.26148781544444,
+            "external_score_vs_training_mean": 0.5058353898427296,
+            "selected_penalty": 10.0,
+            "train_cv_mse": 3.3955273299865665
+          },
+          "conv1_PCA16": {
+            "external_mse": 4.77659958514103,
+            "external_score_vs_training_mean": 0.44610272888403824,
+            "selected_penalty": 100.0,
+            "train_cv_mse": 3.6264904671147646
+          },
+          "conv2_sum16": {
+            "external_mse": 4.56992445341075,
+            "external_score_vs_training_mean": 0.47006889758468595,
+            "selected_penalty": 1.0,
+            "train_cv_mse": 3.426735724885429
+          },
+          "hidden32": {
+            "external_mse": 4.799593556515391,
+            "external_score_vs_training_mean": 0.44343633456536913,
+            "selected_penalty": 10.0,
+            "train_cv_mse": 3.6506084595186747
+          },
+          "conv1_vs_conv2": {
+            "score_advantage": 0.035766492258043764,
+            "molecule_bootstrap_95_percent_interval": [
+              0.006559201186495563,
+              0.06616337456777023
+            ]
+          },
+          "conv1_PCA16_vs_conv2": {
+            "score_advantage": -0.023966168700647668,
+            "molecule_bootstrap_95_percent_interval": [
+              -0.06642225770419057,
+              0.01262896077714626
+            ]
+          }
+        },
+        "trace_A4": {
+          "input_sum": {
+            "external_mse": 214.48973800905932,
+            "external_score_vs_training_mean": 0.4252297515928882,
+            "selected_penalty": 1.0,
+            "train_cv_mse": 115.9527516260601
+          },
+          "conv1_sum32": {
+            "external_mse": 29.20044049748052,
+            "external_score_vs_training_mean": 0.9217512940520022,
+            "selected_penalty": 0.1,
+            "train_cv_mse": 18.989248136363873
+          },
+          "conv1_PCA16": {
+            "external_mse": 29.806622729087998,
+            "external_score_vs_training_mean": 0.920126901598195,
+            "selected_penalty": 1.0,
+            "train_cv_mse": 20.047307007294584
+          },
+          "conv2_sum16": {
+            "external_mse": 42.892463819749274,
+            "external_score_vs_training_mean": 0.8850606452629959,
+            "selected_penalty": 0.0001,
+            "train_cv_mse": 32.791803788100715
+          },
+          "hidden32": {
+            "external_mse": 41.73709394567339,
+            "external_score_vs_training_mean": 0.8881567012127525,
+            "selected_penalty": 0.1,
+            "train_cv_mse": 32.72381294172529
+          },
+          "conv1_vs_conv2": {
+            "score_advantage": 0.036690648789006346,
+            "molecule_bootstrap_95_percent_interval": [
+              0.022081132072805546,
+              0.052561816891204746
+            ]
+          },
+          "conv1_PCA16_vs_conv2": {
+            "score_advantage": 0.0350662563351991,
+            "molecule_bootstrap_95_percent_interval": [
+              0.023452400616010134,
+              0.047705487969339454
+            ]
+          }
+        }
+      },
+      "polarizability_error_by_size": {
+        "archived_test_up_to_6_heavy": {
+          "molecules": 200,
+          "mse": 0.6917222945175956,
+          "mae": 0.5104720759391784
+        },
+        "outside_6_heavy": {
+          "molecules": 383,
+          "mse": 1.5199172822837204,
+          "mae": 0.8405511920819395
+        },
+        "outside_7_heavy": {
+          "molecules": 616,
+          "mse": 2.841345149468789,
+          "mae": 1.168173480343509
+        },
+        "outside_other_heavy": {
+          "molecules": 1,
+          "mse": 4.047073722118512,
+          "mae": 2.0117340087890625
+        }
+      }
+    },
+    "alpha3_step0": {
+      "alpha": 3,
+      "step": 0,
+      "max_prediction_difference_from_animation": 0.0029296875,
+      "probes": {
+        "dipole": {
+          "input_sum": {
+            "external_mse": 1.8778801263458167,
+            "external_score_vs_training_mean": 0.0849447947159162,
+            "selected_penalty": 10.0,
+            "train_cv_mse": 2.205338318534934
+          },
+          "conv1_sum32": {
+            "external_mse": 1.7880192590554094,
+            "external_score_vs_training_mean": 0.12873228317793906,
+            "selected_penalty": 0.1,
+            "train_cv_mse": 2.12390767091135
+          },
+          "conv1_PCA16": {
+            "external_mse": 1.6492689207048508,
+            "external_score_vs_training_mean": 0.19634267936955718,
+            "selected_penalty": 0.1,
+            "train_cv_mse": 1.9638440733158116
+          },
+          "conv2_sum16": {
+            "external_mse": 1.6044187510866181,
+            "external_score_vs_training_mean": 0.21819731246954033,
+            "selected_penalty": 10.0,
+            "train_cv_mse": 2.2044947114497524
+          },
+          "hidden32": {
+            "external_mse": 2.20510501898729,
+            "external_score_vs_training_mean": -0.07450566067218523,
+            "selected_penalty": 10.0,
+            "train_cv_mse": 2.045964715107421
+          }
+        },
+        "polarizability": {
+          "input_sum": {
+            "external_mse": 6.0912300571736635,
+            "external_score_vs_training_mean": 0.96186727121049,
+            "selected_penalty": 0.0001,
+            "train_cv_mse": 2.9933986086916002
+          },
+          "conv1_sum32": {
+            "external_mse": 3.026336198817955,
+            "external_score_vs_training_mean": 0.9810543262342403,
+            "selected_penalty": 0.1,
+            "train_cv_mse": 2.4047199105581525
+          },
+          "conv1_PCA16": {
+            "external_mse": 4.182995813677862,
+            "external_score_vs_training_mean": 0.9738133277854479,
+            "selected_penalty": 1.0,
+            "train_cv_mse": 2.051640136827507
+          },
+          "conv2_sum16": {
+            "external_mse": 4.674684262170365,
+            "external_score_vs_training_mean": 0.9707352266335766,
+            "selected_penalty": 1.0,
+            "train_cv_mse": 2.469725136363523
+          },
+          "hidden32": {
+            "external_mse": 5.09552913058859,
+            "external_score_vs_training_mean": 0.9681006252346441,
+            "selected_penalty": 1.0,
+            "train_cv_mse": 2.594271731403864
+          }
+        },
+        "HOMO": {
+          "input_sum": {
+            "external_mse": 0.6428344459236834,
+            "external_score_vs_training_mean": 0.1952244384376769,
+            "selected_penalty": 0.0001,
+            "train_cv_mse": 0.7241603178469795
+          },
+          "conv1_sum32": {
+            "external_mse": 0.3059131501972063,
+            "external_score_vs_training_mean": 0.6170220360772585,
+            "selected_penalty": 0.1,
+            "train_cv_mse": 0.58492210680925
+          },
+          "conv1_PCA16": {
+            "external_mse": 0.28172911888922353,
+            "external_score_vs_training_mean": 0.647298443167978,
+            "selected_penalty": 0.1,
+            "train_cv_mse": 0.3523526974361813
+          },
+          "conv2_sum16": {
+            "external_mse": 0.27440142886806557,
+            "external_score_vs_training_mean": 0.6564721050479951,
+            "selected_penalty": 1.0,
+            "train_cv_mse": 0.4242840280628343
+          },
+          "hidden32": {
+            "external_mse": 0.27404091565921307,
+            "external_score_vs_training_mean": 0.6569234377697319,
+            "selected_penalty": 0.0001,
+            "train_cv_mse": 0.3256040915166858
+          },
+          "conv1_vs_conv2": {
+            "score_advantage": -0.03945006897073676,
+            "molecule_bootstrap_95_percent_interval": [
+              -0.07586279277092903,
+              -0.0036749056556593775
+            ]
+          },
+          "conv1_PCA16_vs_conv2": {
+            "score_advantage": -0.009173661880017104,
+            "molecule_bootstrap_95_percent_interval": [
+              -0.04042559937093898,
+              0.022140171451111582
+            ]
+          }
+        },
+        "LUMO": {
+          "input_sum": {
+            "external_mse": 1.2958805987594249,
+            "external_score_vs_training_mean": 0.24521834737299886,
+            "selected_penalty": 1.0,
+            "train_cv_mse": 1.11900969464971
+          },
+          "conv1_sum32": {
+            "external_mse": 0.5119728733550323,
+            "external_score_vs_training_mean": 0.7018029810608775,
+            "selected_penalty": 10.0,
+            "train_cv_mse": 0.6053177594480229
+          },
+          "conv1_PCA16": {
+            "external_mse": 0.34341741309345786,
+            "external_score_vs_training_mean": 0.7999775883335914,
+            "selected_penalty": 0.1,
+            "train_cv_mse": 0.28249513011694305
+          },
+          "conv2_sum16": {
+            "external_mse": 0.7298578424628777,
+            "external_score_vs_training_mean": 0.5748965537069688,
+            "selected_penalty": 0.1,
+            "train_cv_mse": 0.43470741918264694
+          },
+          "hidden32": {
+            "external_mse": 0.7592219367625035,
+            "external_score_vs_training_mean": 0.5577935276684709,
+            "selected_penalty": 0.0001,
+            "train_cv_mse": 0.4733177816553155
+          },
+          "conv1_vs_conv2": {
+            "score_advantage": 0.12690642735390867,
+            "molecule_bootstrap_95_percent_interval": [
+              0.09119602595110311,
+              0.1649083443770735
+            ]
+          },
+          "conv1_PCA16_vs_conv2": {
+            "score_advantage": 0.22508103462662263,
+            "molecule_bootstrap_95_percent_interval": [
+              0.1885776072528662,
+              0.2646023331486811
+            ]
+          }
+        },
+        "gap": {
+          "input_sum": {
+            "external_mse": 1.3493889192658124,
+            "external_score_vs_training_mean": 0.308868721283598,
+            "selected_penalty": 1.0,
+            "train_cv_mse": 1.5692941722613696
+          },
+          "conv1_sum32": {
+            "external_mse": 0.6136269287850395,
+            "external_score_vs_training_mean": 0.6857119857062638,
+            "selected_penalty": 100.0,
+            "train_cv_mse": 1.4936098422945114
+          },
+          "conv1_PCA16": {
+            "external_mse": 0.7821516208168912,
+            "external_score_vs_training_mean": 0.5993968513248188,
+            "selected_penalty": 0.1,
+            "train_cv_mse": 0.6818699918117888
+          },
+          "conv2_sum16": {
+            "external_mse": 0.8707917783634218,
+            "external_score_vs_training_mean": 0.5539970525299027,
+            "selected_penalty": 0.1,
+            "train_cv_mse": 1.0374797698039437
+          },
+          "hidden32": {
+            "external_mse": 0.9177979954690736,
+            "external_score_vs_training_mean": 0.5299213642890908,
+            "selected_penalty": 0.01,
+            "train_cv_mse": 0.8197179673156798
+          },
+          "conv1_vs_conv2": {
+            "score_advantage": 0.13171493317636096,
+            "molecule_bootstrap_95_percent_interval": [
+              0.0889401792059963,
+              0.1794346852853539
+            ]
+          },
+          "conv1_PCA16_vs_conv2": {
+            "score_advantage": 0.04539979879491599,
+            "molecule_bootstrap_95_percent_interval": [
+              0.013510176790525458,
+              0.07795888241876353
+            ]
+          }
+        },
+        "trace_A2": {
+          "input_sum": {
+            "external_mse": 2.324146480595263,
+            "external_score_vs_training_mean": 0.801714626924905,
+            "selected_penalty": 0.0001,
+            "train_cv_mse": 1.1791497743651016
+          },
+          "conv1_sum32": {
+            "external_mse": 0.0036534258544094066,
+            "external_score_vs_training_mean": 0.9996883066903949,
+            "selected_penalty": 0.1,
+            "train_cv_mse": 0.011715647369566509
+          },
+          "conv1_PCA16": {
+            "external_mse": 0.002500682821339784,
+            "external_score_vs_training_mean": 0.9997866533670267,
+            "selected_penalty": 0.01,
+            "train_cv_mse": 0.002340179219517917
+          },
+          "conv2_sum16": {
+            "external_mse": 0.04276300426509728,
+            "external_score_vs_training_mean": 0.9963516592756473,
+            "selected_penalty": 1.0,
+            "train_cv_mse": 0.037897902817510966
+          },
+          "hidden32": {
+            "external_mse": 0.02460125645204422,
+            "external_score_vs_training_mean": 0.9979011351674959,
+            "selected_penalty": 0.0001,
+            "train_cv_mse": 0.04057745677017394
+          },
+          "conv1_vs_conv2": {
+            "score_advantage": 0.003336647414747602,
+            "molecule_bootstrap_95_percent_interval": [
+              0.0028434078043264688,
+              0.003938643400670901
+            ]
+          },
+          "conv1_PCA16_vs_conv2": {
+            "score_advantage": 0.003434994091379354,
+            "molecule_bootstrap_95_percent_interval": [
+              0.00293672577618653,
+              0.004043090665736886
+            ]
+          }
+        },
+        "trace_A3": {
+          "input_sum": {
+            "external_mse": 8.386132346295353,
+            "external_score_vs_training_mean": 0.027539206702596575,
+            "selected_penalty": 100.0,
+            "train_cv_mse": 4.61868973076938
+          },
+          "conv1_sum32": {
+            "external_mse": 4.5215741502755415,
+            "external_score_vs_training_mean": 0.4756756269089383,
+            "selected_penalty": 10.0,
+            "train_cv_mse": 3.7552735916794773
+          },
+          "conv1_PCA16": {
+            "external_mse": 3.581478727589,
+            "external_score_vs_training_mean": 0.5846896398972821,
+            "selected_penalty": 0.1,
+            "train_cv_mse": 3.2606969682880043
+          },
+          "conv2_sum16": {
+            "external_mse": 3.7599344016658796,
+            "external_score_vs_training_mean": 0.5639958159490006,
+            "selected_penalty": 0.01,
+            "train_cv_mse": 3.2411161182820067
+          },
+          "hidden32": {
+            "external_mse": 3.832207502597203,
+            "external_score_vs_training_mean": 0.5556149850530052,
+            "selected_penalty": 10.0,
+            "train_cv_mse": 3.470774279123487
+          },
+          "conv1_vs_conv2": {
+            "score_advantage": -0.08832018904006228,
+            "molecule_bootstrap_95_percent_interval": [
+              -0.16614887582973917,
+              -0.015701179237144872
+            ]
+          },
+          "conv1_PCA16_vs_conv2": {
+            "score_advantage": 0.02069382394828155,
+            "molecule_bootstrap_95_percent_interval": [
+              -0.006934474140817354,
+              0.047810426920944234
+            ]
+          }
+        },
+        "trace_A4": {
+          "input_sum": {
+            "external_mse": 214.48973800905932,
+            "external_score_vs_training_mean": 0.4252297515928882,
+            "selected_penalty": 1.0,
+            "train_cv_mse": 115.9527516260601
+          },
+          "conv1_sum32": {
+            "external_mse": 27.613036680007443,
+            "external_score_vs_training_mean": 0.9260050755846779,
+            "selected_penalty": 1.0,
+            "train_cv_mse": 19.804957598711344
+          },
+          "conv1_PCA16": {
+            "external_mse": 22.445385907638833,
+            "external_score_vs_training_mean": 0.9398528798931063,
+            "selected_penalty": 0.1,
+            "train_cv_mse": 13.445850898108592
+          },
+          "conv2_sum16": {
+            "external_mse": 24.67895055419711,
+            "external_score_vs_training_mean": 0.9338675748680173,
+            "selected_penalty": 1.0,
+            "train_cv_mse": 16.397625419495846
+          },
+          "hidden32": {
+            "external_mse": 25.633607643141165,
+            "external_score_vs_training_mean": 0.9313093709313198,
+            "selected_penalty": 1.0,
+            "train_cv_mse": 16.348943050038965
+          },
+          "conv1_vs_conv2": {
+            "score_advantage": -0.0078624992833393,
+            "molecule_bootstrap_95_percent_interval": [
+              -0.01756134924726481,
+              0.00043302042606303544
+            ]
+          },
+          "conv1_PCA16_vs_conv2": {
+            "score_advantage": 0.005985305025088992,
+            "molecule_bootstrap_95_percent_interval": [
+              0.0008521327807888249,
+              0.01117896937863052
+            ]
+          }
+        }
+      },
+      "polarizability_error_by_size": {
+        "archived_test_up_to_6_heavy": {
+          "molecules": 200,
+          "mse": 11045928.950065112,
+          "mae": 3141.072088520527
+        },
+        "outside_6_heavy": {
+          "molecules": 383,
+          "mse": 20607990.598309476,
+          "mae": 4349.117485220688
+        },
+        "outside_7_heavy": {
+          "molecules": 616,
+          "mse": 17654130.989152707,
+          "mae": 4087.6106781154485
+        },
+        "outside_other_heavy": {
+          "molecules": 1,
+          "mse": 15989313.491536984,
+          "mae": 3998.663963317871
+        }
+      }
+    },
+    "alpha3_step20000": {
+      "alpha": 3,
+      "step": 20000,
+      "max_prediction_difference_from_animation": 0.000152587890625,
+      "probes": {
+        "dipole": {
+          "input_sum": {
+            "external_mse": 1.8778801263458167,
+            "external_score_vs_training_mean": 0.0849447947159162,
+            "selected_penalty": 10.0,
+            "train_cv_mse": 2.205338318534934
+          },
+          "conv1_sum32": {
+            "external_mse": 2.126930849520529,
+            "external_score_vs_training_mean": -0.036412877386535314,
+            "selected_penalty": 0.01,
+            "train_cv_mse": 2.03724374583438
+          },
+          "conv1_PCA16": {
+            "external_mse": 1.977126403334147,
+            "external_score_vs_training_mean": 0.036583974933475205,
+            "selected_penalty": 0.1,
+            "train_cv_mse": 2.0509462968671537
+          },
+          "conv2_sum16": {
+            "external_mse": 1.5846677531082232,
+            "external_score_vs_training_mean": 0.22782159745777042,
+            "selected_penalty": 100.0,
+            "train_cv_mse": 2.2964480105003684
+          },
+          "hidden32": {
+            "external_mse": 1.8435805320375156,
+            "external_score_vs_training_mean": 0.10165833349329145,
+            "selected_penalty": 10.0,
+            "train_cv_mse": 2.215134013864996
+          }
+        },
+        "polarizability": {
+          "input_sum": {
+            "external_mse": 6.0912300571736635,
+            "external_score_vs_training_mean": 0.96186727121049,
+            "selected_penalty": 0.0001,
+            "train_cv_mse": 2.9933986086916002
+          },
+          "conv1_sum32": {
+            "external_mse": 2.8890015224044108,
+            "external_score_vs_training_mean": 0.9819140780281994,
+            "selected_penalty": 0.1,
+            "train_cv_mse": 1.1894335844506951
+          },
+          "conv1_PCA16": {
+            "external_mse": 3.9745418677607534,
+            "external_score_vs_training_mean": 0.9751183052218853,
+            "selected_penalty": 1.0,
+            "train_cv_mse": 2.284761815495758
+          },
+          "conv2_sum16": {
+            "external_mse": 5.261914638077,
+            "external_score_vs_training_mean": 0.967059007470743,
+            "selected_penalty": 1.0,
+            "train_cv_mse": 1.1003598816922049
+          },
+          "hidden32": {
+            "external_mse": 5.4487639640028585,
+            "external_score_vs_training_mean": 0.965889280731947,
+            "selected_penalty": 1.0,
+            "train_cv_mse": 1.0908706519631286
+          }
+        },
+        "HOMO": {
+          "input_sum": {
+            "external_mse": 0.6428344459236834,
+            "external_score_vs_training_mean": 0.1952244384376769,
+            "selected_penalty": 0.0001,
+            "train_cv_mse": 0.7241603178469795
+          },
+          "conv1_sum32": {
+            "external_mse": 0.33324046369376187,
+            "external_score_vs_training_mean": 0.5828104996472534,
+            "selected_penalty": 0.1,
+            "train_cv_mse": 0.33850657340685125
+          },
+          "conv1_PCA16": {
+            "external_mse": 0.27834136155665967,
+            "external_score_vs_training_mean": 0.6515396351685614,
+            "selected_penalty": 10.0,
+            "train_cv_mse": 0.41724364145476367
+          },
+          "conv2_sum16": {
+            "external_mse": 0.356629929334057,
+            "external_score_vs_training_mean": 0.5535288230590236,
+            "selected_penalty": 10.0,
+            "train_cv_mse": 0.4599681413902397
+          },
+          "hidden32": {
+            "external_mse": 0.5150806062873134,
+            "external_score_vs_training_mean": 0.3551616799577252,
+            "selected_penalty": 1.0,
+            "train_cv_mse": 0.6349767680369174
+          },
+          "conv1_vs_conv2": {
+            "score_advantage": 0.029281676588229846,
+            "molecule_bootstrap_95_percent_interval": [
+              -0.02150546993401491,
+              0.08560699751853043
+            ]
+          },
+          "conv1_PCA16_vs_conv2": {
+            "score_advantage": 0.0980108121095378,
+            "molecule_bootstrap_95_percent_interval": [
+              0.050736100516572805,
+              0.14798721550998298
+            ]
+          }
+        },
+        "LUMO": {
+          "input_sum": {
+            "external_mse": 1.2958805987594249,
+            "external_score_vs_training_mean": 0.24521834737299886,
+            "selected_penalty": 1.0,
+            "train_cv_mse": 1.11900969464971
+          },
+          "conv1_sum32": {
+            "external_mse": 0.40760184948627975,
+            "external_score_vs_training_mean": 0.7625935615799813,
+            "selected_penalty": 0.01,
+            "train_cv_mse": 0.23407590537499218
+          },
+          "conv1_PCA16": {
+            "external_mse": 0.45636518529182196,
+            "external_score_vs_training_mean": 0.734191507237824,
+            "selected_penalty": 10.0,
+            "train_cv_mse": 0.43693851576922127
+          },
+          "conv2_sum16": {
+            "external_mse": 1.0472534462355123,
+            "external_score_vs_training_mean": 0.39003046451526835,
+            "selected_penalty": 0.0001,
+            "train_cv_mse": 0.9541406125367018
+          },
+          "hidden32": {
+            "external_mse": 0.7540222973956405,
+            "external_score_vs_training_mean": 0.5608220415594438,
+            "selected_penalty": 10.0,
+            "train_cv_mse": 0.7798869376983306
+          },
+          "conv1_vs_conv2": {
+            "score_advantage": 0.37256309706471286,
+            "molecule_bootstrap_95_percent_interval": [
+              0.2870892273609417,
+              0.472942698235101
+            ]
+          },
+          "conv1_PCA16_vs_conv2": {
+            "score_advantage": 0.3441610427225555,
+            "molecule_bootstrap_95_percent_interval": [
+              0.25853895238112734,
+              0.44152025246147686
+            ]
+          }
+        },
+        "gap": {
+          "input_sum": {
+            "external_mse": 1.3493889192658124,
+            "external_score_vs_training_mean": 0.308868721283598,
+            "selected_penalty": 1.0,
+            "train_cv_mse": 1.5692941722613696
+          },
+          "conv1_sum32": {
+            "external_mse": 0.8563871697066022,
+            "external_score_vs_training_mean": 0.5613748184639922,
+            "selected_penalty": 0.1,
+            "train_cv_mse": 0.6670527300427732
+          },
+          "conv1_PCA16": {
+            "external_mse": 0.756639548358423,
+            "external_score_vs_training_mean": 0.612463648457346,
+            "selected_penalty": 10.0,
+            "train_cv_mse": 1.2622181893458706
+          },
+          "conv2_sum16": {
+            "external_mse": 1.1965256170952698,
+            "external_score_vs_training_mean": 0.38716239035820477,
+            "selected_penalty": 1.0,
+            "train_cv_mse": 1.7443011521509004
+          },
+          "hidden32": {
+            "external_mse": 0.8656649056985498,
+            "external_score_vs_training_mean": 0.5566229389664218,
+            "selected_penalty": 10.0,
+            "train_cv_mse": 1.5720834824737255
+          },
+          "conv1_vs_conv2": {
+            "score_advantage": 0.17421242810578735,
+            "molecule_bootstrap_95_percent_interval": [
+              0.09062759706247143,
+              0.2659876262366629
+            ]
+          },
+          "conv1_PCA16_vs_conv2": {
+            "score_advantage": 0.22530125809914128,
+            "molecule_bootstrap_95_percent_interval": [
+              0.14319740853160495,
+              0.3176356518762275
+            ]
+          }
+        },
+        "trace_A2": {
+          "input_sum": {
+            "external_mse": 2.324146480595263,
+            "external_score_vs_training_mean": 0.801714626924905,
+            "selected_penalty": 0.0001,
+            "train_cv_mse": 1.1791497743651016
+          },
+          "conv1_sum32": {
+            "external_mse": 0.005971626882179697,
+            "external_score_vs_training_mean": 0.9994905285557152,
+            "selected_penalty": 0.1,
+            "train_cv_mse": 0.010854710865819506
+          },
+          "conv1_PCA16": {
+            "external_mse": 0.004255246079578496,
+            "external_score_vs_training_mean": 0.9996369621865661,
+            "selected_penalty": 0.0001,
+            "train_cv_mse": 0.012155179757192037
+          },
+          "conv2_sum16": {
+            "external_mse": 1.097443852287071,
+            "external_score_vs_training_mean": 0.906371192394045,
+            "selected_penalty": 10.0,
+            "train_cv_mse": 0.6725652175126315
+          },
+          "hidden32": {
+            "external_mse": 0.8510157669322523,
+            "external_score_vs_training_mean": 0.9273952910249741,
+            "selected_penalty": 1.0,
+            "train_cv_mse": 0.6586707705036519
+          },
+          "conv1_vs_conv2": {
+            "score_advantage": 0.09311933616167022,
+            "molecule_bootstrap_95_percent_interval": [
+              0.08369790696740938,
+              0.10256722406164645
+            ]
+          },
+          "conv1_PCA16_vs_conv2": {
+            "score_advantage": 0.09326576979252103,
+            "molecule_bootstrap_95_percent_interval": [
+              0.08389564611801416,
+              0.10269914656151154
+            ]
+          }
+        },
+        "trace_A3": {
+          "input_sum": {
+            "external_mse": 8.386132346295353,
+            "external_score_vs_training_mean": 0.027539206702596575,
+            "selected_penalty": 100.0,
+            "train_cv_mse": 4.61868973076938
+          },
+          "conv1_sum32": {
+            "external_mse": 4.204432921119192,
+            "external_score_vs_training_mean": 0.512451508633359,
+            "selected_penalty": 10.0,
+            "train_cv_mse": 3.3097677523979265
+          },
+          "conv1_PCA16": {
+            "external_mse": 3.839144162826951,
+            "external_score_vs_training_mean": 0.5548106058909192,
+            "selected_penalty": 1.0,
+            "train_cv_mse": 3.33709644003588
+          },
+          "conv2_sum16": {
+            "external_mse": 5.985321609730354,
+            "external_score_vs_training_mean": 0.3059386186160389,
+            "selected_penalty": 10.0,
+            "train_cv_mse": 4.346485597703177
+          },
+          "hidden32": {
+            "external_mse": 7.283621879580907,
+            "external_score_vs_training_mean": 0.15538696283220876,
+            "selected_penalty": 100.0,
+            "train_cv_mse": 4.639754809903247
+          },
+          "conv1_vs_conv2": {
+            "score_advantage": 0.2065128900173201,
+            "molecule_bootstrap_95_percent_interval": [
+              0.1580211214452867,
+              0.25743357584611826
+            ]
+          },
+          "conv1_PCA16_vs_conv2": {
+            "score_advantage": 0.24887198727488033,
+            "molecule_bootstrap_95_percent_interval": [
+              0.16782810254664102,
+              0.32821206828231553
+            ]
+          }
+        },
+        "trace_A4": {
+          "input_sum": {
+            "external_mse": 214.48973800905932,
+            "external_score_vs_training_mean": 0.4252297515928882,
+            "selected_penalty": 1.0,
+            "train_cv_mse": 115.9527516260601
+          },
+          "conv1_sum32": {
+            "external_mse": 27.844683692140883,
+            "external_score_vs_training_mean": 0.9253843288210213,
+            "selected_penalty": 1.0,
+            "train_cv_mse": 16.488455587390156
+          },
+          "conv1_PCA16": {
+            "external_mse": 20.873229844685532,
+            "external_score_vs_training_mean": 0.9440658018688898,
+            "selected_penalty": 0.1,
+            "train_cv_mse": 14.400570884409657
+          },
+          "conv2_sum16": {
+            "external_mse": 80.39512193914865,
+            "external_score_vs_training_mean": 0.7845644055673525,
+            "selected_penalty": 1.0,
+            "train_cv_mse": 55.00527616995356
+          },
+          "hidden32": {
+            "external_mse": 80.37205739716306,
+            "external_score_vs_training_mean": 0.7846262118460562,
+            "selected_penalty": 1.0,
+            "train_cv_mse": 57.486912992343
+          },
+          "conv1_vs_conv2": {
+            "score_advantage": 0.1408199232536687,
+            "molecule_bootstrap_95_percent_interval": [
+              0.11802152831406539,
+              0.16422876815549045
+            ]
+          },
+          "conv1_PCA16_vs_conv2": {
+            "score_advantage": 0.15950139630153728,
+            "molecule_bootstrap_95_percent_interval": [
+              0.13649440731492718,
+              0.18297860945746633
+            ]
+          }
+        }
+      },
+      "polarizability_error_by_size": {
+        "archived_test_up_to_6_heavy": {
+          "molecules": 200,
+          "mse": 5.532484627102768,
+          "mae": 1.352436158657074
+        },
+        "outside_6_heavy": {
+          "molecules": 383,
+          "mse": 4.151812273966436,
+          "mae": 1.5064325357541715
+        },
+        "outside_7_heavy": {
+          "molecules": 616,
+          "mse": 8.520804190938428,
+          "mae": 2.100240372992181
+        },
+        "outside_other_heavy": {
+          "molecules": 1,
+          "mse": 9.699314532859717,
+          "mae": 3.1143722534179688
+        }
+      }
+    },
+    "alpha3_step40000": {
+      "alpha": 3,
+      "step": 40000,
+      "max_prediction_difference_from_animation": 9.1552734375e-05,
+      "probes": {
+        "dipole": {
+          "input_sum": {
+            "external_mse": 1.8778801263458167,
+            "external_score_vs_training_mean": 0.0849447947159162,
+            "selected_penalty": 10.0,
+            "train_cv_mse": 2.205338318534934
+          },
+          "conv1_sum32": {
+            "external_mse": 2.1862766162587706,
+            "external_score_vs_training_mean": -0.06533093877050389,
+            "selected_penalty": 0.1,
+            "train_cv_mse": 1.9144890218073864
+          },
+          "conv1_PCA16": {
+            "external_mse": 2.3046802689617096,
+            "external_score_vs_training_mean": -0.12302678272264389,
+            "selected_penalty": 0.1,
+            "train_cv_mse": 1.8412053386860212
+          },
+          "conv2_sum16": {
+            "external_mse": 1.8550349233813035,
+            "external_score_vs_training_mean": 0.09607682683829011,
+            "selected_penalty": 10.0,
+            "train_cv_mse": 2.280087250895834
+          },
+          "hidden32": {
+            "external_mse": 1.8913440813271978,
+            "external_score_vs_training_mean": 0.07838406598963832,
+            "selected_penalty": 10.0,
+            "train_cv_mse": 2.3127798801164485
+          }
+        },
+        "polarizability": {
+          "input_sum": {
+            "external_mse": 6.0912300571736635,
+            "external_score_vs_training_mean": 0.96186727121049,
+            "selected_penalty": 0.0001,
+            "train_cv_mse": 2.9933986086916002
+          },
+          "conv1_sum32": {
+            "external_mse": 2.4876166234432158,
+            "external_score_vs_training_mean": 0.9844268548152568,
+            "selected_penalty": 0.01,
+            "train_cv_mse": 0.7758423973859497
+          },
+          "conv1_PCA16": {
+            "external_mse": 3.1266160686568973,
+            "external_score_vs_training_mean": 0.9804265474368999,
+            "selected_penalty": 1.0,
+            "train_cv_mse": 2.225192620782178
+          },
+          "conv2_sum16": {
+            "external_mse": 2.94280360123002,
+            "external_score_vs_training_mean": 0.9815772626295177,
+            "selected_penalty": 0.0001,
+            "train_cv_mse": 0.17235184371201298
+          },
+          "hidden32": {
+            "external_mse": 3.2235731626857813,
+            "external_score_vs_training_mean": 0.9798195701045518,
+            "selected_penalty": 10.0,
+            "train_cv_mse": 0.6728720336533971
+          }
+        },
+        "HOMO": {
+          "input_sum": {
+            "external_mse": 0.6428344459236834,
+            "external_score_vs_training_mean": 0.1952244384376769,
+            "selected_penalty": 0.0001,
+            "train_cv_mse": 0.7241603178469795
+          },
+          "conv1_sum32": {
+            "external_mse": 0.3193631057948392,
+            "external_score_vs_training_mean": 0.6001838040290051,
+            "selected_penalty": 1.0,
+            "train_cv_mse": 0.5254953010291625
+          },
+          "conv1_PCA16": {
+            "external_mse": 0.351122501286528,
+            "external_score_vs_training_mean": 0.5604236674903074,
+            "selected_penalty": 100.0,
+            "train_cv_mse": 0.5578803771553896
+          },
+          "conv2_sum16": {
+            "external_mse": 0.4671736449261745,
+            "external_score_vs_training_mean": 0.41513723350286336,
+            "selected_penalty": 1.0,
+            "train_cv_mse": 0.5789402755045063
+          },
+          "hidden32": {
+            "external_mse": 0.5203587087814928,
+            "external_score_vs_training_mean": 0.3485539321531824,
+            "selected_penalty": 100.0,
+            "train_cv_mse": 0.6184171788460925
+          },
+          "conv1_vs_conv2": {
+            "score_advantage": 0.18504657052614176,
+            "molecule_bootstrap_95_percent_interval": [
+              0.13233455897105206,
+              0.24377309638227146
+            ]
+          },
+          "conv1_PCA16_vs_conv2": {
+            "score_advantage": 0.145286433987444,
+            "molecule_bootstrap_95_percent_interval": [
+              0.0928577249524639,
+              0.20161716676968633
+            ]
+          }
+        },
+        "LUMO": {
+          "input_sum": {
+            "external_mse": 1.2958805987594249,
+            "external_score_vs_training_mean": 0.24521834737299886,
+            "selected_penalty": 1.0,
+            "train_cv_mse": 1.11900969464971
+          },
+          "conv1_sum32": {
+            "external_mse": 0.4332560554557567,
+            "external_score_vs_training_mean": 0.7476513485419805,
+            "selected_penalty": 0.1,
+            "train_cv_mse": 0.24581332676984494
+          },
+          "conv1_PCA16": {
+            "external_mse": 0.46284778244525926,
+            "external_score_vs_training_mean": 0.7304157385462712,
+            "selected_penalty": 1.0,
+            "train_cv_mse": 0.2856754680155409
+          },
+          "conv2_sum16": {
+            "external_mse": 1.1772010762767067,
+            "external_score_vs_training_mean": 0.3143428687202924,
+            "selected_penalty": 1.0,
+            "train_cv_mse": 1.0155933263109054
+          },
+          "hidden32": {
+            "external_mse": 1.087909515713728,
+            "external_score_vs_training_mean": 0.36635046240746416,
+            "selected_penalty": 10.0,
+            "train_cv_mse": 1.0926509055710523
+          },
+          "conv1_vs_conv2": {
+            "score_advantage": 0.4333084798216882,
+            "molecule_bootstrap_95_percent_interval": [
+              0.37060649466902096,
+              0.49736974018404145
+            ]
+          },
+          "conv1_PCA16_vs_conv2": {
+            "score_advantage": 0.4160728698259789,
+            "molecule_bootstrap_95_percent_interval": [
+              0.35367467314841305,
+              0.4808290200553262
+            ]
+          }
+        },
+        "gap": {
+          "input_sum": {
+            "external_mse": 1.3493889192658124,
+            "external_score_vs_training_mean": 0.308868721283598,
+            "selected_penalty": 1.0,
+            "train_cv_mse": 1.5692941722613696
+          },
+          "conv1_sum32": {
+            "external_mse": 0.9358327004474811,
+            "external_score_vs_training_mean": 0.5206843322258798,
+            "selected_penalty": 0.0001,
+            "train_cv_mse": 0.7915008442229914
+          },
+          "conv1_PCA16": {
+            "external_mse": 0.8113895249079237,
+            "external_score_vs_training_mean": 0.5844217542620554,
+            "selected_penalty": 0.1,
+            "train_cv_mse": 1.0167862439115973
+          },
+          "conv2_sum16": {
+            "external_mse": 1.2796169975058278,
+            "external_score_vs_training_mean": 0.34460456942641193,
+            "selected_penalty": 1.0,
+            "train_cv_mse": 1.3311901560372787
+          },
+          "hidden32": {
+            "external_mse": 1.0115514402679429,
+            "external_score_vs_training_mean": 0.48190263724695315,
+            "selected_penalty": 100.0,
+            "train_cv_mse": 1.8324387613141344
+          },
+          "conv1_vs_conv2": {
+            "score_advantage": 0.1760797627994679,
+            "molecule_bootstrap_95_percent_interval": [
+              0.12097892550706879,
+              0.23312351432238135
+            ]
+          },
+          "conv1_PCA16_vs_conv2": {
+            "score_advantage": 0.2398171848356436,
+            "molecule_bootstrap_95_percent_interval": [
+              0.187407834165837,
+              0.29455462967035234
+            ]
+          }
+        },
+        "trace_A2": {
+          "input_sum": {
+            "external_mse": 2.324146480595263,
+            "external_score_vs_training_mean": 0.801714626924905,
+            "selected_penalty": 0.0001,
+            "train_cv_mse": 1.1791497743651016
+          },
+          "conv1_sum32": {
+            "external_mse": 0.0023914854614020217,
+            "external_score_vs_training_mean": 0.9997959695781324,
+            "selected_penalty": 0.0001,
+            "train_cv_mse": 0.005096480426976022
+          },
+          "conv1_PCA16": {
+            "external_mse": 0.0063994086967523525,
+            "external_score_vs_training_mean": 0.9994540321999968,
+            "selected_penalty": 0.0001,
+            "train_cv_mse": 0.010187435361151912
+          },
+          "conv2_sum16": {
+            "external_mse": 1.0062448208185346,
+            "external_score_vs_training_mean": 0.9141518697867171,
+            "selected_penalty": 1.0,
+            "train_cv_mse": 0.6584033727095194
+          },
+          "hidden32": {
+            "external_mse": 1.300410846192489,
+            "external_score_vs_training_mean": 0.8890549920407185,
+            "selected_penalty": 10.0,
+            "train_cv_mse": 0.8231049160602757
+          },
+          "conv1_vs_conv2": {
+            "score_advantage": 0.08564409979141534,
+            "molecule_bootstrap_95_percent_interval": [
+              0.07586467969114806,
+              0.09628230627798563
+            ]
+          },
+          "conv1_PCA16_vs_conv2": {
+            "score_advantage": 0.08530216241327974,
+            "molecule_bootstrap_95_percent_interval": [
+              0.0755423317485275,
+              0.09589015382168858
+            ]
+          }
+        },
+        "trace_A3": {
+          "input_sum": {
+            "external_mse": 8.386132346295353,
+            "external_score_vs_training_mean": 0.027539206702596575,
+            "selected_penalty": 100.0,
+            "train_cv_mse": 4.61868973076938
+          },
+          "conv1_sum32": {
+            "external_mse": 3.9788671943434526,
+            "external_score_vs_training_mean": 0.5386082417426263,
+            "selected_penalty": 10.0,
+            "train_cv_mse": 3.4666434724825828
+          },
+          "conv1_PCA16": {
+            "external_mse": 4.594271817916575,
+            "external_score_vs_training_mean": 0.46724556300989883,
+            "selected_penalty": 100.0,
+            "train_cv_mse": 3.4879491017702455
+          },
+          "conv2_sum16": {
+            "external_mse": 6.937922840909438,
+            "external_score_vs_training_mean": 0.19547442478803123,
+            "selected_penalty": 1.0,
+            "train_cv_mse": 4.116587788413237
+          },
+          "hidden32": {
+            "external_mse": 7.198088421726009,
+            "external_score_vs_training_mean": 0.16530547244358984,
+            "selected_penalty": 100.0,
+            "train_cv_mse": 4.3723679904111865
+          },
+          "conv1_vs_conv2": {
+            "score_advantage": 0.34313381695459527,
+            "molecule_bootstrap_95_percent_interval": [
+              0.25739753988054725,
+              0.43420413118352585
+            ]
+          },
+          "conv1_PCA16_vs_conv2": {
+            "score_advantage": 0.27177113822186777,
+            "molecule_bootstrap_95_percent_interval": [
+              0.2183580627444229,
+              0.3284432021509487
+            ]
+          }
+        },
+        "trace_A4": {
+          "input_sum": {
+            "external_mse": 214.48973800905932,
+            "external_score_vs_training_mean": 0.4252297515928882,
+            "selected_penalty": 1.0,
+            "train_cv_mse": 115.9527516260601
+          },
+          "conv1_sum32": {
+            "external_mse": 24.27312178123102,
+            "external_score_vs_training_mean": 0.9349550781994755,
+            "selected_penalty": 0.0001,
+            "train_cv_mse": 14.57243471798883
+          },
+          "conv1_PCA16": {
+            "external_mse": 31.06499709729088,
+            "external_score_vs_training_mean": 0.9167548234982601,
+            "selected_penalty": 1.0,
+            "train_cv_mse": 15.517208269601918
+          },
+          "conv2_sum16": {
+            "external_mse": 116.01429023577933,
+            "external_score_vs_training_mean": 0.689115371968158,
+            "selected_penalty": 0.1,
+            "train_cv_mse": 70.99144110940287
+          },
+          "hidden32": {
+            "external_mse": 116.5970495124844,
+            "external_score_vs_training_mean": 0.6875537462356525,
+            "selected_penalty": 10.0,
+            "train_cv_mse": 77.10546799253434
+          },
+          "conv1_vs_conv2": {
+            "score_advantage": 0.2458397062313176,
+            "molecule_bootstrap_95_percent_interval": [
+              0.19037347472437013,
+              0.3127186253366351
+            ]
+          },
+          "conv1_PCA16_vs_conv2": {
+            "score_advantage": 0.22763945153010212,
+            "molecule_bootstrap_95_percent_interval": [
+              0.17874167687095602,
+              0.28409301851952184
+            ]
+          }
+        }
+      },
+      "polarizability_error_by_size": {
+        "archived_test_up_to_6_heavy": {
+          "molecules": 200,
+          "mse": 0.7862667967278878,
+          "mae": 0.5250979638099671
+        },
+        "outside_6_heavy": {
+          "molecules": 383,
+          "mse": 2.4928163014782307,
+          "mae": 1.0694039446878059
+        },
+        "outside_7_heavy": {
+          "molecules": 616,
+          "mse": 2.967957622247781,
+          "mae": 1.2190996516834607
+        },
+        "outside_other_heavy": {
+          "molecules": 1,
+          "mse": 2.1695029852562584,
+          "mae": 1.4729232788085938
+        }
+      }
+    },
+    "alpha3_step87500": {
+      "alpha": 3,
+      "step": 87500,
+      "max_prediction_difference_from_animation": 4.57763671875e-05,
+      "probes": {
+        "dipole": {
+          "input_sum": {
+            "external_mse": 1.8778801263458167,
+            "external_score_vs_training_mean": 0.0849447947159162,
+            "selected_penalty": 10.0,
+            "train_cv_mse": 2.205338318534934
+          },
+          "conv1_sum32": {
+            "external_mse": 1.4877257376709854,
+            "external_score_vs_training_mean": 0.27505959449072837,
+            "selected_penalty": 100.0,
+            "train_cv_mse": 2.2489263049443284
+          },
+          "conv1_PCA16": {
+            "external_mse": 1.6153790890854645,
+            "external_score_vs_training_mean": 0.2128565485960584,
+            "selected_penalty": 100.0,
+            "train_cv_mse": 2.062756195992576
+          },
+          "conv2_sum16": {
+            "external_mse": 1.838407065733603,
+            "external_score_vs_training_mean": 0.10417926505028552,
+            "selected_penalty": 10.0,
+            "train_cv_mse": 2.233943248192438
+          },
+          "hidden32": {
+            "external_mse": 1.937001973979707,
+            "external_score_vs_training_mean": 0.05613584484504397,
+            "selected_penalty": 10.0,
+            "train_cv_mse": 2.257444909548845
+          }
+        },
+        "polarizability": {
+          "input_sum": {
+            "external_mse": 6.0912300571736635,
+            "external_score_vs_training_mean": 0.96186727121049,
+            "selected_penalty": 0.0001,
+            "train_cv_mse": 2.9933986086916002
+          },
+          "conv1_sum32": {
+            "external_mse": 2.5769634817303793,
+            "external_score_vs_training_mean": 0.9838675195934248,
+            "selected_penalty": 0.0001,
+            "train_cv_mse": 3.473987112882388
+          },
+          "conv1_PCA16": {
+            "external_mse": 2.545664112287137,
+            "external_score_vs_training_mean": 0.9840634620147517,
+            "selected_penalty": 0.0001,
+            "train_cv_mse": 3.0289206418775594
+          },
+          "conv2_sum16": {
+            "external_mse": 2.5582025441052356,
+            "external_score_vs_training_mean": 0.9839849680791299,
+            "selected_penalty": 0.0001,
+            "train_cv_mse": 0.18448847116419068
+          },
+          "hidden32": {
+            "external_mse": 2.5979683076625664,
+            "external_score_vs_training_mean": 0.983736023766962,
+            "selected_penalty": 0.01,
+            "train_cv_mse": 0.04002696163981321
+          }
+        },
+        "HOMO": {
+          "input_sum": {
+            "external_mse": 0.6428344459236834,
+            "external_score_vs_training_mean": 0.1952244384376769,
+            "selected_penalty": 0.0001,
+            "train_cv_mse": 0.7241603178469795
+          },
+          "conv1_sum32": {
+            "external_mse": 0.5614473700335638,
+            "external_score_vs_training_mean": 0.29711432644651314,
+            "selected_penalty": 1000.0,
+            "train_cv_mse": 0.7401858971442045
+          },
+          "conv1_PCA16": {
+            "external_mse": 0.3697127371878247,
+            "external_score_vs_training_mean": 0.537150229621643,
+            "selected_penalty": 100.0,
+            "train_cv_mse": 0.5243216372996973
+          },
+          "conv2_sum16": {
+            "external_mse": 0.5108651715755248,
+            "external_score_vs_training_mean": 0.36043905558518463,
+            "selected_penalty": 10.0,
+            "train_cv_mse": 0.6150091551445414
+          },
+          "hidden32": {
+            "external_mse": 0.5214800628453847,
+            "external_score_vs_training_mean": 0.3471500896052273,
+            "selected_penalty": 10.0,
+            "train_cv_mse": 0.625553927472585
+          },
+          "conv1_vs_conv2": {
+            "score_advantage": -0.06332472913867154,
+            "molecule_bootstrap_95_percent_interval": [
+              -0.12717712190961747,
+              0.005925517355118715
+            ]
+          },
+          "conv1_PCA16_vs_conv2": {
+            "score_advantage": 0.17671117403645842,
+            "molecule_bootstrap_95_percent_interval": [
+              0.12047095945907085,
+              0.23470709849094656
+            ]
+          }
+        },
+        "LUMO": {
+          "input_sum": {
+            "external_mse": 1.2958805987594249,
+            "external_score_vs_training_mean": 0.24521834737299886,
+            "selected_penalty": 1.0,
+            "train_cv_mse": 1.11900969464971
+          },
+          "conv1_sum32": {
+            "external_mse": 0.4976388869157947,
+            "external_score_vs_training_mean": 0.7101517671941817,
+            "selected_penalty": 0.0001,
+            "train_cv_mse": 0.2800511360559848
+          },
+          "conv1_PCA16": {
+            "external_mse": 0.5254597809405458,
+            "external_score_vs_training_mean": 0.6939475733898569,
+            "selected_penalty": 0.1,
+            "train_cv_mse": 0.3064270938778886
+          },
+          "conv2_sum16": {
+            "external_mse": 1.2106790246530281,
+            "external_score_vs_training_mean": 0.29484374107980493,
+            "selected_penalty": 1.0,
+            "train_cv_mse": 1.0146310517990114
+          },
+          "hidden32": {
+            "external_mse": 1.208756929283061,
+            "external_score_vs_training_mean": 0.29596325959195735,
+            "selected_penalty": 1.0,
+            "train_cv_mse": 0.9737978718579822
+          },
+          "conv1_vs_conv2": {
+            "score_advantage": 0.41530802611437695,
+            "molecule_bootstrap_95_percent_interval": [
+              0.36098623666809815,
+              0.4707891698027316
+            ]
+          },
+          "conv1_PCA16_vs_conv2": {
+            "score_advantage": 0.3991038323100521,
+            "molecule_bootstrap_95_percent_interval": [
+              0.34494707545480696,
+              0.4536186744869762
+            ]
+          }
+        },
+        "gap": {
+          "input_sum": {
+            "external_mse": 1.3493889192658124,
+            "external_score_vs_training_mean": 0.308868721283598,
+            "selected_penalty": 1.0,
+            "train_cv_mse": 1.5692941722613696
+          },
+          "conv1_sum32": {
+            "external_mse": 0.9482054286567486,
+            "external_score_vs_training_mean": 0.5143472567197802,
+            "selected_penalty": 0.0001,
+            "train_cv_mse": 1.8200425094156099
+          },
+          "conv1_PCA16": {
+            "external_mse": 0.9040354828949394,
+            "external_score_vs_training_mean": 0.5369702608510154,
+            "selected_penalty": 0.0001,
+            "train_cv_mse": 1.2445363462637986
+          },
+          "conv2_sum16": {
+            "external_mse": 1.1988751850033688,
+            "external_score_vs_training_mean": 0.3859589864695476,
+            "selected_penalty": 10.0,
+            "train_cv_mse": 1.3987986708933853
+          },
+          "hidden32": {
+            "external_mse": 1.2105842168503658,
+            "external_score_vs_training_mean": 0.3799618435870129,
+            "selected_penalty": 10.0,
+            "train_cv_mse": 1.348921310458567
+          },
+          "conv1_vs_conv2": {
+            "score_advantage": 0.12838827025023278,
+            "molecule_bootstrap_95_percent_interval": [
+              0.07311572071904583,
+              0.18508913924774495
+            ]
+          },
+          "conv1_PCA16_vs_conv2": {
+            "score_advantage": 0.15101127438146777,
+            "molecule_bootstrap_95_percent_interval": [
+              0.0977521832245874,
+              0.20474620340670768
+            ]
+          }
+        },
+        "trace_A2": {
+          "input_sum": {
+            "external_mse": 2.324146480595263,
+            "external_score_vs_training_mean": 0.801714626924905,
+            "selected_penalty": 0.0001,
+            "train_cv_mse": 1.1791497743651016
+          },
+          "conv1_sum32": {
+            "external_mse": 0.09200689495055009,
+            "external_score_vs_training_mean": 0.9921503994506928,
+            "selected_penalty": 1.0,
+            "train_cv_mse": 0.051192854312266146
+          },
+          "conv1_PCA16": {
+            "external_mse": 0.09935510155560909,
+            "external_score_vs_training_mean": 0.9915234846239889,
+            "selected_penalty": 1.0,
+            "train_cv_mse": 0.051460978665065917
+          },
+          "conv2_sum16": {
+            "external_mse": 1.1924598384848941,
+            "external_score_vs_training_mean": 0.8982648701683873,
+            "selected_penalty": 1.0,
+            "train_cv_mse": 0.855284279807004
+          },
+          "hidden32": {
+            "external_mse": 1.1632514110707695,
+            "external_score_vs_training_mean": 0.9007567974092483,
+            "selected_penalty": 1.0,
+            "train_cv_mse": 0.8716181352800833
+          },
+          "conv1_vs_conv2": {
+            "score_advantage": 0.0938855292823055,
+            "molecule_bootstrap_95_percent_interval": [
+              0.08143428268210577,
+              0.10815244948294252
+            ]
+          },
+          "conv1_PCA16_vs_conv2": {
+            "score_advantage": 0.09325861445560153,
+            "molecule_bootstrap_95_percent_interval": [
+              0.08113278392993212,
+              0.10702005752891713
+            ]
+          }
+        },
+        "trace_A3": {
+          "input_sum": {
+            "external_mse": 8.386132346295353,
+            "external_score_vs_training_mean": 0.027539206702596575,
+            "selected_penalty": 100.0,
+            "train_cv_mse": 4.61868973076938
+          },
+          "conv1_sum32": {
+            "external_mse": 5.3685499151128155,
+            "external_score_vs_training_mean": 0.37745982370363995,
+            "selected_penalty": 100.0,
+            "train_cv_mse": 3.814318217110473
+          },
+          "conv1_PCA16": {
+            "external_mse": 4.6627701215599755,
+            "external_score_vs_training_mean": 0.4593024598069052,
+            "selected_penalty": 100.0,
+            "train_cv_mse": 3.3603412599119182
+          },
+          "conv2_sum16": {
+            "external_mse": 7.400302636400256,
+            "external_score_vs_training_mean": 0.14185659428404118,
+            "selected_penalty": 10.0,
+            "train_cv_mse": 4.431730676168917
+          },
+          "hidden32": {
+            "external_mse": 7.483621547141643,
+            "external_score_vs_training_mean": 0.13219488484631226,
+            "selected_penalty": 100.0,
+            "train_cv_mse": 4.580336855210492
+          },
+          "conv1_vs_conv2": {
+            "score_advantage": 0.23560322941959894,
+            "molecule_bootstrap_95_percent_interval": [
+              0.18759412472330936,
+              0.28536861357930704
+            ]
+          },
+          "conv1_PCA16_vs_conv2": {
+            "score_advantage": 0.3174458655228641,
+            "molecule_bootstrap_95_percent_interval": [
+              0.24227052997024834,
+              0.39789275598457
+            ]
+          }
+        },
+        "trace_A4": {
+          "input_sum": {
+            "external_mse": 214.48973800905932,
+            "external_score_vs_training_mean": 0.4252297515928882,
+            "selected_penalty": 1.0,
+            "train_cv_mse": 115.9527516260601
+          },
+          "conv1_sum32": {
+            "external_mse": 35.68494388073607,
+            "external_score_vs_training_mean": 0.9043747069248683,
+            "selected_penalty": 10.0,
+            "train_cv_mse": 22.424352218964245
+          },
+          "conv1_PCA16": {
+            "external_mse": 39.40508159662367,
+            "external_score_vs_training_mean": 0.8944058175089137,
+            "selected_penalty": 10.0,
+            "train_cv_mse": 18.62458794729655
+          },
+          "conv2_sum16": {
+            "external_mse": 142.9891370144867,
+            "external_score_vs_training_mean": 0.6168306112721169,
+            "selected_penalty": 1.0,
+            "train_cv_mse": 89.54473842341099
+          },
+          "hidden32": {
+            "external_mse": 142.4183675010965,
+            "external_score_vs_training_mean": 0.6183601079186214,
+            "selected_penalty": 1.0,
+            "train_cv_mse": 92.5713650837465
+          },
+          "conv1_vs_conv2": {
+            "score_advantage": 0.2875440956527514,
+            "molecule_bootstrap_95_percent_interval": [
+              0.2335989891235629,
+              0.3528409184904782
+            ]
+          },
+          "conv1_PCA16_vs_conv2": {
+            "score_advantage": 0.2775752062367968,
+            "molecule_bootstrap_95_percent_interval": [
+              0.22578409908275376,
+              0.3404834895039326
+            ]
+          }
+        }
+      },
+      "polarizability_error_by_size": {
+        "archived_test_up_to_6_heavy": {
+          "molecules": 200,
+          "mse": 1.0878791315172793,
+          "mae": 0.6431105947494506
+        },
+        "outside_6_heavy": {
+          "molecules": 383,
+          "mse": 6.969178146313943,
+          "mae": 1.248970728941437
+        },
+        "outside_7_heavy": {
+          "molecules": 616,
+          "mse": 3.090156845682232,
+          "mae": 1.3013261943668515
+        },
+        "outside_other_heavy": {
+          "molecules": 1,
+          "mse": 1.736462488770485,
+          "mae": 1.3177490234375
+        }
+      }
+    }
+  },
+  "node_permutation_checks": {
+    "1": {
+      "molecules": 50,
+      "max_abs_output_difference": 1.52587890625e-05,
+      "mean_abs_output_difference": 2.0599365234375e-06,
+      "max_abs_pooled_channel_difference": 6.103515625e-05
+    },
+    "3": {
+      "molecules": 50,
+      "max_abs_output_difference": 9.1552734375e-05,
+      "mean_abs_output_difference": 2.38037109375e-05,
+      "max_abs_pooled_channel_difference": 0.000244140625
+    }
+  }
+}

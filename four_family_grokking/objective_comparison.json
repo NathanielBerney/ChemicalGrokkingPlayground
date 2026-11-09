@@ -1,0 +1,38 @@
+{
+  "circulant": {
+    "raw energy": {
+      "last_train_relative_accuracy": 0.253,
+      "last_test_relative_accuracy": 0.241,
+      "best_test_relative_accuracy": 0.33914285714285713
+    },
+    "log magnitude": {
+      "last_train_relative_accuracy": 0.672,
+      "last_test_relative_accuracy": 0.6602857142857143,
+      "best_test_relative_accuracy": 0.9917142857142857
+    }
+  },
+  "mobius": {
+    "raw energy": {
+      "last_train_relative_accuracy": 0.31,
+      "last_test_relative_accuracy": 0.2927142857142857,
+      "best_test_relative_accuracy": 0.5162857142857142
+    },
+    "log magnitude": {
+      "last_train_relative_accuracy": 0.937,
+      "last_test_relative_accuracy": 0.9242857142857143,
+      "best_test_relative_accuracy": 0.995
+    }
+  },
+  "linear": {
+    "raw energy": {
+      "last_train_relative_accuracy": 0.174,
+      "last_test_relative_accuracy": 0.17885714285714285,
+      "best_test_relative_accuracy": 0.5698571428571428
+    },
+    "log magnitude": {
+      "last_train_relative_accuracy": 0.9463333333333334,
+      "last_test_relative_accuracy": 0.9404285714285714,
+      "best_test_relative_accuracy": 0.9954285714285714
+    }
+  }
+}

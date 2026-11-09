@@ -1,0 +1,38 @@
+[
+  {
+    "total_size": 100,
+    "test_similarity_graph_vertices": 50,
+    "similarity_graph_bridges": 0,
+    "snapshot_count": 101,
+    "unsanitized_smiles_fallbacks": 0,
+    "node_layers": [
+      "conv1",
+      "conv2"
+    ],
+    "node_band_bounds": [
+      0.0,
+      0.5,
+      1.0,
+      1.5,
+      2.000001
+    ]
+  },
+  {
+    "total_size": 400,
+    "test_similarity_graph_vertices": 200,
+    "similarity_graph_bridges": 0,
+    "snapshot_count": 89,
+    "unsanitized_smiles_fallbacks": 1,
+    "node_layers": [
+      "conv1",
+      "conv2"
+    ],
+    "node_band_bounds": [
+      0.0,
+      0.5,
+      1.0,
+      1.5,
+      2.000001
+    ]
+  }
+]

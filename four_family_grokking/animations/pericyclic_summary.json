@@ -1,0 +1,9 @@
+{
+  "frames": 61,
+  "last_step": 120000,
+  "final_test_accuracy": 0.9604285714285714,
+  "final_hidden_pc1_fraction": 0.4832057505681508,
+  "final_row_pc12_fraction": 0.679217482306442,
+  "final_position_pc12_fraction": 0.6732810654337882,
+  "site_examples_per_label": 256
+}

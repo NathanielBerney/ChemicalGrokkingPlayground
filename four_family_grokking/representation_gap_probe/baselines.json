@@ -1,0 +1,19 @@
+{
+  "constant_loggap": {
+    "accuracy_rel_1pct": 0.029333333333333333,
+    "accuracy_rel_5pct": 0.12466666666666666,
+    "mae": 0.2820442075932826,
+    "rmse": 0.3619719490142525,
+    "median_relative_error": 0.20964351720371582,
+    "p90_relative_error": 0.5677985602625193
+  },
+  "exact_huckel": {
+    "accuracy_rel_1pct": 1.0,
+    "accuracy_rel_5pct": 1.0,
+    "mae": 1.9664565087396113e-08,
+    "rmse": 4.355372595910012e-08,
+    "median_relative_error": 0.0,
+    "p90_relative_error": 8.255342009988453e-08
+  },
+  "exact_max_abs_error": 1.1920928955078125e-07
+}

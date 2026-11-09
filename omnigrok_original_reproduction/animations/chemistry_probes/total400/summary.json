@@ -1,0 +1,856 @@
+{
+  "dataset": "first 400 QM9 molecules; same 200/200 split as archived animations",
+  "concept_definitions_smarts": {
+    "ring": "[R]",
+    "carbonyl": "[CX3]=[OX1]",
+    "hydroxyl": "[OX2H]",
+    "nitrile": "[CX2]#N",
+    "amine": "[NX3;H2,H1;!$(NC=O)]"
+  },
+  "element_features": [
+    "H",
+    "C",
+    "N",
+    "O",
+    "F"
+  ],
+  "unsanitized_smiles_fallbacks": 2,
+  "prevalence": {
+    "ring": {
+      "train_positive": 70,
+      "test_positive": 76,
+      "composition_matched_test_pairs": 111,
+      "composition_matched_test_groups": 24
+    },
+    "carbonyl": {
+      "train_positive": 78,
+      "test_positive": 66,
+      "composition_matched_test_pairs": 101,
+      "composition_matched_test_groups": 17
+    },
+    "hydroxyl": {
+      "train_positive": 49,
+      "test_positive": 60,
+      "composition_matched_test_pairs": 115,
+      "composition_matched_test_groups": 20
+    },
+    "nitrile": {
+      "train_positive": 22,
+      "test_positive": 39,
+      "composition_matched_test_pairs": 68,
+      "composition_matched_test_groups": 14
+    },
+    "amine": {
+      "train_positive": 15,
+      "test_positive": 22,
+      "composition_matched_test_pairs": 52,
+      "composition_matched_test_groups": 10
+    }
+  },
+  "probes": {
+    "ring": {
+      "element_counts": {
+        "test_auc": 0.7001803904923599,
+        "composition_matched_test_auc": 0.5,
+        "composition_matched_group_mean_auc": 0.5,
+        "train_cv_mse": 0.22799498190817952,
+        "selected_penalty": 100.0
+      },
+      "alpha3_step0_pooled16": {
+        "test_auc": 0.9388794567062818,
+        "composition_matched_test_auc": 0.990990990990991,
+        "composition_matched_group_mean_auc": 0.9976851851851851,
+        "train_cv_mse": 0.1384464082893409,
+        "selected_penalty": 10.0
+      },
+      "alpha3_step0_output": {
+        "test_auc": 0.732279286926995,
+        "composition_matched_test_auc": 0.9369369369369369,
+        "composition_matched_group_mean_auc": 0.8804398148148147,
+        "train_cv_mse": 0.1979130996762943,
+        "selected_penalty": 0.0001
+      },
+      "alpha3_step0_pooled_plus_elements": {
+        "test_auc": 1.0,
+        "composition_matched_test_auc": 1.0,
+        "composition_matched_group_mean_auc": 1.0,
+        "train_cv_mse": 0.059171956677408113,
+        "selected_penalty": 10.0
+      },
+      "alpha3_step10000_pooled16": {
+        "test_auc": 0.9845076400679117,
+        "composition_matched_test_auc": 1.0,
+        "composition_matched_group_mean_auc": 1.0,
+        "train_cv_mse": 0.08655632678873179,
+        "selected_penalty": 0.01
+      },
+      "alpha3_step10000_output": {
+        "test_auc": 0.5878607809847198,
+        "composition_matched_test_auc": 0.5135135135135135,
+        "composition_matched_group_mean_auc": 0.514103835978836,
+        "train_cv_mse": 0.23315509753442928,
+        "selected_penalty": 1000.0
+      },
+      "alpha3_step10000_pooled_plus_elements": {
+        "test_auc": 1.0,
+        "composition_matched_test_auc": 1.0,
+        "composition_matched_group_mean_auc": 1.0,
+        "train_cv_mse": 0.059834423641750234,
+        "selected_penalty": 10.0
+      },
+      "alpha3_step20000_pooled16": {
+        "test_auc": 0.7834252971137521,
+        "composition_matched_test_auc": 0.9279279279279279,
+        "composition_matched_group_mean_auc": 0.9256448412698411,
+        "train_cv_mse": 0.16867962724627036,
+        "selected_penalty": 10.0
+      },
+      "alpha3_step20000_output": {
+        "test_auc": 0.4611629881154499,
+        "composition_matched_test_auc": 0.6576576576576577,
+        "composition_matched_group_mean_auc": 0.7798611111111112,
+        "train_cv_mse": 0.23370664329545154,
+        "selected_penalty": 1000.0
+      },
+      "alpha3_step20000_pooled_plus_elements": {
+        "test_auc": 0.961481324278438,
+        "composition_matched_test_auc": 0.9819819819819819,
+        "composition_matched_group_mean_auc": 0.9777777777777779,
+        "train_cv_mse": 0.10979195681784981,
+        "selected_penalty": 1.0
+      },
+      "alpha3_step40000_pooled16": {
+        "test_auc": 0.8032682512733447,
+        "composition_matched_test_auc": 0.9099099099099099,
+        "composition_matched_group_mean_auc": 0.9104166666666665,
+        "train_cv_mse": 0.18188840776592463,
+        "selected_penalty": 1.0
+      },
+      "alpha3_step40000_output": {
+        "test_auc": 0.47315365025466893,
+        "composition_matched_test_auc": 0.7567567567567568,
+        "composition_matched_group_mean_auc": 0.8629629629629628,
+        "train_cv_mse": 0.23368663769153128,
+        "selected_penalty": 1000.0
+      },
+      "alpha3_step40000_pooled_plus_elements": {
+        "test_auc": 0.9515067911714771,
+        "composition_matched_test_auc": 0.963963963963964,
+        "composition_matched_group_mean_auc": 0.9671296296296296,
+        "train_cv_mse": 0.10568522915343292,
+        "selected_penalty": 0.0001
+      },
+      "alpha3_step87500_pooled16": {
+        "test_auc": 0.8899617996604414,
+        "composition_matched_test_auc": 0.9369369369369369,
+        "composition_matched_group_mean_auc": 0.9083333333333333,
+        "train_cv_mse": 0.1827510756593068,
+        "selected_penalty": 10.0
+      },
+      "alpha3_step87500_output": {
+        "test_auc": 0.46169354838709675,
+        "composition_matched_test_auc": 0.6756756756756757,
+        "composition_matched_group_mean_auc": 0.7641203703703704,
+        "train_cv_mse": 0.23369431962470677,
+        "selected_penalty": 1000.0
+      },
+      "alpha3_step87500_pooled_plus_elements": {
+        "test_auc": 0.9517190152801358,
+        "composition_matched_test_auc": 0.9369369369369369,
+        "composition_matched_group_mean_auc": 0.9500000000000001,
+        "train_cv_mse": 0.12422537354328937,
+        "selected_penalty": 0.1
+      },
+      "alpha1_step0_pooled16": {
+        "test_auc": 0.9974533106960951,
+        "composition_matched_test_auc": 1.0,
+        "composition_matched_group_mean_auc": 1.0,
+        "train_cv_mse": 0.06408295337808531,
+        "selected_penalty": 0.1
+      },
+      "alpha1_step0_output": {
+        "test_auc": 0.6135398981324278,
+        "composition_matched_test_auc": 0.5405405405405406,
+        "composition_matched_group_mean_auc": 0.4870370370370371,
+        "train_cv_mse": 0.22342034536338368,
+        "selected_penalty": 10.0
+      },
+      "alpha1_step0_pooled_plus_elements": {
+        "test_auc": 1.0,
+        "composition_matched_test_auc": 1.0,
+        "composition_matched_group_mean_auc": 1.0,
+        "train_cv_mse": 0.04770359958361967,
+        "selected_penalty": 10.0
+      },
+      "alpha1_step40000_pooled16": {
+        "test_auc": 0.9991511035653651,
+        "composition_matched_test_auc": 1.0,
+        "composition_matched_group_mean_auc": 1.0,
+        "train_cv_mse": 0.057550733564338895,
+        "selected_penalty": 1.0
+      },
+      "alpha1_step40000_output": {
+        "test_auc": 0.4725169779286927,
+        "composition_matched_test_auc": 0.7027027027027027,
+        "composition_matched_group_mean_auc": 0.7335648148148147,
+        "train_cv_mse": 0.23365453644420495,
+        "selected_penalty": 1000.0
+      },
+      "alpha1_step40000_pooled_plus_elements": {
+        "test_auc": 1.0,
+        "composition_matched_test_auc": 1.0,
+        "composition_matched_group_mean_auc": 1.0,
+        "train_cv_mse": 0.04632559375905489,
+        "selected_penalty": 1.0
+      }
+    },
+    "carbonyl": {
+      "element_counts": {
+        "test_auc": 0.826831750339213,
+        "composition_matched_test_auc": 0.5,
+        "composition_matched_group_mean_auc": 0.5,
+        "train_cv_mse": 0.16302967570347357,
+        "selected_penalty": 1.0
+      },
+      "alpha3_step0_pooled16": {
+        "test_auc": 0.8490502035278155,
+        "composition_matched_test_auc": 0.7326732673267327,
+        "composition_matched_group_mean_auc": 0.7973856209150326,
+        "train_cv_mse": 0.1689399149025564,
+        "selected_penalty": 1.0
+      },
+      "alpha3_step0_output": {
+        "test_auc": 0.6546811397557666,
+        "composition_matched_test_auc": 0.7524752475247525,
+        "composition_matched_group_mean_auc": 0.8254901960784313,
+        "train_cv_mse": 0.21686143517643722,
+        "selected_penalty": 10.0
+      },
+      "alpha3_step0_pooled_plus_elements": {
+        "test_auc": 0.9353233830845771,
+        "composition_matched_test_auc": 0.8316831683168316,
+        "composition_matched_group_mean_auc": 0.8464052287581699,
+        "train_cv_mse": 0.11003873870233191,
+        "selected_penalty": 0.1
+      },
+      "alpha3_step10000_pooled16": {
+        "test_auc": 0.9086386250565355,
+        "composition_matched_test_auc": 0.8910891089108911,
+        "composition_matched_group_mean_auc": 0.8862745098039215,
+        "train_cv_mse": 0.10465266336902232,
+        "selected_penalty": 1.0
+      },
+      "alpha3_step10000_output": {
+        "test_auc": 0.6086612392582542,
+        "composition_matched_test_auc": 0.6138613861386139,
+        "composition_matched_group_mean_auc": 0.584780578898226,
+        "train_cv_mse": 0.23500565165352852,
+        "selected_penalty": 10.0
+      },
+      "alpha3_step10000_pooled_plus_elements": {
+        "test_auc": 0.9704884667571235,
+        "composition_matched_test_auc": 0.9207920792079208,
+        "composition_matched_group_mean_auc": 0.9215686274509803,
+        "train_cv_mse": 0.0733854638329334,
+        "selected_penalty": 1.0
+      },
+      "alpha3_step20000_pooled16": {
+        "test_auc": 0.7408412483039348,
+        "composition_matched_test_auc": 0.7128712871287128,
+        "composition_matched_group_mean_auc": 0.6535947712418301,
+        "train_cv_mse": 0.23761436229439878,
+        "selected_penalty": 1000.0
+      },
+      "alpha3_step20000_output": {
+        "test_auc": 0.5682948891904116,
+        "composition_matched_test_auc": 0.1485148514851485,
+        "composition_matched_group_mean_auc": 0.1803921568627451,
+        "train_cv_mse": 0.23767044979385635,
+        "selected_penalty": 100.0
+      },
+      "alpha3_step20000_pooled_plus_elements": {
+        "test_auc": 0.9148575305291723,
+        "composition_matched_test_auc": 0.9207920792079208,
+        "composition_matched_group_mean_auc": 0.8202614379084967,
+        "train_cv_mse": 0.14494438115340746,
+        "selected_penalty": 1.0
+      },
+      "alpha3_step40000_pooled16": {
+        "test_auc": 0.7018317503392131,
+        "composition_matched_test_auc": 0.6237623762376238,
+        "composition_matched_group_mean_auc": 0.4790849673202614,
+        "train_cv_mse": 0.20958203691789296,
+        "selected_penalty": 10.0
+      },
+      "alpha3_step40000_output": {
+        "test_auc": 0.5636589778380823,
+        "composition_matched_test_auc": 0.24752475247524752,
+        "composition_matched_group_mean_auc": 0.2196078431372549,
+        "train_cv_mse": 0.23824363582750338,
+        "selected_penalty": 100.0
+      },
+      "alpha3_step40000_pooled_plus_elements": {
+        "test_auc": 0.8894165535956581,
+        "composition_matched_test_auc": 0.8415841584158416,
+        "composition_matched_group_mean_auc": 0.8202614379084967,
+        "train_cv_mse": 0.15274910738050454,
+        "selected_penalty": 1.0
+      },
+      "alpha3_step87500_pooled16": {
+        "test_auc": 0.5818634102216191,
+        "composition_matched_test_auc": 0.49504950495049505,
+        "composition_matched_group_mean_auc": 0.3496732026143791,
+        "train_cv_mse": 0.23470728153355638,
+        "selected_penalty": 100.0
+      },
+      "alpha3_step87500_output": {
+        "test_auc": 0.5679556761646314,
+        "composition_matched_test_auc": 0.2079207920792079,
+        "composition_matched_group_mean_auc": 0.19869281045751633,
+        "train_cv_mse": 0.23826749799670893,
+        "selected_penalty": 100.0
+      },
+      "alpha3_step87500_pooled_plus_elements": {
+        "test_auc": 0.8562867480777928,
+        "composition_matched_test_auc": 0.7722772277227723,
+        "composition_matched_group_mean_auc": 0.7189542483660132,
+        "train_cv_mse": 0.1632410441776799,
+        "selected_penalty": 1.0
+      },
+      "alpha1_step0_pooled16": {
+        "test_auc": 0.8674807779285392,
+        "composition_matched_test_auc": 0.8514851485148515,
+        "composition_matched_group_mean_auc": 0.788235294117647,
+        "train_cv_mse": 0.1496467211689258,
+        "selected_penalty": 1.0
+      },
+      "alpha1_step0_output": {
+        "test_auc": 0.6146540027137042,
+        "composition_matched_test_auc": 0.7326732673267327,
+        "composition_matched_group_mean_auc": 0.7359477124183007,
+        "train_cv_mse": 0.2375364461327428,
+        "selected_penalty": 100.0
+      },
+      "alpha1_step0_pooled_plus_elements": {
+        "test_auc": 0.9508141112618724,
+        "composition_matched_test_auc": 0.8910891089108911,
+        "composition_matched_group_mean_auc": 0.9405228758169935,
+        "train_cv_mse": 0.10105109544345289,
+        "selected_penalty": 10.0
+      },
+      "alpha1_step40000_pooled16": {
+        "test_auc": 0.9816824966078698,
+        "composition_matched_test_auc": 0.9603960396039604,
+        "composition_matched_group_mean_auc": 0.9699346405228757,
+        "train_cv_mse": 0.08616478804845087,
+        "selected_penalty": 10.0
+      },
+      "alpha1_step40000_output": {
+        "test_auc": 0.5642243328810493,
+        "composition_matched_test_auc": 0.21782178217821782,
+        "composition_matched_group_mean_auc": 0.265359477124183,
+        "train_cv_mse": 0.2383842924334319,
+        "selected_penalty": 100.0
+      },
+      "alpha1_step40000_pooled_plus_elements": {
+        "test_auc": 0.9854138398914518,
+        "composition_matched_test_auc": 0.9702970297029703,
+        "composition_matched_group_mean_auc": 0.973202614379085,
+        "train_cv_mse": 0.07861071377109592,
+        "selected_penalty": 10.0
+      }
+    },
+    "hydroxyl": {
+      "element_counts": {
+        "test_auc": 0.7456547619047619,
+        "composition_matched_test_auc": 0.5,
+        "composition_matched_group_mean_auc": 0.5,
+        "train_cv_mse": 0.15017603339185795,
+        "selected_penalty": 10.0
+      },
+      "alpha3_step0_pooled16": {
+        "test_auc": 0.700952380952381,
+        "composition_matched_test_auc": 0.6173913043478261,
+        "composition_matched_group_mean_auc": 0.66625,
+        "train_cv_mse": 0.1588952741398614,
+        "selected_penalty": 10.0
+      },
+      "alpha3_step0_output": {
+        "test_auc": 0.6489285714285714,
+        "composition_matched_test_auc": 0.43478260869565216,
+        "composition_matched_group_mean_auc": 0.43916666666666665,
+        "train_cv_mse": 0.16388986332000446,
+        "selected_penalty": 10.0
+      },
+      "alpha3_step0_pooled_plus_elements": {
+        "test_auc": 0.8689285714285714,
+        "composition_matched_test_auc": 0.8260869565217391,
+        "composition_matched_group_mean_auc": 0.8395833333333332,
+        "train_cv_mse": 0.12426005087901444,
+        "selected_penalty": 10.0
+      },
+      "alpha3_step10000_pooled16": {
+        "test_auc": 0.7861904761904762,
+        "composition_matched_test_auc": 0.7913043478260869,
+        "composition_matched_group_mean_auc": 0.8425,
+        "train_cv_mse": 0.1518645327784298,
+        "selected_penalty": 1.0
+      },
+      "alpha3_step10000_output": {
+        "test_auc": 0.49726190476190474,
+        "composition_matched_test_auc": 0.5565217391304348,
+        "composition_matched_group_mean_auc": 0.6441666666666668,
+        "train_cv_mse": 0.18247054011231256,
+        "selected_penalty": 10.0
+      },
+      "alpha3_step10000_pooled_plus_elements": {
+        "test_auc": 0.940595238095238,
+        "composition_matched_test_auc": 0.9130434782608695,
+        "composition_matched_group_mean_auc": 0.93875,
+        "train_cv_mse": 0.10735382716948424,
+        "selected_penalty": 1.0
+      },
+      "alpha3_step20000_pooled16": {
+        "test_auc": 0.6258333333333334,
+        "composition_matched_test_auc": 0.5130434782608696,
+        "composition_matched_group_mean_auc": 0.5945833333333332,
+        "train_cv_mse": 0.1673718025883054,
+        "selected_penalty": 10.0
+      },
+      "alpha3_step20000_output": {
+        "test_auc": 0.4822619047619048,
+        "composition_matched_test_auc": 0.34782608695652173,
+        "composition_matched_group_mean_auc": 0.3704166666666667,
+        "train_cv_mse": 0.18353886331509636,
+        "selected_penalty": 100.0
+      },
+      "alpha3_step20000_pooled_plus_elements": {
+        "test_auc": 0.8291666666666667,
+        "composition_matched_test_auc": 0.6260869565217392,
+        "composition_matched_group_mean_auc": 0.6879166666666666,
+        "train_cv_mse": 0.14484131928950447,
+        "selected_penalty": 10.0
+      },
+      "alpha3_step40000_pooled16": {
+        "test_auc": 0.5557142857142857,
+        "composition_matched_test_auc": 0.6521739130434783,
+        "composition_matched_group_mean_auc": 0.6525000000000001,
+        "train_cv_mse": 0.182790127475647,
+        "selected_penalty": 10.0
+      },
+      "alpha3_step40000_output": {
+        "test_auc": 0.46726190476190477,
+        "composition_matched_test_auc": 0.23478260869565218,
+        "composition_matched_group_mean_auc": 0.26625,
+        "train_cv_mse": 0.1842263770745025,
+        "selected_penalty": 100.0
+      },
+      "alpha3_step40000_pooled_plus_elements": {
+        "test_auc": 0.9001190476190476,
+        "composition_matched_test_auc": 0.8608695652173913,
+        "composition_matched_group_mean_auc": 0.8479166666666667,
+        "train_cv_mse": 0.1260441633318369,
+        "selected_penalty": 1.0
+      },
+      "alpha3_step87500_pooled16": {
+        "test_auc": 0.7503571428571428,
+        "composition_matched_test_auc": 0.7913043478260869,
+        "composition_matched_group_mean_auc": 0.7883333333333333,
+        "train_cv_mse": 0.16861129523764787,
+        "selected_penalty": 10.0
+      },
+      "alpha3_step87500_output": {
+        "test_auc": 0.46785714285714286,
+        "composition_matched_test_auc": 0.26956521739130435,
+        "composition_matched_group_mean_auc": 0.28833333333333333,
+        "train_cv_mse": 0.18429392693561414,
+        "selected_penalty": 100.0
+      },
+      "alpha3_step87500_pooled_plus_elements": {
+        "test_auc": 0.8928571428571429,
+        "composition_matched_test_auc": 0.8,
+        "composition_matched_group_mean_auc": 0.7779166666666667,
+        "train_cv_mse": 0.12041409140558276,
+        "selected_penalty": 1.0
+      },
+      "alpha1_step0_pooled16": {
+        "test_auc": 0.8220238095238095,
+        "composition_matched_test_auc": 0.7391304347826086,
+        "composition_matched_group_mean_auc": 0.6245833333333333,
+        "train_cv_mse": 0.14375302248680977,
+        "selected_penalty": 10.0
+      },
+      "alpha1_step0_output": {
+        "test_auc": 0.6702380952380952,
+        "composition_matched_test_auc": 0.4782608695652174,
+        "composition_matched_group_mean_auc": 0.38,
+        "train_cv_mse": 0.1787960908849316,
+        "selected_penalty": 10.0
+      },
+      "alpha1_step0_pooled_plus_elements": {
+        "test_auc": 0.969047619047619,
+        "composition_matched_test_auc": 0.9826086956521739,
+        "composition_matched_group_mean_auc": 0.975,
+        "train_cv_mse": 0.105967045444283,
+        "selected_penalty": 1.0
+      },
+      "alpha1_step40000_pooled16": {
+        "test_auc": 0.5935714285714285,
+        "composition_matched_test_auc": 0.8782608695652174,
+        "composition_matched_group_mean_auc": 0.8733333333333334,
+        "train_cv_mse": 0.17954742749622682,
+        "selected_penalty": 100.0
+      },
+      "alpha1_step40000_output": {
+        "test_auc": 0.4683333333333333,
+        "composition_matched_test_auc": 0.24347826086956523,
+        "composition_matched_group_mean_auc": 0.3266666666666666,
+        "train_cv_mse": 0.18400607342842318,
+        "selected_penalty": 100.0
+      },
+      "alpha1_step40000_pooled_plus_elements": {
+        "test_auc": 0.9314285714285714,
+        "composition_matched_test_auc": 0.8869565217391304,
+        "composition_matched_group_mean_auc": 0.8666666666666666,
+        "train_cv_mse": 0.10421840595003444,
+        "selected_penalty": 1.0
+      }
+    },
+    "nitrile": {
+      "element_counts": {
+        "test_auc": 0.8488612836438924,
+        "composition_matched_test_auc": 0.5,
+        "composition_matched_group_mean_auc": 0.5,
+        "train_cv_mse": 0.08059723097689135,
+        "selected_penalty": 10.0
+      },
+      "alpha3_step0_pooled16": {
+        "test_auc": 0.9942666029622551,
+        "composition_matched_test_auc": 1.0,
+        "composition_matched_group_mean_auc": 1.0,
+        "train_cv_mse": 0.03709053369746485,
+        "selected_penalty": 10.0
+      },
+      "alpha3_step0_output": {
+        "test_auc": 0.4972129319955407,
+        "composition_matched_test_auc": 0.6029411764705882,
+        "composition_matched_group_mean_auc": 0.5678571428571428,
+        "train_cv_mse": 0.09732983001539737,
+        "selected_penalty": 10.0
+      },
+      "alpha3_step0_pooled_plus_elements": {
+        "test_auc": 1.0,
+        "composition_matched_test_auc": 1.0,
+        "composition_matched_group_mean_auc": 1.0,
+        "train_cv_mse": 0.02674130033561691,
+        "selected_penalty": 1.0
+      },
+      "alpha3_step10000_pooled16": {
+        "test_auc": 1.0,
+        "composition_matched_test_auc": 1.0,
+        "composition_matched_group_mean_auc": 1.0,
+        "train_cv_mse": 0.014721455055575497,
+        "selected_penalty": 1.0
+      },
+      "alpha3_step10000_output": {
+        "test_auc": 0.5338429686255773,
+        "composition_matched_test_auc": 0.5441176470588235,
+        "composition_matched_group_mean_auc": 0.696031746031746,
+        "train_cv_mse": 0.0981153172674148,
+        "selected_penalty": 10.0
+      },
+      "alpha3_step10000_pooled_plus_elements": {
+        "test_auc": 1.0,
+        "composition_matched_test_auc": 1.0,
+        "composition_matched_group_mean_auc": 1.0,
+        "train_cv_mse": 0.015205077070183707,
+        "selected_penalty": 10.0
+      },
+      "alpha3_step20000_pooled16": {
+        "test_auc": 0.9770664118490205,
+        "composition_matched_test_auc": 1.0,
+        "composition_matched_group_mean_auc": 1.0,
+        "train_cv_mse": 0.014509255049020644,
+        "selected_penalty": 10.0
+      },
+      "alpha3_step20000_output": {
+        "test_auc": 0.52524287306896,
+        "composition_matched_test_auc": 0.6323529411764706,
+        "composition_matched_group_mean_auc": 0.4857142857142857,
+        "train_cv_mse": 0.0979621044386721,
+        "selected_penalty": 10.0
+      },
+      "alpha3_step20000_pooled_plus_elements": {
+        "test_auc": 0.9882146838668577,
+        "composition_matched_test_auc": 1.0,
+        "composition_matched_group_mean_auc": 1.0,
+        "train_cv_mse": 0.014842882990156101,
+        "selected_penalty": 10.0
+      },
+      "alpha3_step40000_pooled16": {
+        "test_auc": 0.9788182831661093,
+        "composition_matched_test_auc": 1.0,
+        "composition_matched_group_mean_auc": 1.0,
+        "train_cv_mse": 0.06120506845837481,
+        "selected_penalty": 10.0
+      },
+      "alpha3_step40000_output": {
+        "test_auc": 0.5239687848383501,
+        "composition_matched_test_auc": 0.6176470588235294,
+        "composition_matched_group_mean_auc": 0.49682539682539684,
+        "train_cv_mse": 0.09802645835503673,
+        "selected_penalty": 10.0
+      },
+      "alpha3_step40000_pooled_plus_elements": {
+        "test_auc": 0.9926739926739927,
+        "composition_matched_test_auc": 1.0,
+        "composition_matched_group_mean_auc": 1.0,
+        "train_cv_mse": 0.04596278018963206,
+        "selected_penalty": 0.1
+      },
+      "alpha3_step87500_pooled16": {
+        "test_auc": 0.9520624303232998,
+        "composition_matched_test_auc": 0.9558823529411765,
+        "composition_matched_group_mean_auc": 0.9880952380952381,
+        "train_cv_mse": 0.06552247783157139,
+        "selected_penalty": 10.0
+      },
+      "alpha3_step87500_output": {
+        "test_auc": 0.5236502627806976,
+        "composition_matched_test_auc": 0.7205882352941176,
+        "composition_matched_group_mean_auc": 0.6242063492063492,
+        "train_cv_mse": 0.09803795871429705,
+        "selected_penalty": 10.0
+      },
+      "alpha3_step87500_pooled_plus_elements": {
+        "test_auc": 0.9928332537028189,
+        "composition_matched_test_auc": 1.0,
+        "composition_matched_group_mean_auc": 1.0,
+        "train_cv_mse": 0.04978332212932917,
+        "selected_penalty": 0.1
+      },
+      "alpha1_step0_pooled16": {
+        "test_auc": 1.0,
+        "composition_matched_test_auc": 1.0,
+        "composition_matched_group_mean_auc": 1.0,
+        "train_cv_mse": 0.039316711627983295,
+        "selected_penalty": 10.0
+      },
+      "alpha1_step0_output": {
+        "test_auc": 0.4921165790731008,
+        "composition_matched_test_auc": 0.29411764705882354,
+        "composition_matched_group_mean_auc": 0.3535714285714286,
+        "train_cv_mse": 0.09857703521442224,
+        "selected_penalty": 1000.0
+      },
+      "alpha1_step0_pooled_plus_elements": {
+        "test_auc": 1.0,
+        "composition_matched_test_auc": 1.0,
+        "composition_matched_group_mean_auc": 1.0,
+        "train_cv_mse": 0.03278883506207088,
+        "selected_penalty": 10.0
+      },
+      "alpha1_step40000_pooled16": {
+        "test_auc": 0.8843764930721453,
+        "composition_matched_test_auc": 0.8970588235294118,
+        "composition_matched_group_mean_auc": 0.8730158730158729,
+        "train_cv_mse": 0.08263077804269733,
+        "selected_penalty": 1.0
+      },
+      "alpha1_step40000_output": {
+        "test_auc": 0.5249243510113075,
+        "composition_matched_test_auc": 0.6764705882352942,
+        "composition_matched_group_mean_auc": 0.542063492063492,
+        "train_cv_mse": 0.09798320485894167,
+        "selected_penalty": 10.0
+      },
+      "alpha1_step40000_pooled_plus_elements": {
+        "test_auc": 0.9609810479375697,
+        "composition_matched_test_auc": 0.9411764705882353,
+        "composition_matched_group_mean_auc": 0.9523809523809524,
+        "train_cv_mse": 0.06203067730535228,
+        "selected_penalty": 1.0
+      }
+    },
+    "amine": {
+      "element_counts": {
+        "test_auc": 0.8730847803881512,
+        "composition_matched_test_auc": 0.5,
+        "composition_matched_group_mean_auc": 0.5,
+        "train_cv_mse": 0.056785575988317925,
+        "selected_penalty": 10.0
+      },
+      "alpha3_step0_pooled16": {
+        "test_auc": 0.8899387129724209,
+        "composition_matched_test_auc": 0.6730769230769231,
+        "composition_matched_group_mean_auc": 0.8541666666666667,
+        "train_cv_mse": 0.058118962787075214,
+        "selected_penalty": 1.0
+      },
+      "alpha3_step0_output": {
+        "test_auc": 0.6677732379979571,
+        "composition_matched_test_auc": 0.7307692307692307,
+        "composition_matched_group_mean_auc": 0.7035714285714286,
+        "train_cv_mse": 0.07008621141868111,
+        "selected_penalty": 1000.0
+      },
+      "alpha3_step0_pooled_plus_elements": {
+        "test_auc": 0.8953013278855976,
+        "composition_matched_test_auc": 0.5192307692307693,
+        "composition_matched_group_mean_auc": 0.7744047619047618,
+        "train_cv_mse": 0.05659119735142435,
+        "selected_penalty": 10.0
+      },
+      "alpha3_step10000_pooled16": {
+        "test_auc": 0.822267620020429,
+        "composition_matched_test_auc": 0.5576923076923077,
+        "composition_matched_group_mean_auc": 0.6464285714285714,
+        "train_cv_mse": 0.06068510060872119,
+        "selected_penalty": 0.1
+      },
+      "alpha3_step10000_output": {
+        "test_auc": 0.5561797752808989,
+        "composition_matched_test_auc": 0.4230769230769231,
+        "composition_matched_group_mean_auc": 0.4011904761904762,
+        "train_cv_mse": 0.06908304438778938,
+        "selected_penalty": 10.0
+      },
+      "alpha3_step10000_pooled_plus_elements": {
+        "test_auc": 0.9118998978549541,
+        "composition_matched_test_auc": 0.5576923076923077,
+        "composition_matched_group_mean_auc": 0.6595238095238095,
+        "train_cv_mse": 0.05471506784324017,
+        "selected_penalty": 1.0
+      },
+      "alpha3_step20000_pooled16": {
+        "test_auc": 0.6874361593462717,
+        "composition_matched_test_auc": 0.34615384615384615,
+        "composition_matched_group_mean_auc": 0.35238095238095235,
+        "train_cv_mse": 0.06508442875087721,
+        "selected_penalty": 10.0
+      },
+      "alpha3_step20000_output": {
+        "test_auc": 0.5204290091930541,
+        "composition_matched_test_auc": 0.38461538461538464,
+        "composition_matched_group_mean_auc": 0.46130952380952384,
+        "train_cv_mse": 0.06997950234491887,
+        "selected_penalty": 10.0
+      },
+      "alpha3_step20000_pooled_plus_elements": {
+        "test_auc": 0.900153217568948,
+        "composition_matched_test_auc": 0.6153846153846154,
+        "composition_matched_group_mean_auc": 0.5464285714285715,
+        "train_cv_mse": 0.059405418809237706,
+        "selected_penalty": 10.0
+      },
+      "alpha3_step40000_pooled16": {
+        "test_auc": 0.6361082737487231,
+        "composition_matched_test_auc": 0.25,
+        "composition_matched_group_mean_auc": 0.3678571428571428,
+        "train_cv_mse": 0.06962751332840407,
+        "selected_penalty": 100.0
+      },
+      "alpha3_step40000_output": {
+        "test_auc": 0.5362614913176711,
+        "composition_matched_test_auc": 0.4807692307692308,
+        "composition_matched_group_mean_auc": 0.43392857142857144,
+        "train_cv_mse": 0.06997539811959522,
+        "selected_penalty": 10.0
+      },
+      "alpha3_step40000_pooled_plus_elements": {
+        "test_auc": 0.8531664964249234,
+        "composition_matched_test_auc": 0.25,
+        "composition_matched_group_mean_auc": 0.40595238095238095,
+        "train_cv_mse": 0.058522631846992954,
+        "selected_penalty": 10.0
+      },
+      "alpha3_step87500_pooled16": {
+        "test_auc": 0.6021450459652706,
+        "composition_matched_test_auc": 0.25,
+        "composition_matched_group_mean_auc": 0.44523809523809527,
+        "train_cv_mse": 0.06946491632699224,
+        "selected_penalty": 100.0
+      },
+      "alpha3_step87500_output": {
+        "test_auc": 0.5439223697650664,
+        "composition_matched_test_auc": 0.5,
+        "composition_matched_group_mean_auc": 0.5041666666666667,
+        "train_cv_mse": 0.06997268151858527,
+        "selected_penalty": 10.0
+      },
+      "alpha3_step87500_pooled_plus_elements": {
+        "test_auc": 0.855464759959142,
+        "composition_matched_test_auc": 0.38461538461538464,
+        "composition_matched_group_mean_auc": 0.505952380952381,
+        "train_cv_mse": 0.0570758544204358,
+        "selected_penalty": 10.0
+      },
+      "alpha1_step0_pooled16": {
+        "test_auc": 0.7821756894790602,
+        "composition_matched_test_auc": 0.4230769230769231,
+        "composition_matched_group_mean_auc": 0.6964285714285714,
+        "train_cv_mse": 0.06354214040172494,
+        "selected_penalty": 10.0
+      },
+      "alpha1_step0_output": {
+        "test_auc": 0.432073544433095,
+        "composition_matched_test_auc": 0.6730769230769231,
+        "composition_matched_group_mean_auc": 0.5255952380952381,
+        "train_cv_mse": 0.07014148521530775,
+        "selected_penalty": 1000.0
+      },
+      "alpha1_step0_pooled_plus_elements": {
+        "test_auc": 0.8490806945863125,
+        "composition_matched_test_auc": 0.5576923076923077,
+        "composition_matched_group_mean_auc": 0.6226190476190476,
+        "train_cv_mse": 0.05524937178453597,
+        "selected_penalty": 1.0
+      },
+      "alpha1_step40000_pooled16": {
+        "test_auc": 0.8958120531154239,
+        "composition_matched_test_auc": 0.8076923076923077,
+        "composition_matched_group_mean_auc": 0.7642857142857142,
+        "train_cv_mse": 0.06417285983109766,
+        "selected_penalty": 10.0
+      },
+      "alpha1_step40000_output": {
+        "test_auc": 0.5337078651685393,
+        "composition_matched_test_auc": 0.4230769230769231,
+        "composition_matched_group_mean_auc": 0.5303571428571429,
+        "train_cv_mse": 0.06999546070496325,
+        "selected_penalty": 10.0
+      },
+      "alpha1_step40000_pooled_plus_elements": {
+        "test_auc": 0.9218590398365679,
+        "composition_matched_test_auc": 0.8461538461538461,
+        "composition_matched_group_mean_auc": 0.7785714285714285,
+        "train_cv_mse": 0.056596336594224875,
+        "selected_penalty": 100.0
+      }
+    }
+  },
+  "polarizability_target_baselines": {
+    "total_atom_count": {
+      "selected_penalty": 0.1,
+      "train_cv_mse": 20.500413470435625,
+      "train_mse": 20.306990385870122,
+      "test_mse": 21.290967165594335,
+      "test_mae": 3.557594436028966
+    },
+    "element_counts": {
+      "selected_penalty": 1.0,
+      "train_cv_mse": 2.86033060936174,
+      "train_mse": 2.3061089014923364,
+      "test_mse": 1.5077373119508608,
+      "test_mae": 0.9083839661350999
+    },
+    "element_counts_plus_five_concepts": {
+      "selected_penalty": 1.0,
+      "train_cv_mse": 2.1719653422245147,
+      "train_mse": 1.57826264779615,
+      "test_mse": 1.0149504436114787,
+      "test_mae": 0.7497785630029311
+    }
+  },
+  "method": "Ridge score for each binary concept; 5-fold training-only CV selects penalty by MSE. Matched AUC compares opposite-label held-out molecules with identical H/C/N/O/F counts. Pairs share molecules, so counts are not independent observations. No GNN weights are changed."
+}

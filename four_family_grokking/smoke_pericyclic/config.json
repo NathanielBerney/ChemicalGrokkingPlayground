@@ -1,0 +1,23 @@
+{
+  "family": "pericyclic",
+  "dataset": "/mnt/das_storage/nates_workspace/OPGrokkingDatasets/OPSandbox/pericyclic_thermal_dataset/dataset.npz",
+  "n_samples": 10000,
+  "train_size": 3000,
+  "test_size": 7000,
+  "seed": 0,
+  "steps": 2,
+  "train_fraction": 0.3,
+  "eval_every": 1,
+  "checkpoint_every": 2,
+  "tolerance_abs_beta": 0.05,
+  "lr": 0.001,
+  "weight_decay": 1.0,
+  "architecture": "one-layer four-head d128 MLP512 ReLU no LayerNorm",
+  "input": "8x8 TS matrix row tokens plus site mask",
+  "target": "thermal allowed label",
+  "device": "NVIDIA H200 NVL",
+  "baselines": {
+    "majority_test_accuracy": 0.5032857060432434,
+    "exact_loop_rule_test_accuracy": 1.0
+  }
+}

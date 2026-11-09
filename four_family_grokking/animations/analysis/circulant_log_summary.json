@@ -1,0 +1,11 @@
+{
+  "family": "circulant",
+  "objective": "log",
+  "frames": 41,
+  "last_step": 40000,
+  "final_test_relative_accuracy": 0.6602857142857143,
+  "final_output_gini": 0.999387751914502,
+  "final_hidden_gini": 0.9990689176167268,
+  "final_hidden_pc12_fraction": 0.9959118636050799,
+  "final_token_pc12_fraction": 0.9063482194139185
+}
